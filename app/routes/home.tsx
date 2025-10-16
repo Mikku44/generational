@@ -19,8 +19,8 @@ export default function Home() {
       className="w-full h-full object-cover"
       />
     </div>
-    <div className="md:text-[150px] text-[50px] max-w-[50vw] text-wrap
-     text-center  tracking-[30px] relative z-1">
+    <div className="md:text-[150px] text-[50px] md:max-w-full  max-w-[50vw] text-wrap
+     text-center  tracking-[30px] relative z-1 overflow-hidden">
       GENERATIONAL
     </div>
 
@@ -30,7 +30,7 @@ export default function Home() {
       </div>
 
       {/* menu */}
-      <div className="flex gap-4">
+      <div className="flex gap-2 flex-wrap">
         {
           APP_MENU?.map((menu) => <Link
            to={menu.href}
