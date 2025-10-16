@@ -14,13 +14,13 @@ export default function Home() {
   return <main className="min-h-screen w-full p-10 relative flex h-full justify-between flex-col">
     {/* image */}
     <div className="w-full h-full absolute z-0 left-0 top-0">
-      <img src="https://images.unsplash.com/photo-1760510926216-d5fe00372ff0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=764"
+      <img src="https://www.lamborghinilongisland.com/imagetag/1939/5/l/New-2017-Lamborghini-Huracan-RWD-Coupe-1498579834.jpg"
        alt="yellow car - GENERATIONAL image" 
       className="w-full h-full object-cover"
       />
     </div>
-    <div className="md:text-[150px] text-[50px] md:max-w-full  max-w-[50vw] text-wrap
-     text-center  tracking-[30px] relative z-1 overflow-hidden">
+    <div className="md:text-[150px] text-[50px] h-auto text-wrap
+     text-center  tracking-[30px] relative z-1 w-full overflow-hidden">
       GENERATIONAL
     </div>
 
@@ -30,12 +30,12 @@ export default function Home() {
       </div>
 
       {/* menu */}
-      <div className="flex gap-2 flex-wrap">
+      <div className="flex md:gap-5 gap-2 flex-wrap">
         {
           APP_MENU?.map((menu) => <Link
            to={menu.href}
            key={menu.label}
-           className="hover:text-black/60 font-medium duration-150"
+           className="hover:text-white/80 font-medium duration-150"
            >
             {menu.label}
             </Link>)
