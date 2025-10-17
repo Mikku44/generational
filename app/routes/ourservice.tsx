@@ -79,9 +79,9 @@ export default function OurService() {
       </div>
 
       {/* HERO IMAGE */}
-      <div className="h-[800px] mt-10 overflow-hidden">
+      <div className="h-[600px] mt-10 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1613107292856-1d17447c76fd?auto=format&fit=crop&q=80&w=1170"
+          src="/images/Lamborghini_Diablo.jpg"
           alt="pink car generational"
           className="w-full h-full object-cover"
         />
@@ -104,7 +104,7 @@ export default function OurService() {
 
       {/* SECTION 2: THE ACQUISITION JOURNEY */}
       <div className="grid md:grid-cols-2 gap-5 mt-14 container-x ">
-        <ImageBox src="https://images.unsplash.com/photo-1598870114761-7fcb0bdcf87d?auto=format&fit=crop&q=80&w=735" />
+        <ImageBox src="/images/unnamed.jpg" />
         <div className="space-y-6 md:px-0 px-4">
           <h2 className="text-2xl font-semibold">THE ACQUISITION JOURNEY</h2>
           <p>FROM DISCOVERY TO DELIVERY — WITH CONFIDENCE, CLARITY, AND CARE</p>
@@ -145,7 +145,7 @@ export default function OurService() {
 
       {/* IMAGE */}
       <ImageBox
-        src="https://images.unsplash.com/photo-1598870114761-7fcb0bdcf87d?auto=format&fit=crop&q=80&w=735"
+        src="/images/Porsche_964_RS.jpg"
         className="mt-14 col-span-2"
       />
 

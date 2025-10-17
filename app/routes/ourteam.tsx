@@ -17,7 +17,7 @@ export default function Ourteam() {
 
 
       {/* content */}
-      <section className="">
+      <section className="mt-24 mb-20">
 
         {/*  */}
         <div className="grid md:grid-cols-2 gap-5">

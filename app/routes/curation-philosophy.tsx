@@ -15,14 +15,14 @@ export default function CurationPage() {
       </div>
 
       {/* content */}
-      <section className="mb-20">
-        <div className="text-xl font-medium mb-2">
+      <section className="mb-20 mt-28">
+        <div className="text-5xl font-semibold mb-2">
           CURATION PHILOSOPHY
         </div>
         {/*  */}
         <div className="grid md:grid-cols-2 gap-5">
           <div className="basis-1/2">
-            <img src="https://images.unsplash.com/photo-1662128364478-e89fd638ad80?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=676"
+            <img src="/images/M1.jpg"
               alt="" />
           </div>
           {/* text */}
