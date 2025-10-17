@@ -1,17 +1,17 @@
 export const APP_MENU = [
     {
-        href: "#",label : "CURATION PHILOSOPHY"
+        href: "/curation-philosyphy",label : "CURATION PHILOSOPHY"
     },
     {
-        href: "#",label : "OUR SERVICE"
+        href: "/ourservice",label : "OUR SERVICE"
     },
     {
-        href: "#",label : "INVENTORY"
+        href: "/inventory",label : "INVENTORY"
     },
     {
-        href: "#",label : "OUR TEAM"
+        href: "/ourteam",label : "OUR TEAM"
     },
     {
-        href: "#",label : "CONTACT"
+        href: "/contact",label : "CONTACT"
     },
 ]

@@ -13,3 +13,8 @@ body {
     color-scheme: dark;
   }
 }
+
+
+.container-x {
+  @apply max-w-7xl mx-auto;
+}
