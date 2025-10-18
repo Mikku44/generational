@@ -1,4 +1,5 @@
 import Logo from "~/components/logo";
+import { motion } from "framer-motion";
 import type { Route } from "./+types/ourservice";
 
 export function meta({ }: Route.MetaArgs) {
@@ -91,9 +92,14 @@ export default function OurService() {
         {/* SECTION 1: OUR SERVICES */}
         {/* our service */}
         <div className="w-full md:px-0 px-5 grid md:grid-cols-2 container-x mt-10 gap-5">
-          <div className="text-5xl font-bold ">OUR SERVICES</div>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="text-5xl font-bold ">OUR SERVICES</motion.div>
           {/* global sourcing */}
-          <div className="space-y-4">
+          <motion.div className="space-y-4">
             <div className=" text-2xl mb-2 font-semibold">GLOBAL SOURCING</div>
             <div className="">At Generational, we are devoted to a singular mission:
               to uncover the world's most beautiful and historically significant cars
@@ -101,7 +107,7 @@ export default function OurService() {
             <div className="">Our team of professionals travels across the globe-chasing the
               faintest lead-to curate exceptional pieces of automotive history and bring our
               clients' dream collections to life.</div>
-          </div>
+          </motion.div>
         </div>
         {/* SECTION 2: THE ACQUISITION JOURNEY */}
         <div className="grid md:grid-cols-2 gap-5 mt-14 container-x ">
@@ -110,14 +116,19 @@ export default function OurService() {
             <h2 className="text-2xl font-semibold">THE ACQUISITION JOURNEY</h2>
             <p>FROM DISCOVERY TO DELIVERY — WITH CONFIDENCE, CLARITY, AND CARE</p>
             {steps.map((step) => (
-              <div key={step.title}>
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                key={step.title}>
                 <h3 className="text-xl font-semibold mb-1">{step.title}</h3>
                 {step.content.map((c, i) => (
                   <p key={i} className="mb-3">
                     {c}
                   </p>
                 ))}
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -187,18 +198,24 @@ function Section({
   paragraphs: string[];
 }) {
   return (
-    <div className="w-full grid md:grid-cols-2 container-x mt-14 gap-5 md:px-0 px-4">
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="w-full grid md:grid-cols-2 container-x mt-14 gap-5 md:px-0 px-4"
+    >
       <div className=""></div>
-      <div className="">
+      <div>
         <h2 className="text-2xl font-bold">{title}</h2>
         <div className="space-y-4">
-          {subtitle && <div className="text-xl ">{subtitle}</div>}
+          {subtitle && <div className="text-xl">{subtitle}</div>}
           {paragraphs.map((text, i) => (
             <p key={i}>{text}</p>
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

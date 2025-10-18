@@ -1,5 +1,6 @@
 import Logo from "~/components/logo";
 import type { Route } from "./+types/ourteam";
+import AnimatedSection from "~/components/AnimationSector";
 
 
 export function meta({ }: Route.MetaArgs) {
@@ -25,120 +26,164 @@ export default function Ourteam() {
           </div>
           {/* text */}
           <div className="">
-            <div className="font-semibold text-xl mb-2">
-              FOUNDER
-            </div>
+            <AnimatedSection>
+              <div className="font-semibold text-xl mb-2">
+                FOUNDER
+              </div>
+            </AnimatedSection>
             <div className="">
-              <div className="">GENERATIONAL was founded by Kajkanit “Gem” Sakdisubha — a lifelong
-                car enthusiast and entrepreneur — together with a close group of friends
-                who share his deep passion for classic automobiles.</div>
-              <div className="">Gem’s fascination with cars began at the age of six, behind the wheel of a
-                red toy Countach he drove around his family’s vacation home in Khao Yai.
-                Years later, while studying architecture in Milan and Bangkok, his
-                appreciation for design matured — particularly the sculptural beauty
-                found in automotive form. </div>
-              <div className="">Before founding GENERATIONAL, Gem launched a successful startup
-                and co-founded a professional association, serving as both CEO and
-                President. These years of building, leading, and creating laid the
-                foundation for what would become his most personal venture.</div>
-              <div className="">At what he calls the “ripe moment” — with enough experience behind him
-                and encouragement from the people around him — Gem set out to bring
-                his long-held dream to life: a company devoted to timeless machines,
-                worthy of being passed down through generations. Thus, the name was born.
-              </div>
-              <div className="">GENERATIONAL is Gem’s magnum opus — a love letter to the beauty of
-                automotive design, and his belief in cars not only as kinetic art, but as
-                meaningful investments, emotional totems, and lifelong dreams made
-                tangible
-              </div>
+              <AnimatedSection>
+                <div className="">GENERATIONAL was founded by Kajkanit “Gem” Sakdisubha — a lifelong
+                  car enthusiast and entrepreneur — together with a close group of friends
+                  who share his deep passion for classic automobiles.</div>
+              </AnimatedSection>
+              <AnimatedSection>
+                <div className="">Gem’s fascination with cars began at the age of six, behind the wheel of a
+                  red toy Countach he drove around his family’s vacation home in Khao Yai.
+                  Years later, while studying architecture in Milan and Bangkok, his
+                  appreciation for design matured — particularly the sculptural beauty
+                  found in automotive form. </div>
+              </AnimatedSection>
+              <AnimatedSection>
+                <div className="">Before founding GENERATIONAL, Gem launched a successful startup
+                  and co-founded a professional association, serving as both CEO and
+                  President. These years of building, leading, and creating laid the
+                  foundation for what would become his most personal venture.</div>
+              </AnimatedSection>
+              <AnimatedSection>
+                <div className="">At what he calls the “ripe moment” — with enough experience behind him
+                  and encouragement from the people around him — Gem set out to bring
+                  his long-held dream to life: a company devoted to timeless machines,
+                  worthy of being passed down through generations. Thus, the name was born.
+                </div>
+              </AnimatedSection>
+              <AnimatedSection>
+                <div className="">GENERATIONAL is Gem’s magnum opus — a love letter to the beauty of
+                  automotive design, and his belief in cars not only as kinetic art, but as
+                  meaningful investments, emotional totems, and lifelong dreams made
+                  tangible
+                </div>
+              </AnimatedSection>
 
             </div>
 
 
             {/* Design Above All */}
             <div className="mt-10">
-              <div className="text-xl font-semibold mb-2">
-                Design Above All
-              </div>
+              <AnimatedSection>
+                <div className="text-xl font-semibold mb-2">
+                  Design Above All
+                </div>
+              </AnimatedSection>
 
-              <div className="">We look for timeless design-sculptural forms, precise lines, and details that have aged with grace.
-                From the muscular arches of the Lamborghini Countach LP400, to the sculpted elegance of the Ferrari 250 GT/L "Lusso",
-                and the purity of the Porsche 911,
-                we study these automobiles as if they were architecture on wheels - because they are.</div>
+              <AnimatedSection>
+                <div className="">We look for timeless design-sculptural forms, precise lines, and details that have aged with grace.
+                  From the muscular arches of the Lamborghini Countach LP400, to the sculpted elegance of the Ferrari 250 GT/L "Lusso",
+                  and the purity of the Porsche 911,
+                  we study these automobiles as if they were architecture on wheels - because they are.</div>
+              </AnimatedSection>
             </div>
             {/* Provenance & Originality */}
             <div className="mt-10 ">
-              <div className="text-xl font-semibold mb-2">
-                Provenance & Originality
-              </div>
+              <AnimatedSection>
+                <div className="text-xl font-semibold mb-2">
+                  Provenance & Originality
+                </div>
+              </AnimatedSection>
 
-              <div className="">A car is only as valuable as its condition.
-                We prioritize vehicles with clear provenance, verified histories from previous owners,
-                original components, service records from respected garages,
-                and minimal modifications.</div>
-              <div className="">We believe art is best left untouched once it has passed through the hands of its creator -
-                you don't alter the Mona Lisa's smile. It's perfect as it is.</div>
+              <AnimatedSection>
+                <div className="">A car is only as valuable as its condition.
+                  We prioritize vehicles with clear provenance, verified histories from previous owners,
+                  original components, service records from respected garages,
+                  and minimal modifications.</div>
+              </AnimatedSection>
+              <AnimatedSection>
+                <div className="">We believe art is best left untouched once it has passed through the hands of its creator -
+                  you don't alter the Mona Lisa's smile. It's perfect as it is.</div>
+              </AnimatedSection>
             </div>
 
             {/* Driving Experience */}
             <div className="mt-10 ">
-              <div className="text-xl font-semibold mb-2">
-                Driving Experience
-              </div>
+              <AnimatedSection>
+                <div className="text-xl font-semibold mb-2">
+                  Driving Experience
+                </div>
+              </AnimatedSection>
 
-              <div className="">We believe a classic car should be driven, not just displayed.
-                Every vehicle we source must deliver an emotional response behind the wheel - sound,
-                feel and mechanical character. We don't bring cars all the way to Thailand just for her to sit in the garage waiting for parts -
-                the soul of the car must be alive.</div>
+              <AnimatedSection>
+                <div className="">We believe a classic car should be driven, not just displayed.
+                  Every vehicle we source must deliver an emotional response behind the wheel - sound,
+                  feel and mechanical character. We don't bring cars all the way to Thailand just for her to sit in the garage waiting for parts -
+                  the soul of the car must be alive.</div>
+              </AnimatedSection>
 
             </div>
             {/* Rarity with Relevance */}
             <div className="mt-10 ">
-              <div className="text-xl font-semibold mb-2">
-                Rarity with Relevance
-              </div>
+              <AnimatedSection>
+                <div className="text-xl font-semibold mb-2">
+                  Rarity with Relevance
+                </div>
+              </AnimatedSection>
 
-              <div className="">Not every rare car is collectible.
-                We curate models that matter: culturally significant and racing pedigree,
-                or underappreciated legends whose time</div>
+              <AnimatedSection>
+                <div className="">Not every rare car is collectible.
+                  We curate models that matter: culturally significant and racing pedigree,
+                  or underappreciated legends whose time</div>
+              </AnimatedSection>
 
             </div>
             {/* Cars That Belong in Your Future */}
             <div className="mt-10 ">
-              <div className="text-xl font-semibold mb-2">
-                Cars That Belong in Your Future
-              </div>
+              <AnimatedSection>
+                <div className="text-xl font-semibold mb-2">
+                  Cars That Belong in Your Future
+                </div>
+              </AnimatedSection>
 
-              <div className="">Our philosophy is rooted in the long view.
-                These are vehicles not just for today - but for tomorrow's curators,
-                collectors, and connoisseurs. We exist to find, protect, and deliver those cars.</div>
+              <AnimatedSection>
+                <div className="">Our philosophy is rooted in the long view.
+                  These are vehicles not just for today - but for tomorrow's curators,
+                  collectors, and connoisseurs. We exist to find, protect, and deliver those cars.</div>
+              </AnimatedSection>
 
 
-              <div className="">This is how we curated GENERATIONAL.</div>
+              <AnimatedSection>
+                <div className="">This is how we curated GENERATIONAL.</div>
+              </AnimatedSection>
             </div>
           </div>
 
 
           <div className="mt-14"></div>
           <div className="mt-14">
-            <div className="font-semibold text-xl mb-2">
-              CO-FOUNDERS
-            </div>
+            <AnimatedSection>
+              <div className="font-semibold text-xl mb-2">
+                CO-FOUNDERS
+              </div>
+            </AnimatedSection>
             <div className="">
-              <div className=""> The co-founders of GENERATIONAL — all friends and respected seniors
-                of Gem — bring with them a wealth of experience, knowledge, and
-                genuine passion for automobiles.</div>
-              <div className=""> As prominent members of Thailand’s most exclusive and intellectually
-                engaged car clubs, they represent the pinnacle of the country’s collector
-                community. Their personal collections and areas of expertise span an
-                impressive range  of marques: from Alfa Romeo, BMW, Ferrari,
-                Lamborghini, McLaren, Mercedes-Benz, and Porsche — to many other
-                significant and storied names.</div>
+              <AnimatedSection>
+                <div className=""> The co-founders of GENERATIONAL — all friends and respected seniors
+                  of Gem — bring with them a wealth of experience, knowledge, and
+                  genuine passion for automobiles.</div>
+              </AnimatedSection>
+              <AnimatedSection>
+                <div className=""> As prominent members of Thailand’s most exclusive and intellectually
+                  engaged car clubs, they represent the pinnacle of the country’s collector
+                  community. Their personal collections and areas of expertise span an
+                  impressive range  of marques: from Alfa Romeo, BMW, Ferrari,
+                  Lamborghini, McLaren, Mercedes-Benz, and Porsche — to many other
+                  significant and storied names.</div>
+              </AnimatedSection>
 
-              <div className="">Together, their collective insight and appreciation for heritage and
-                engineering form the foundation that makes GENERATIONAL a truly
-                versatile and well-rounded presence across all corners of Thailand’s car
-                culture</div>
+              <AnimatedSection>
+                <div className="">Together, their collective insight and appreciation for heritage and
+                  engineering form the foundation that makes GENERATIONAL a truly
+                  versatile and well-rounded presence across all corners of Thailand’s car
+                  culture</div>
+              </AnimatedSection>
 
 
             </div>
@@ -157,28 +202,36 @@ export default function Ourteam() {
           </div>
 
           <div className="">
-            <div className="font-semibold text-xl mb-2">
-              INTERNATIONAL TEAM
-            </div>
+            <AnimatedSection>
+              <div className="font-semibold text-xl mb-2">
+                INTERNATIONAL TEAM
+              </div>
+            </AnimatedSection>
             <div className="">
-              <div className=""> Beyond its Thai roots, GENERATIONAL has established a truly global
-                footprint. With specialist team members based in the United Kingdom —
-                the world’s largest right-hand-drive classic car market — we are perfectly
-                positioned to source rare and iconic vehicles across the western
-                hemisphere.</div>
+              <AnimatedSection>
+                <div className=""> Beyond its Thai roots, GENERATIONAL has established a truly global
+                  footprint. With specialist team members based in the United Kingdom —
+                  the world’s largest right-hand-drive classic car market — we are perfectly
+                  positioned to source rare and iconic vehicles across the western
+                  hemisphere.</div>
+              </AnimatedSection>
 
 
-              <div className="">At the same time, our presence in Japan ensures a close watch on
-                emerging collectible markets throughout the eastern hemisphere,
-                including Japan and Hong Kong. Our international team, embedded in
-                these key automotive hubs, live and breathe cars. They are constantly on
-                the hunt for the finest and rarest vehicles — all with the singular goal of
-                curating the most exceptional collection for our clients in Thailand.</div>
+              <AnimatedSection>
+                <div className="">At the same time, our presence in Japan ensures a close watch on
+                  emerging collectible markets throughout the eastern hemisphere,
+                  including Japan and Hong Kong. Our international team, embedded in
+                  these key automotive hubs, live and breathe cars. They are constantly on
+                  the hunt for the finest and rarest vehicles — all with the singular goal of
+                  curating the most exceptional collection for our clients in Thailand.</div>
+              </AnimatedSection>
 
                 
-              <div className="">With the combined dedication and global reach of our team, we deliver
-                more than just exceptional curated cars — we deliver trust, passion, and
-                lasting relationships</div>
+              <AnimatedSection>
+                <div className="">With the combined dedication and global reach of our team, we deliver
+                  more than just exceptional curated cars — we deliver trust, passion, and
+                  lasting relationships</div>
+              </AnimatedSection>
 
 
             </div>

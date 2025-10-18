@@ -2,6 +2,8 @@ import { Box, Button, TextField } from "@mui/material";
 import { useState } from "react";
 import type { Route } from "./+types/home";
 import Logo from "~/components/logo";
+import { ContactService } from "services/contactService";
+import { toast } from "sonner";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -23,14 +25,23 @@ export default function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(form);
+
+    toast.promise(
+      ContactService.create(form),
+      {
+        loading: "Submitting...",
+        success: (result: any) => `Message sent successfully!\n Your ticket ID: ${result.id}`,
+        error: "Something went wrong. Please try again.",
+      }
+    );
   };
 
 
+
   return (
-    <main className="min-h-screen w-full md:p-10 p-5">
+    <main className="min-h-screen w-full md:p-10 p-5 relative">
       <Logo />
       {/* content */}
 

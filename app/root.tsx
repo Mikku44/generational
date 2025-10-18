@@ -6,7 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-
+import { Toaster } from 'sonner'
 import type { Route } from "./+types/root";
 import "./app.css";
 import Navbar from "./components/navbar";
@@ -38,6 +38,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+         <Toaster className="rounded-none" />
         {children}
         <Navbar />
         <ScrollRestoration />
