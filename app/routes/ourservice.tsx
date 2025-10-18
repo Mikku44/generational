@@ -1,6 +1,8 @@
 import Logo from "~/components/logo";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import type { Route } from "./+types/ourservice";
+import AnimatedSection from "~/components/AnimationSector";
+import { useRef } from "react";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -10,6 +12,16 @@ export function meta({ }: Route.MetaArgs) {
 }
 
 export default function OurService() {
+  const ref = useRef<any>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  // scale from 1 to 1.1
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.3]);
+
+
   const steps = [
     {
       title: "1. Global Discovery Begins",
@@ -83,7 +95,9 @@ export default function OurService() {
       <div className="md:mt-40 mt-12">
         {/* HERO IMAGE */}
         <div className="h-[600px] mt-10 overflow-hidden">
-          <img
+          <motion.img
+            ref={ref}
+            style={{ scale }}
             src="/images/Lamborghini_Diablo.jpg"
             alt="pink car generational"
             className="w-full h-full object-cover"
@@ -100,21 +114,31 @@ export default function OurService() {
             className="text-5xl font-bold ">OUR SERVICES</motion.div>
           {/* global sourcing */}
           <motion.div className="space-y-4">
-            <div className=" text-2xl mb-2 font-semibold">GLOBAL SOURCING</div>
-            <div className="">At Generational, we are devoted to a singular mission:
-              to uncover the world's most beautiful and historically significant cars
-              and deliver them into the hands of Thailand's most discerning collectors.</div>
-            <div className="">Our team of professionals travels across the globe-chasing the
-              faintest lead-to curate exceptional pieces of automotive history and bring our
-              clients' dream collections to life.</div>
+            <AnimatedSection>
+              <div className=" text-2xl mb-2 font-semibold">GLOBAL SOURCING</div>
+            </AnimatedSection>
+            <AnimatedSection>
+              <div className="">At Generational, we are devoted to a singular mission:
+                to uncover the world's most beautiful and historically significant cars
+                and deliver them into the hands of Thailand's most discerning collectors.</div>
+            </AnimatedSection>
+            <AnimatedSection>
+              <div className="">Our team of professionals travels across the globe-chasing the
+                faintest lead-to curate exceptional pieces of automotive history and bring our
+                clients' dream collections to life.</div>
+            </AnimatedSection>
           </motion.div>
         </div>
         {/* SECTION 2: THE ACQUISITION JOURNEY */}
         <div className="grid md:grid-cols-2 gap-5 mt-14 container-x ">
           <ImageBox src="/images/unnamed.jpg" />
           <div className="space-y-6 md:px-0 px-4">
-            <h2 className="text-2xl font-semibold">THE ACQUISITION JOURNEY</h2>
-            <p>FROM DISCOVERY TO DELIVERY — WITH CONFIDENCE, CLARITY, AND CARE</p>
+            <AnimatedSection>
+              <h2 className="text-2xl font-semibold">THE ACQUISITION JOURNEY</h2>
+            </AnimatedSection>
+            <AnimatedSection>
+              <p>FROM DISCOVERY TO DELIVERY — WITH CONFIDENCE, CLARITY, AND CARE</p>
+            </AnimatedSection>
             {steps.map((step) => (
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
@@ -219,10 +243,19 @@ function Section({
   );
 }
 
-function ImageBox({ src, className = "" }: { src: string; className?: string }) {
+interface ImageBoxProps {
+  src: string;
+  className?: string;
+}
+
+function ImageBox({ src, className = "" }: ImageBoxProps) {
+
   return (
-    <div className={`w-full h-[500px] overflow-hidden ${className}`}>
-      <img src={src} alt="" className="w-full h-full object-cover" />
+    <div
+      className={`w-full h-[500px] overflow-hidden ${className}`}
+    >
+      <img
+        src={src} alt="" className="w-full h-full object-cover" />
     </div>
   );
 }
