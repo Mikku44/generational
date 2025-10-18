@@ -1,3 +1,4 @@
+import Logo from "~/components/logo";
 import type { Route } from "./+types/ourservice";
 
 export function meta({ }: Route.MetaArgs) {
@@ -74,103 +75,100 @@ export default function OurService() {
   return (
     <main className="min-h-screen mb-20 w-full mx-auto ">
       {/* HERO TITLE */}
-      <div className="md:text-[120px] text-[50px] container-x text-center tracking-[30px] mt-10">
-        GENERATIONAL
+      <div className="md:p-10 p-5">
+        <Logo />
       </div>
 
-      {/* HERO IMAGE */}
-      <div className="h-[600px] mt-10 overflow-hidden">
-        <img
-          src="/images/Lamborghini_Diablo.jpg"
-          alt="pink car generational"
-          className="w-full h-full object-cover"
+      <div className="md:mt-40 mt-12">
+        {/* HERO IMAGE */}
+        <div className="h-[600px] mt-10 overflow-hidden">
+          <img
+            src="/images/Lamborghini_Diablo.jpg"
+            alt="pink car generational"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        {/* SECTION 1: OUR SERVICES */}
+        {/* our service */}
+        <div className="w-full md:px-0 px-5 grid md:grid-cols-2 container-x mt-10 gap-5">
+          <div className="text-5xl font-bold ">OUR SERVICES</div>
+          {/* global sourcing */}
+          <div className="space-y-4">
+            <div className=" text-2xl mb-2 font-semibold">GLOBAL SOURCING</div>
+            <div className="">At Generational, we are devoted to a singular mission:
+              to uncover the world's most beautiful and historically significant cars
+              and deliver them into the hands of Thailand's most discerning collectors.</div>
+            <div className="">Our team of professionals travels across the globe-chasing the
+              faintest lead-to curate exceptional pieces of automotive history and bring our
+              clients' dream collections to life.</div>
+          </div>
+        </div>
+        {/* SECTION 2: THE ACQUISITION JOURNEY */}
+        <div className="grid md:grid-cols-2 gap-5 mt-14 container-x ">
+          <ImageBox src="/images/unnamed.jpg" />
+          <div className="space-y-6 md:px-0 px-4">
+            <h2 className="text-2xl font-semibold">THE ACQUISITION JOURNEY</h2>
+            <p>FROM DISCOVERY TO DELIVERY — WITH CONFIDENCE, CLARITY, AND CARE</p>
+            {steps.map((step) => (
+              <div key={step.title}>
+                <h3 className="text-xl font-semibold mb-1">{step.title}</h3>
+                {step.content.map((c, i) => (
+                  <p key={i} className="mb-3">
+                    {c}
+                  </p>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* SECTION 3: SELLING BACK TO THE WORLD */}
+        <Section
+          title="SELLING BACK TO THE WORLD"
+          subtitle="HELPING YOU EXIT AS SMOOTHLY AS YOU ENTER"
+          paragraphs={[
+            "While GENERATIONAL is best known for bringing classic cars into Thailand, our service doesn’t end there.",
+            "We assist our clients in exporting their vehicles to global markets — whether to seize a strong offer abroad, rebalance their collection, or move on to the next dream.",
+            "Our international sourcing team works in reverse — identifying qualified buyers, connecting with dealers and collectors overseas, and presenting your vehicle with the same curated care we use when sourcing.",
+            "And thanks to Thailand’s new Classic Car Act, the opportunity is more compelling than ever.",
+          ]}
         />
-      </div>
-
-      {/* SECTION 1: OUR SERVICES */}
-      {/* our service */} <div className="w-full md:px-0 px-4 grid md:grid-cols-2 container-x mt-10 gap-5">
-        <div className="text-5xl">OUR SERVICES</div>
-        {/* global sourcing */}
-        <div className="space-y-4">
-          <div className=" text-2xl mb-2 font-semibold">GLOBAL SOURCING</div>
-          <div className="">At Generational, we are devoted to a singular mission:
-            to uncover the world's most beautiful and historically significant cars
-            and deliver them into the hands of Thailand's most discerning collectors.</div>
-          <div className="">Our team of professionals travels across the globe-chasing the
-            faintest lead-to curate exceptional pieces of automotive history and bring our
-            clients' dream collections to life.</div>
-        </div>
-      </div>
-
-      {/* SECTION 2: THE ACQUISITION JOURNEY */}
-      <div className="grid md:grid-cols-2 gap-5 mt-14 container-x ">
-        <ImageBox src="/images/unnamed.jpg" />
-        <div className="space-y-6 md:px-0 px-4">
-          <h2 className="text-2xl font-semibold">THE ACQUISITION JOURNEY</h2>
-          <p>FROM DISCOVERY TO DELIVERY — WITH CONFIDENCE, CLARITY, AND CARE</p>
-          {steps.map((step) => (
-            <div key={step.title}>
-              <h3 className="text-xl font-medium mb-1">{step.title}</h3>
-              {step.content.map((c, i) => (
-                <p key={i} className="mb-3">
-                  {c}
-                </p>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* SECTION 3: SELLING BACK TO THE WORLD */}
-      <Section
-        title="SELLING BACK TO THE WORLD"
-        subtitle="HELPING YOU EXIT AS SMOOTHLY AS YOU ENTER"
-        paragraphs={[
-          "While GENERATIONAL is best known for bringing classic cars into Thailand, our service doesn’t end there.",
-          "We assist our clients in exporting their vehicles to global markets — whether to seize a strong offer abroad, rebalance their collection, or move on to the next dream.",
-          "Our international sourcing team works in reverse — identifying qualified buyers, connecting with dealers and collectors overseas, and presenting your vehicle with the same curated care we use when sourcing.",
-          "And thanks to Thailand’s new Classic Car Act, the opportunity is more compelling than ever.",
-        ]}
-      />
-
-      {/* SECTION 4: TAX CREDIT BENEFITS */}
-      <Section
-        title="TAX CREDIT BENEFITS FOR EXPORTING"
-        paragraphs={[
-          "Under the new legislation, if a classic car you imported is exported back within two years, you are entitled to a full import tax credit — returned as credit within the Ministry of Finance.",
-          "This credit can be used toward the import of your next classic vehicle into Thailand, significantly reducing your effective tax exposure and unlocking more flexibility as a collector.",
-          "Whether you’re entering or exiting the market, GENERATIONAL is with you on both ends of the journey. Because for us, it’s not just about bringing cars in — it’s about keeping collectors in motion.",
-        ]}
-      />
-
-      {/* IMAGE */}
-      <ImageBox
-        src="/images/Porsche_964_RS.jpg"
-        className="mt-14 col-span-2"
-      />
-
-      {/* DOMESTIC TRANSFERS + FROR */}
-      <div className=" mt-14 container-x ">
-        <div>
-          <Section
-            title="DOMESTIC TRANSFERS"
-            paragraphs={[
-              "Here at home, we offer a unique service that brings collectors together.",
-              "Our “First Right of Refusal” (FROR) program gives peace of mind to owners with a deep personal connection to their cars — ensuring they can buy back their beloved vehicles in the future at the same value.",
-            ]}
-          />
-        </div>
-        <div>
-          <Section
-            title='EXPLAINING THE “FIRST RIGHT OF REFUSAL” (FROR) PROGRAM'
-            paragraphs={[
-              "As collectors ourselves, we understand that parting with a cherished car is never easy. That’s why we created the FROR program — a legal agreement built on mutual respect for the vehicle’s history.",
-              "Under this agreement, the buyer pledges that after holding the car for a minimum period (typically 6 months), they will offer to sell it back to the original owner at the same price if they ever decide to part with it.",
-              "The idea originated with our founder, who, like many collectors, found himself torn between holding on to treasured vehicles and making room for new discoveries. As he said, “Some cars need to go — but never be gone.”",
-              "Through this program, sellers can rest assured knowing they may one day be reunited with their cherished automobiles — while buyers gain access to cars from private, well-loved collections that would otherwise never come up for sale.",
-              "Contact us to learn more or to review a sample contract.",
-            ]}
-          />
+        {/* SECTION 4: TAX CREDIT BENEFITS */}
+        <Section
+          title="TAX CREDIT BENEFITS FOR EXPORTING"
+          paragraphs={[
+            "Under the new legislation, if a classic car you imported is exported back within two years, you are entitled to a full import tax credit — returned as credit within the Ministry of Finance.",
+            "This credit can be used toward the import of your next classic vehicle into Thailand, significantly reducing your effective tax exposure and unlocking more flexibility as a collector.",
+            "Whether you’re entering or exiting the market, GENERATIONAL is with you on both ends of the journey. Because for us, it’s not just about bringing cars in — it’s about keeping collectors in motion.",
+          ]}
+        />
+        {/* IMAGE */}
+        <ImageBox
+          src="/images/Porsche_964_RS.jpg"
+          className="mt-14 col-span-2"
+        />
+        {/* DOMESTIC TRANSFERS + FROR */}
+        <div className=" mt-14 container-x ">
+          <div>
+            <Section
+              title="DOMESTIC TRANSFERS"
+              paragraphs={[
+                "Here at home, we offer a unique service that brings collectors together.",
+                "Our “First Right of Refusal” (FROR) program gives peace of mind to owners with a deep personal connection to their cars — ensuring they can buy back their beloved vehicles in the future at the same value.",
+              ]}
+            />
+          </div>
+          <div>
+            <Section
+              title='EXPLAINING THE “FIRST RIGHT OF REFUSAL” (FROR) PROGRAM'
+              paragraphs={[
+                "As collectors ourselves, we understand that parting with a cherished car is never easy. That’s why we created the FROR program — a legal agreement built on mutual respect for the vehicle’s history.",
+                "Under this agreement, the buyer pledges that after holding the car for a minimum period (typically 6 months), they will offer to sell it back to the original owner at the same price if they ever decide to part with it.",
+                "The idea originated with our founder, who, like many collectors, found himself torn between holding on to treasured vehicles and making room for new discoveries. As he said, “Some cars need to go — but never be gone.”",
+                "Through this program, sellers can rest assured knowing they may one day be reunited with their cherished automobiles — while buyers gain access to cars from private, well-loved collections that would otherwise never come up for sale.",
+                "Contact us to learn more or to review a sample contract.",
+              ]}
+            />
+          </div>
         </div>
       </div>
     </main>
@@ -192,7 +190,7 @@ function Section({
     <div className="w-full grid md:grid-cols-2 container-x mt-14 gap-5 md:px-0 px-4">
       <div className=""></div>
       <div className="">
-        <h2 className="text-2xl font-semibold">{title}</h2>
+        <h2 className="text-2xl font-bold">{title}</h2>
         <div className="space-y-4">
           {subtitle && <div className="text-xl ">{subtitle}</div>}
           {paragraphs.map((text, i) => (

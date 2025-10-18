@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router'
 import { APP_MENU } from '~/constants/app'
+import MobileNav from './mobileNav';
 
 export default function Navbar() {
    const location = useLocation();
@@ -7,28 +8,37 @@ export default function Navbar() {
    const isHomePage = location.pathname === "/";
   return (
     <nav className={` fixed
-      bottom-0 w-full p-5 z-1 ${isHomePage ? "" : "bg-white"}`}>
-      <div className='flex justify-between  md:flex-row flex-col  gap-3 md:items-end'>
-        {isHomePage ?  <div className="md:text-xl text-base md:max-w-[40vw] w-full">
+      bottom-0 w-full py-3 md:px-10 px-5 z-1 ${isHomePage ? "" : "bg-white"}`}>
+      <div className='flex justify-between gap-3 items-end '>
+        {isHomePage ?  <div className="md:text-xl text-base max-w-[50vw] w-full">
       
           PURVEYOR OF THE MOST BEAUTIFUL, CULTURALLY SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND.
         </div>
       :
       <Link to={"/"} className='size-[30px] bg-black text-white
-       flex items-center justify-center'>G</Link>
+       flex items-center justify-center'>
+        <img src="/logo.png" alt="GENERATIONAL LOGO" />
+       </Link>
       }
         {/* menu */}
-        <div className="flex md:gap-5 gap-2 flex-wrap">
+        <div className="lg:flex hidden  md:gap-5 gap-2 flex-wrap">
           {
-            APP_MENU?.map((menu) => <Link
+            APP_MENU?.map((menu) => {
+             const isActive = location.pathname === menu.href; 
+            return<Link
              to={menu.href}
              key={menu.label}
-             className="hover:text-gray-500 font-medium duration-150 hover:drop-shadow-2xl"
+              className={`font-medium duration-150 ${
+                    isActive
+                      ? "text-black font-semibold" // ACTIVE
+                      : "hover:text-gray-500"
+                  }`}
              >
               {menu.label}
-              </Link>)
+              </Link>})
           }
         </div>
+        <MobileNav menu={APP_MENU} />
       </div>
     </nav>
   )

@@ -1,3 +1,4 @@
+import Logo from "~/components/logo";
 import type { Route } from "./+types/ourteam";
 
 
@@ -9,15 +10,12 @@ export function meta({ }: Route.MetaArgs) {
 }
 export default function Ourteam() {
   return (
-    <main className="min-h-screen mb-20 w-full max-w-7xl  mx-auto">
-      <div className="md:text-[120px] text-[50px] container-x h-auto text-wrap
-     text-center  tracking-[30px] relative z-1 w-full overflow-hidden">
-        GENERATIONAL
-      </div>
+    <main className="min-h-screen mb-20 w-full md:p-10 p-5 ">
+    <Logo />
 
 
       {/* content */}
-      <section className="mt-24 mb-20">
+      <section className="md:mt-40 mt-12 mb-20">
 
         {/*  */}
         <div className="grid md:grid-cols-2 gap-5">
@@ -30,7 +28,7 @@ export default function Ourteam() {
             <div className="font-semibold text-xl mb-2">
               FOUNDER
             </div>
-            <div className="grid gap-4">
+            <div className="">
               <div className="">GENERATIONAL was founded by Kajkanit “Gem” Sakdisubha — a lifelong
                 car enthusiast and entrepreneur — together with a close group of friends
                 who share his deep passion for classic automobiles.</div>
@@ -59,7 +57,7 @@ export default function Ourteam() {
 
             {/* Design Above All */}
             <div className="mt-10">
-              <div className="text-xl font-medium mb-2">
+              <div className="text-xl font-semibold mb-2">
                 Design Above All
               </div>
 
@@ -69,8 +67,8 @@ export default function Ourteam() {
                 we study these automobiles as if they were architecture on wheels - because they are.</div>
             </div>
             {/* Provenance & Originality */}
-            <div className="mt-10 grid gap-4">
-              <div className="text-xl font-medium mb-2">
+            <div className="mt-10 ">
+              <div className="text-xl font-semibold mb-2">
                 Provenance & Originality
               </div>
 
@@ -83,8 +81,8 @@ export default function Ourteam() {
             </div>
 
             {/* Driving Experience */}
-            <div className="mt-10 grid gap-4">
-              <div className="text-xl font-medium mb-2">
+            <div className="mt-10 ">
+              <div className="text-xl font-semibold mb-2">
                 Driving Experience
               </div>
 
@@ -95,8 +93,8 @@ export default function Ourteam() {
 
             </div>
             {/* Rarity with Relevance */}
-            <div className="mt-10 grid gap-4">
-              <div className="text-xl font-medium mb-2">
+            <div className="mt-10 ">
+              <div className="text-xl font-semibold mb-2">
                 Rarity with Relevance
               </div>
 
@@ -106,8 +104,8 @@ export default function Ourteam() {
 
             </div>
             {/* Cars That Belong in Your Future */}
-            <div className="mt-10 grid gap-4">
-              <div className="text-xl font-medium mb-2">
+            <div className="mt-10 ">
+              <div className="text-xl font-semibold mb-2">
                 Cars That Belong in Your Future
               </div>
 
@@ -126,7 +124,7 @@ export default function Ourteam() {
             <div className="font-semibold text-xl mb-2">
               CO-FOUNDERS
             </div>
-            <div className="grid gap-4">
+            <div className="">
               <div className=""> The co-founders of GENERATIONAL — all friends and respected seniors
                 of Gem — bring with them a wealth of experience, knowledge, and
                 genuine passion for automobiles.</div>
@@ -162,7 +160,7 @@ export default function Ourteam() {
             <div className="font-semibold text-xl mb-2">
               INTERNATIONAL TEAM
             </div>
-            <div className="grid gap-4">
+            <div className="">
               <div className=""> Beyond its Thai roots, GENERATIONAL has established a truly global
                 footprint. With specialist team members based in the United Kingdom —
                 the world’s largest right-hand-drive classic car market — we are perfectly

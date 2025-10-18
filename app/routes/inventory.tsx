@@ -1,3 +1,4 @@
+import Logo from "~/components/logo";
 import type { Route } from "./+types/inventory";
 
 export function meta({ }: Route.MetaArgs) {
@@ -8,25 +9,24 @@ export function meta({ }: Route.MetaArgs) {
 }
 export default function Inventory() {
   return (
-    <main className="min-h-screen w-full p-10 max-w-7xl mx-auto">
-      <div className="md:text-[120px] text-[50px] h-auto text-wrap
-     text-center  tracking-[30px] relative z-1 w-full overflow-hidden">
-        GENERATIONAL
-      </div>
+    <main className="min-h-screen w-full md:p-10 p-5">
+      <Logo />
       {/* content */}
 
       <div className="grid md:grid-cols-2 justify-items-center justify-center
-       items-center gap-5 mt-20 mb-20">
+       items-center gap-5 md:mt-40 mt-12 mb-20">
         {/* image */}
         <div className="">
-          <div className="md:text-5xl mb-2 font-medium text-3xl">INVENTORY</div>
-          <img src="/images/inventory.png" alt="3 classic car" />
+          <div className="md:text-5xl mb-2 font-semibold text-3xl">INVENTORY</div>
+          <img src="/images/Porsche_911_3L.jpg" alt="3 classic car" />
         </div>
 
         {/* qr-code */}
-        <div className="flex items-center justify-center flex-col">
-          <div className=" text-center leading-tight mb-10">SCAN OUR QR <br/> TO ACCESS OUR INVENTORY</div>
-          <img src="/images/inventory-qr.png" alt="GENERATIONAL qr code" />
+        <div className="flex items-center justify-center gap-5 flex-col">
+          <div className=" text-center leading-tight">SCAN OUR QR <br/> TO ACCESS OUR INVENTORY</div>
+          <img src="/images/inventory-qr.png"
+          className="md:size-[200px] size-[40vw]"
+          alt="GENERATIONAL qr code" />
         </div>
       </div>
 

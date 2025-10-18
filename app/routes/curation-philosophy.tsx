@@ -1,3 +1,4 @@
+import Logo from "~/components/logo";
 import type { Route } from "./+types/curation-philosophy";
 
 export function meta({ }: Route.MetaArgs) {
@@ -8,14 +9,11 @@ export function meta({ }: Route.MetaArgs) {
 }
 export default function CurationPage() {
   return (
-    <main className="min-h-screen w-full p-10 max-w-7xl mx-auto">
-      <div className="md:text-[120px] text-[50px] h-auto text-wrap
-     text-center  tracking-[30px] relative z-1 w-full overflow-hidden">
-        GENERATIONAL
-      </div>
+    <main className="min-h-screen w-full md:p-10 p-5">
+      <Logo />
 
       {/* content */}
-      <section className="mb-20 mt-28">
+      <section className="mb-20 md:mt-40 mt-12">
         <div className="text-5xl font-semibold mb-2">
           CURATION PHILOSOPHY
         </div>
@@ -27,10 +25,10 @@ export default function CurationPage() {
           </div>
           {/* text */}
           <div className="">
-            <div className="font-medium text-xl mb-2">
+            <div className="font-extrabold text-xl mb-2">
               WHAT MAKES A CAR WORTHY OF GENERATIONS
             </div>
-            <div className="grid gap-4">
+            <div className="">
               <div className="">Our approach to curation is grounded in the belief that classic cars are more than machines.
                 They are design objects and ultimately -investments of passion. When we evaluate a car,
                 we ask: Is this something a collector would be proud to own in 30 years?
@@ -46,7 +44,7 @@ export default function CurationPage() {
 
             {/* Design Above All */}
             <div className="mt-10">
-              <div className="text-xl font-medium mb-2">
+              <div className="text-xl font-bold mb-2">
                 Design Above All
               </div>
 
@@ -56,8 +54,8 @@ export default function CurationPage() {
                 we study these automobiles as if they were architecture on wheels - because they are.</div>
             </div>
             {/* Provenance & Originality */}
-            <div className="mt-10 grid gap-4">
-              <div className="text-xl font-medium mb-2">
+            <div className="mt-10 ">
+              <div className="text-xl font-bold mb-2">
                 Provenance & Originality
               </div>
 
@@ -70,8 +68,8 @@ export default function CurationPage() {
             </div>
 
             {/* Driving Experience */}
-            <div className="mt-10 grid gap-4">
-              <div className="text-xl font-medium mb-2">
+            <div className="mt-10 ">
+              <div className="text-xl font-bold mb-2">
                 Driving Experience
               </div>
 
@@ -82,8 +80,8 @@ export default function CurationPage() {
 
             </div>
             {/* Rarity with Relevance */}
-            <div className="mt-10 grid gap-4">
-              <div className="text-xl font-medium mb-2">
+            <div className="mt-10 ">
+              <div className="text-xl font-bold mb-2">
                 Rarity with Relevance
               </div>
 
@@ -93,8 +91,8 @@ export default function CurationPage() {
 
             </div>
             {/* Cars That Belong in Your Future */}
-            <div className="mt-10 grid gap-4">
-              <div className="text-xl font-medium mb-2">
+            <div className="mt-10 ">
+              <div className="text-xl font-bold mb-2">
                 Cars That Belong in Your Future
               </div>
 

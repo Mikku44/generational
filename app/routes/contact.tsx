@@ -1,6 +1,7 @@
 import { Box, Button, TextField } from "@mui/material";
 import { useState } from "react";
 import type { Route } from "./+types/home";
+import Logo from "~/components/logo";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -29,18 +30,15 @@ export default function Contact() {
 
 
   return (
-    <main className="min-h-screen w-full p-10 max-w-7xl mx-auto">
-      <div className="md:text-[120px] text-[50px] h-auto text-wrap
-     text-center  tracking-[30px] relative z-1 w-full overflow-hidden">
-        GENERATIONAL
-      </div>
+    <main className="min-h-screen w-full md:p-10 p-5">
+      <Logo />
       {/* content */}
 
       <div className="grid md:grid-cols-2 
-       gap-5 mt-20 mb-20">
+       gap-5 md:mt-40 mt-12 mb-20">
         {/* image */}
         <div className="">
-          <div className="md:text-5xl mb-2 font-medium text-3xl">CONTACT</div>
+          <div className="md:text-5xl mb-2 font-bold text-3xl ">CONTACT</div>
           <img src="/images/contact.png" alt="3 classic car" />
         </div>
 
@@ -48,19 +46,20 @@ export default function Contact() {
         <div className="flex flex-col">
           <div className="md:text-5xl mb-2 font-medium text-3xl text-white"> .</div>
           <div className="text-xl font-semibold">TALK TO GENERATIONAL</div>
-          <div className="grid font-medium mt-5 grid-cols-2">
-            <div className="title">MOBILE&WHATSAPP </div>
-            <div className="value">+66 85 1661256 </div>
+          <div className="grid font-semibold mt-5 md:grid-cols-2 gap-2">
+            <div className="title break-words">MOBILE&WHATSAPP </div>
+            <div className="value break-words md:font-semibold font-normal">+66 85 1661256 </div>
 
-            <div className="title">EMAIL </div>
-            <div className="value">HELLO@GENERATIONAL.CO.TH</div>
+            <div className="title break-words">EMAIL </div>
+            <div className="value break-words md:font-semibold font-normal">HELLO@GENERATIONAL.CO.TH</div>
 
-            <div className="title">LINE ID </div>
-            <div className="value">@GENERATIONAL</div>
+            <div className="title break-words">LINE ID </div>
+            <div className="value break-words md:font-semibold font-normal">@GENERATIONAL</div>
 
-            <div className="title">INSTAGRAM </div>
-            <div className="value">@DRIVEGENERATIONAL</div>
+            <div className="title break-words">INSTAGRAM </div>
+            <div className="value break-words md:font-semibold font-normal">@DRIVEGENERATIONAL</div>
           </div>
+
 
           {/* form */}
 
@@ -120,7 +119,7 @@ export default function Contact() {
                 type="submit"
                 variant="contained"
                 sx={{
-                  maxWidth:200,
+                  maxWidth: 200,
                   mt: 1,
                   bgcolor: "black",
                   color: "white",
