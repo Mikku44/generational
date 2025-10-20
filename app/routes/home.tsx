@@ -41,10 +41,10 @@ export default function Home() {
         <div className="w-full h-screen absolute z-0 left-0 top-0 overflow-hidden">
           <motion.div
             style={{ x }}
-            className="flex h-full w-[300%]"
+            className="flex h-full w-[300%] snap-always snap-proximity snap-x"
           >
             {/* Image 1 */}
-            <div className="w-screen h-screen flex-shrink-0">
+            <div className="w-screen h-screen flex-shrink-0 snap-center">
               <img draggable={false} src="/images/Lamborghini_Countach_md.jpg"
                 alt="yellow car - GENERATIONAL image"
                 className="w-full h-full object-cover hidden md:block"
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
 
             {/* Image 2 */}
-            <div className="w-screen h-screen flex-shrink-0">
+            <div className="w-screen h-screen flex-shrink-0 snap-center">
               <img draggable={false} src="/images/Ferr_512_RRA42.jpg"
                 alt="yellow car - GENERATIONAL image"
                 className="w-full h-full object-cover hidden md:block"
@@ -68,7 +68,7 @@ export default function Home() {
             </div>
 
             {/* Image 3 */}
-            <div className="w-screen h-screen flex-shrink-0">
+            <div className="w-screen h-screen flex-shrink-0 snap-center">
               <img draggable={false} src="/images/930 Turbo.jpg"
                 alt="yellow car - GENERATIONAL image"
                 className="w-full h-full object-cover hidden md:block"

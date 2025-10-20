@@ -8,8 +8,9 @@ import {
 } from "react-router";
 import { Toaster } from 'sonner'
 import type { Route } from "./+types/root";
+import { PhotoProvider } from 'react-photo-view';
 import "./app.css";
-import Navbar from "./components/navbar";
+import 'react-photo-view/dist/react-photo-view.css';
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -39,8 +40,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
          <Toaster className="rounded-none" />
-        {children}
-        <Navbar />
+        <PhotoProvider>{children}</PhotoProvider>
+       
         <ScrollRestoration />
         <Scripts />
       </body>

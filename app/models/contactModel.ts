@@ -6,5 +6,6 @@ export interface Contact {
     email : string
     subject : string
     content : string
+    status ? : "read" | "unread" | "done" | "progress"
     created_at : Timestamp
 }

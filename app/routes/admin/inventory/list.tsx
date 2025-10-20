@@ -1,59 +1,141 @@
-import { useState } from 'react';
-import { Plus, Search, Edit2, Trash2, Eye } from 'lucide-react';
+import React, { useEffect, useState } from "react";
+import { Plus, Search, Edit2, Trash2, Eye } from "lucide-react";
+import { InventoryService } from "services/inventoryService";
 
-export default function InventoryList() {
+
+type LocalCar = {
+  id: string | number;
+  name: string;
+  year: string;
+  price: string;
+  status: string;
+  image: string;
+  createdAt?: string;
+};
+
+const FALLBACK_CARS: LocalCar[] = [
+  {
+    id: "demo-1",
+    name: "Lamborghini Huracan",
+    year: "2017",
+    price: "$250,000",
+    status: "Available",
+    image:
+      "https://www.lamborghinilongisland.com/imagetag/1939/5/l/New-2017-Lamborghini-Huracan-RWD-Coupe-1498579834.jpg",
+  },
+  {
+    id: "demo-2",
+    name: "Ferrari 488 GTB",
+    year: "2019",
+    price: "$320,000",
+    status: "Sold",
+    image: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=400",
+  },
+  {
+    id: "demo-3",
+    name: "Porsche 911 GT3",
+    year: "2021",
+    price: "$180,000",
+    status: "Available",
+    image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400",
+  },
+];
+
+export default function InventoryListRealtime() {
+  // UI state (local-only add/delete/edit)
   const [showAddModal, setShowAddModal] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [cars, setCars] = useState([
-    {
-      id: 1,
-      name: 'Lamborghini Huracan',
-      year: '2017',
-      price: '$250,000',
-      status: 'Available',
-      image: 'https://www.lamborghinilongisland.com/imagetag/1939/5/l/New-2017-Lamborghini-Huracan-RWD-Coupe-1498579834.jpg'
-    },
-    {
-      id: 2,
-      name: 'Ferrari 488 GTB',
-      year: '2019',
-      price: '$320,000',
-      status: 'Sold',
-      image: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=400'
-    },
-    {
-      id: 3,
-      name: 'Porsche 911 GT3',
-      year: '2021',
-      price: '$180,000',
-      status: 'Available',
-      image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400'
-    }
-  ]);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [cars, setCars] = useState<LocalCar[]>(FALLBACK_CARS);
 
   const [formData, setFormData] = useState({
-    name: '',
-    year: '',
-    price: '',
-    status: 'Available',
-    image: ''
+    name: "",
+    year: "",
+    price: "",
+    status: "Available",
+    image: "",
   });
 
+  // Subscribe to Firestore realtime updates
+  useEffect(() => {
+    // subscribe; InventoryService.listen returns unsubscribe function
+    const unsubscribe = InventoryService.listen((data) => {
+      // data: Inventory[] from Firestore
+      if (Array.isArray(data) && data.length > 0) {
+        // Map Firestore inventory to LocalCar shape
+        const mapped = data.map((item: any) => {
+          // inventory model may use title, cover.href, gallery, price (number)
+          const name = item.title ?? item.name ?? "Untitled";
+          const year = item.year ?? "";
+          const priceRaw = item.price ?? "";
+          const price = typeof priceRaw === "number" ? formatCurrency(priceRaw) : String(priceRaw || "");
+          const status = item.status ?? "Available";
+          const image =
+            (item.cover && item.cover.href) ||
+            (Array.isArray(item.gallery) && item.gallery[0]) ||
+            item.image ||
+            "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400";
+
+          const createdAt =
+            item.created_at && item.created_at.toDate
+              ? item.created_at.toDate().toLocaleString()
+              : item.created_at
+              ? String(item.created_at)
+              : undefined;
+
+          return {
+            id: item.id ?? item.id, // Firestore doc id should be present as .id in listen mapping
+            name,
+            year,
+            price,
+            status,
+            image,
+            createdAt,
+          } as LocalCar;
+        });
+
+        setCars(mapped);
+      } else {
+        // if firestore empty, keep fallback demo cars (as requested)
+        setCars(FALLBACK_CARS);
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  // helper: format number to currency (basic)
+  function formatCurrency(v: number) {
+    try {
+      return v.toLocaleString(undefined, { style: "currency", currency: "USD", maximumFractionDigits: 0 });
+    } catch {
+      return String(v);
+    }
+  }
+
+  // local-only add (does NOT write to Firestore per your request)
   const handleAddCar = () => {
     if (formData.name && formData.year && formData.price) {
-      setCars([...cars, { ...formData, id: cars.length + 1 }]);
-      setFormData({ name: '', year: '', price: '', status: 'Available', image: '' });
+      const newCar: LocalCar = {
+        id: `local-${Date.now()}`,
+        name: formData.name,
+        year: formData.year,
+        price: formData.price,
+        status: formData.status,
+        image: formData.image || FALLBACK_CARS[0].image,
+      };
+      setCars((prev) => [newCar, ...prev]);
+      setFormData({ name: "", year: "", price: "", status: "Available", image: "" });
       setShowAddModal(false);
     }
   };
 
-  const handleDelete = (id) => {
-    setCars(cars.filter(car => car.id !== id));
+  // local-only delete (does NOT delete from Firestore)
+  const handleDelete = (id: string | number) => {
+    setCars((prev) => prev.filter((c) => c.id !== id));
   };
 
-  const filteredCars = cars.filter(car =>
-    car.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    car.year.includes(searchQuery)
+  const filteredCars = cars.filter((car) =>
+    car.name.toLowerCase().includes(searchQuery.toLowerCase()) || car.year.includes(searchQuery)
   );
 
   return (
@@ -62,7 +144,7 @@ export default function InventoryList() {
       <header className="bg-black text-white px-8 py-6">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl font-bold tracking-wider">GENERATIONAL</h1>
-          <p className="text-sm tracking-widest text-gray-400 mt-1">ADMIN DASHBOARD</p>
+          <p className="text-sm tracking-widest text-gray-400 mt-1">ADMIN INVENTORY</p>
         </div>
       </header>
 
@@ -104,14 +186,12 @@ export default function InventoryList() {
           {filteredCars.map((car) => (
             <div key={car.id} className="bg-white border border-gray-200 overflow-hidden hover:shadow-lg transition">
               <div className="relative h-48 bg-gray-200">
-                <img
-                  src={car.image || 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400'}
-                  alt={car.name}
-                  className="w-full h-full object-cover"
-                />
-                <div className={`absolute top-4 right-4 px-3 py-1 text-xs font-medium ${
-                  car.status === 'Available' ? 'bg-green-500' : 'bg-red-500'
-                } text-white`}>
+                <img src={car.image} alt={car.name} className="w-full h-full object-cover" />
+                <div
+                  className={`absolute top-4 right-4 px-3 py-1 text-xs font-medium ${
+                    car.status.toLowerCase() === "available" ? "bg-green-500" : "bg-red-500"
+                  } text-white`}
+                >
                   {car.status}
                 </div>
               </div>
@@ -133,6 +213,7 @@ export default function InventoryList() {
                   <button
                     onClick={() => handleDelete(car.id)}
                     className="flex items-center justify-center px-3 py-2 border border-red-300 text-red-600 hover:bg-red-50 transition text-sm"
+                    aria-label={`Delete ${car.name}`}
                   >
                     <Trash2 className="w-4 h-4" />
                   </button>
@@ -143,9 +224,7 @@ export default function InventoryList() {
         </div>
 
         {filteredCars.length === 0 && (
-          <div className="text-center py-12 text-gray-500">
-            No vehicles found matching your search.
-          </div>
+          <div className="text-center py-12 text-gray-500">No vehicles found matching your search.</div>
         )}
       </main>
 
@@ -157,9 +236,7 @@ export default function InventoryList() {
 
             <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Vehicle Name
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Vehicle Name</label>
                 <input
                   type="text"
                   value={formData.name}
@@ -170,9 +247,7 @@ export default function InventoryList() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Year
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Year</label>
                 <input
                   type="text"
                   value={formData.year}
@@ -183,9 +258,7 @@ export default function InventoryList() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Price
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Price</label>
                 <input
                   type="text"
                   value={formData.price}
@@ -196,9 +269,7 @@ export default function InventoryList() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Image URL
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Image URL</label>
                 <input
                   type="text"
                   value={formData.image}
@@ -209,9 +280,7 @@ export default function InventoryList() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Status
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Status</label>
                 <select
                   value={formData.status}
                   onChange={(e) => setFormData({ ...formData, status: e.target.value })}
@@ -230,10 +299,7 @@ export default function InventoryList() {
               >
                 Cancel
               </button>
-              <button
-                onClick={handleAddCar}
-                className="flex-1 px-4 py-2 bg-black text-white hover:bg-gray-800 transition"
-              >
+              <button onClick={handleAddCar} className="flex-1 px-4 py-2 bg-black text-white hover:bg-gray-800 transition">
                 Add Vehicle
               </button>
             </div>
