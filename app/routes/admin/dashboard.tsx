@@ -34,7 +34,7 @@ export default function dashboard() {
     <main className=''>
       <div className="w-full border bg-white border-zinc-300 h-[300px]
       flex justify-center items-center flex-col gap-4 invert-100  font-bold">
-        <div className="text-xl">Welcom back, Admin!</div>
+        <div className="text-xl">Welcome back, Admin!</div>
         <div className="px-4"><Logo /></div>
       </div>
       <div className="grid md:grid-cols-4 px-5 grid-cols-2 gap-5 py-5">
