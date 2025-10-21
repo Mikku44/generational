@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Logo from "~/components/logo";
 import type { Route } from "./+types/home";
+import AutoFadeImage from "~/components/AutoFadeImage";
 
   export function meta({ }: Route.MetaArgs) {
     return [
@@ -38,8 +39,35 @@ export default function Home() {
     <div ref={containerRef} className="h-[300vh]">
       <main className="min-h-screen w-full md:p-10 p-5 sticky top-0 flex h-screen justify-between flex-col">
         {/* image container */}
-        <div className="w-full h-screen absolute z-0 left-0 top-0 overflow-hidden">
-          <motion.div
+        <div className="w-full h-screen lg:block hidden absolute z-0 left-0 top-0 overflow-hidden">
+        <AutoFadeImage
+            // className="h-[100%]"
+            images={["/images/Lamborghini_Countach_md.jpg",
+              "/images/Ferr_512_RRA42.jpg",
+              "/images/930 Turbo.jpg",
+
+            ]} interval={3000} />
+          
+        </div>
+        <div className="w-full h-screen lg:hidden block absolute z-0 left-0 top-0 overflow-hidden">
+        <AutoFadeImage
+            // className="h-[100%]"
+            images={["/images/Lamborghini_Countach.jpg",
+              "/images/Ferr_512_RRA42.jpg",
+              "/images/930 Turbo.jpg",
+
+            ]} interval={3000} />
+          
+        </div>
+
+        <div className="fixed w-[90%] mx-auto z-10">
+          <Logo />
+        </div>
+      </main>
+    </div>
+  );
+
+  return <motion.div
             style={{ x }}
             className="flex h-full w-[300%] snap-always snap-proximity snap-x"
           >
@@ -79,12 +107,5 @@ export default function Home() {
               />
             </div>
           </motion.div>
-        </div>
-
-        <div className="fixed w-[90%] mx-auto z-10">
-          <Logo />
-        </div>
-      </main>
-    </div>
-  );
 }
+

@@ -59,16 +59,26 @@ export default function Contact() {
           <div className="text-xl font-semibold">TALK TO GENERATIONAL</div>
           <div className="grid font-semibold mt-5 md:grid-cols-2 gap-2">
             <div className="title break-words">MOBILE&WHATSAPP </div>
-            <div className="value break-words md:font-semibold font-normal">+66 85 1661256 </div>
+            <a href="tel:+668919911911"
+            target="_blank"
+            className="value break-words md:font-semibold font-normal">+66 8 919 911 911</a>
 
             <div className="title break-words">EMAIL </div>
-            <div className="value break-words md:font-semibold font-normal">HELLO@GENERATIONAL.CO.TH</div>
+            <a
+             href="mailto:HELLO@GENERATIONAL.CO.TH"
+            target="_blank"
+            className="value break-words md:font-semibold font-normal">HELLO@GENERATIONAL.CO.TH</a>
 
             <div className="title break-words">LINE ID </div>
-            <div className="value break-words md:font-semibold font-normal">@GENERATIONAL</div>
+            <a href="#"
+            target="_blank"
+            className="value break-words md:font-semibold font-normal">@GENERATIONAL</a>
 
             <div className="title break-words">INSTAGRAM </div>
-            <div className="value break-words md:font-semibold font-normal">@DRIVEGENERATIONAL</div>
+            <a
+            href="https://www.instagram.com/drivegenerational/?utm_source=ig_web_button_share_sheet"
+            target="_blank"
+            className="value break-words md:font-semibold font-normal">@DRIVEGENERATIONAL</a>
           </div>
 
 
