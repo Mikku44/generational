@@ -27,6 +27,8 @@ export const ADMIN_MENU = [
     },
 ]
 
+
+
 export const mockInventory: Inventory = {
   id: "abc123",
   slug: "1967-ford-mustang-fastback",
