@@ -22,9 +22,9 @@ export const ADMIN_MENU = [
     {
         href: "/admin/contact",label : "CONTACT"
     },
-    // {
-    //     href: "/admin/inventory",label : "INVENTORY"
-    // },
+    {
+        href: "/admin/inventory",label : "INVENTORY"
+    },
 ]
 
 export const mockInventory: Inventory = {

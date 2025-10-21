@@ -24,7 +24,7 @@ export default function dashboard() {
     
   
     useEffect(() => {
-      const unsubscribe = ContactService.listen((data) => {
+      const unsubscribe = ContactService.listenUnread("unread",(data) => {
         setContactList(data);
       });
   

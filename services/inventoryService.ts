@@ -8,6 +8,8 @@ import {
   deleteDoc,
   onSnapshot,
   serverTimestamp,
+  query,
+  where,
 } from "firebase/firestore";
 import { db } from "~/lib/firebase/config";
 import type { Inventory } from "~/models/inventoryModel";
@@ -48,6 +50,18 @@ export const InventoryService = {
     const snapshot = await getDoc(doc(db, "inventory", id));
     return snapshot.exists() ? ({ id, ...snapshot.data() } as Inventory & { id: string }) : null;
   },
+
+  async getBySlug(slug: string) {
+  const q = query(inventoryRef, where("slug", "==", slug));
+  const snapshot = await getDocs(q);
+
+  if (!snapshot.empty) {
+    const docData = snapshot.docs[0];
+    return { id: docData.id, ...docData.data() } as Inventory & { id: string };
+  }
+
+  return null; // not found
+},
 
   // ✅ Update
   async update(id: string, data: Partial<Omit<Inventory, "id" | "created_at">>) {

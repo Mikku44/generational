@@ -2,7 +2,7 @@ import type { Timestamp } from "firebase/firestore"
 
 export interface Inventory {
     id?: string
-    slug?: string // SEO-friendly URL
+    slug: string 
     title: string
     subtitle?: string
     year: string

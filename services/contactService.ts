@@ -8,6 +8,8 @@ import {
   deleteDoc,
   onSnapshot,
   serverTimestamp,
+  query,
+  where,
 
 } from "firebase/firestore";
 import { db } from "~/lib/firebase/config";
@@ -31,6 +33,22 @@ export const ContactService = {
         id: doc.id,
         ...doc.data(),
       })) as (Contact & { id: string })[];
+      callback(contacts);
+    });
+  },
+
+  listenUnread(
+    status: string,
+    callback: (data: (Contact & { id: string })[]) => void
+  ) {
+    const q = query(contactRef, where("status", "==", status));
+
+    return onSnapshot(q, (snapshot) => {
+      const contacts = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      })) as (Contact & { id: string })[];
+
       callback(contacts);
     });
   },
