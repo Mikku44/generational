@@ -61,7 +61,7 @@ export default function Contact() {
 
 
   return (
-    <main className="min-h-screen w-full relative ">
+    <main className="min-h-screen w-full mb-20 relative ">
       <div className="md:p-10 p-5">
         <Logo />
       </div>
@@ -70,8 +70,8 @@ export default function Contact() {
       <div className="grid md:grid-cols-12 container-x
         gap-5 md:mt-[220px] mt-12 mb-20  h-full overflow-hidden">
         {/* image */}
-        <div className="md:text-[72px] text-[48px] -mb-4 md:col-span-7 font-semibold ">CONTACT</div>
-        <div className="md:text-[72px] text-[48px] md:block hidden -mb-4 md:col-span-5 font-semibold "></div>
+        <div className="md:col-span-7  md:text-[72px] text-[48px] leading-tight -mt-5 font-semibold -mb-10 pt-1">CONTACT</div>
+        <div className="md:col-span-7  md:text-[72px] text-[48px] leading-tight -mt-5 font-semibold -mb-10 pt-1"></div>
 
         <div className="md:col-span-7 w-full h-full">
           <div className="md:max-h-[710px] overflow-hidden h-full ">
