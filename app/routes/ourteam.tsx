@@ -17,7 +17,7 @@ export default function Ourteam() {
       </div>
 
       {/* content */}
-      <section className="md:mt-[220px] mt-12 mb-20 container-x">
+      <section className="md:mt-[220px] mt-18 mb-20 container-x">
 
         {/*  */}
         <div className="grid md:grid-cols-12  gap-5">

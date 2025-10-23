@@ -17,7 +17,7 @@ export default function CurationPage() {
 
       {/* content */}
       {/*  */}
-      <div className="grid md:grid-cols-12 gap-5 md:mt-[220px] mt-12 container-x">
+      <div className="grid md:grid-cols-12 gap-5 md:mt-[220px] mt-18 container-x">
         <div className=" md:col-span-7">
           <div className="md:text-[72px] text-[48px] leading-tight -mt-4 font-semibold mb-2">
             CURATION PHILOSOPHY

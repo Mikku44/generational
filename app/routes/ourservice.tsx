@@ -92,7 +92,7 @@ export default function OurService() {
         <Logo />
       </div>
 
-      <div className="md:mt-[220px] mt-12">
+      <div className="md:mt-[220px] mt-18">
         {/* HERO IMAGE */}
         <div className="h-[820px] mt-10 overflow-hidden">
           <motion.img
@@ -229,7 +229,7 @@ function Section({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="w-full grid md:grid-cols-12 mt-12 gap-5 "
+      className="w-full grid md:grid-cols-12 mt-18 gap-5 "
     >
       <div className="md:col-span-7"></div>
       <div className="md:col-span-5">

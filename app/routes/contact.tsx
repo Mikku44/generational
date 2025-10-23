@@ -68,10 +68,10 @@ export default function Contact() {
       {/* content */}
 
       <div className="grid md:grid-cols-12 container-x
-        gap-5 md:mt-[220px] mt-12 mb-20  h-full overflow-hidden">
+        gap-5 md:mt-[220px] mt-18 mb-20  h-full overflow-hidden">
         {/* image */}
-        <div className="md:col-span-7  md:text-[72px] text-[48px] leading-tight -mt-5 font-semibold -mb-10 pt-1">CONTACT</div>
-        <div className="md:col-span-7  md:text-[72px] text-[48px] leading-tight -mt-5 font-semibold -mb-10 pt-1"></div>
+        <div className="md:col-span-7  md:text-[72px] text-[48px] md:leading-tight -mt-4 font-semibold -mb-4">CONTACT</div>
+        <div className="md:block hidden"></div>
 
         <div className="md:col-span-7 w-full h-full">
           <div className="md:max-h-[710px] overflow-hidden h-full ">

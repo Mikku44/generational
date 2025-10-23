@@ -15,7 +15,7 @@ export default function Inventory() {
       </div>
 
       <div className="grid container-x md:grid-cols-12 justify-items-center justify-center
-       items-center gap-5 md:mt-[220px]  mt-12 mb-20">
+       items-center gap-5 md:mt-[220px]  mt-18 mb-20">
         {/* image */}
         <div className=" md:col-span-7">
           <div className="md:text-[72px] text-[48px] leading-tight -mt-4 font-semibold mb-2">INVENTORY</div>
