@@ -28,6 +28,15 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    // 1. Basic client-side validation check
+    const isFormValid = Object.values(form).every(value => value.trim() !== "");
+
+    if (!isFormValid) {
+      toast.error("All fields are required. Please fill them out.");
+      return; // Stop the function if validation fails
+    }
+
+    // 2. Wrap API call with toast.promise as before
     toast.promise(
       ContactService.create(form),
       {
@@ -38,59 +47,77 @@ export default function Contact() {
     );
   };
 
+  const textFieldStyles = {
+    '& .MuiInputBase-input': {
+      fontSize: '22px',
+      fontWeight: 500, // font-medium
+    },
+    '& .MuiInputLabel-root': {
+      fontSize: '22px',
+      fontWeight: 500,
+    },
+  };
+
 
 
   return (
-    <main className="min-h-screen w-full md:p-10 p-5 relative">
-      <Logo />
+    <main className="min-h-screen w-full relative ">
+      <div className="md:p-10 p-5">
+        <Logo />
+      </div>
       {/* content */}
 
-      <div className="grid md:grid-cols-2 
-       gap-5 md:mt-40 mt-12 mb-20">
+      <div className="grid md:grid-cols-12 container-x
+        gap-5 md:mt-[220px] mt-12 mb-20  h-full overflow-hidden">
         {/* image */}
-        <div className="">
-          <div className="md:text-5xl mb-2 font-bold text-3xl ">CONTACT</div>
-          <img src="/images/contact.png" alt="3 classic car" />
+        <div className="md:text-[72px] text-[48px] -mb-4 md:col-span-7 font-semibold ">CONTACT</div>
+        <div className="md:text-[72px] text-[48px] md:block hidden -mb-4 md:col-span-5 font-semibold "></div>
+
+        <div className="md:col-span-7 w-full h-full">
+          <div className="md:max-h-[710px] overflow-hidden h-full ">
+            <img src="/images/246GTS Dino_crop.jpg" className="w-full h-full object-cover" alt="3 classic car" />
+            </div>
+          <div className="flex justify-end w-full mt-1 text-[#7C7C7C]">PHOTO CREDITS AND COPYRIGHT BELONG TO ROMAN RÄTZKE</div>
         </div>
 
         {/* contact form */}
-        <div className="flex flex-col">
-          <div className="md:text-5xl mb-2 font-medium text-3xl text-white"> .</div>
-          <div className="text-xl font-semibold">TALK TO GENERATIONAL</div>
-          <div className="grid font-semibold mt-5 md:grid-cols-2 gap-2">
+        <div className="md:mt-0 mt-16 md:col-span-5">
+          <div className="text-[32px] font-bold">TALK TO GENERATIONAL</div>
+          <div className="grid text-[22px] leading-6 font-semibold mt-5 md:grid-cols-2 gap-2">
             <div className="title break-words">MOBILE&WHATSAPP </div>
             <a href="tel:+668919911911"
-            target="_blank"
-            className="value break-words md:font-semibold font-normal">+66 8 919 911 911</a>
+              target="_blank"
+              className="value break-words md:font-semibold font-normal">+66 8 919 911 911</a>
 
             <div className="title break-words">EMAIL </div>
             <a
-             href="mailto:HELLO@GENERATIONAL.CO.TH"
-            target="_blank"
-            className="value break-words md:font-semibold font-normal">HELLO@GENERATIONAL.CO.TH</a>
+              href="mailto:HELLO@GENERATIONAL.CO.TH"
+              target="_blank"
+              className="value break-words md:font-semibold font-normal">HELLO@GENERATIONAL.CO.TH</a>
 
             <div className="title break-words">LINE ID </div>
             <a href="#"
-            target="_blank"
-            className="value break-words md:font-semibold font-normal">@GENERATIONAL</a>
+              target="_blank"
+              className="value break-words md:font-semibold font-normal">@GENERATIONAL</a>
 
             <div className="title break-words">INSTAGRAM </div>
             <a
-            href="https://www.instagram.com/drivegenerational/?utm_source=ig_web_button_share_sheet"
-            target="_blank"
-            className="value break-words md:font-semibold font-normal">@DRIVEGENERATIONAL</a>
+              href="https://www.instagram.com/drivegenerational/?utm_source=ig_web_button_share_sheet"
+              target="_blank"
+              className="value break-words md:font-semibold font-normal">@DRIVEGENERATIONAL</a>
           </div>
 
 
           {/* form */}
 
-          <div className="mt-10">
+          <div className="mt-10 text-[22px] font-medium">
             <Box
               component="form"
               onSubmit={handleSubmit}
               sx={{
                 display: "flex",
                 flexDirection: "column",
+                fontSize: "22px",
                 gap: 2,
               }}
             >
@@ -101,6 +128,13 @@ export default function Contact() {
                 value={form.name}
                 onChange={handleChange}
                 fullWidth
+                sx={textFieldStyles}
+                required
+                InputLabelProps={{
+
+
+                  required: false,
+                }}
               />
               <TextField
                 name="mobile"
@@ -109,6 +143,13 @@ export default function Contact() {
                 value={form.mobile}
                 onChange={handleChange}
                 fullWidth
+                sx={textFieldStyles}
+                required
+                InputLabelProps={{
+
+
+                  required: false,
+                }}
               />
               <TextField
                 name="email"
@@ -117,6 +158,13 @@ export default function Contact() {
                 value={form.email}
                 onChange={handleChange}
                 fullWidth
+                sx={textFieldStyles}
+                required
+                InputLabelProps={{
+
+
+                  required: false,
+                }}
               />
               <TextField
                 name="subject"
@@ -125,29 +173,56 @@ export default function Contact() {
                 value={form.subject}
                 onChange={handleChange}
                 fullWidth
+                sx={textFieldStyles}
+                required
+                InputLabelProps={{
+
+
+                  required: false,
+                }}
               />
               <TextField
                 name="content"
                 label="CONTENT"
                 variant="outlined"
+                className="z-0"
                 value={form.content}
                 onChange={handleChange}
                 multiline
-                rows={4}
+                InputProps={{
+                  sx: {
+                    borderRadius: 0,
+                    fontSize: "22px",
+                  },
+                }}
+                InputLabelProps={{
+                  sx: { borderRadius: 0, fontSize: "22px", },
+
+                  required: false,
+
+                }}
+                rows={2}
                 fullWidth
+                required
+
               />
               <Button
                 type="submit"
                 variant="contained"
                 sx={{
-                  maxWidth: 200,
+                  maxWidth: 250,
                   mt: 1,
                   bgcolor: "black",
+                  boxShadow: "none",
                   color: "white",
+                  fontSize: "22px",
+                  fontWeight: "medium",
                   borderRadius: 0,
                   py: 1.5,
                   "&:hover": {
-                    bgcolor: "#222",
+                    bgcolor: "#B2B2B2",
+                    boxShadow: "none",
+                    color: "black"
                   },
                 }}
               >
@@ -157,8 +232,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-
-
     </main>
   )
 }

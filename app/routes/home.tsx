@@ -36,13 +36,14 @@ export default function Home() {
 
 
   return (
-    <div ref={containerRef} className="h-[300vh]">
+    <div ref={containerRef} className="h-screen">
       <main className="min-h-screen w-full md:p-10 p-5 sticky top-0 flex h-screen justify-between flex-col">
         {/* image container */}
         <div className="w-full h-screen lg:block hidden absolute z-0 left-0 top-0 overflow-hidden">
         <AutoFadeImage
             // className="h-[100%]"
             images={["/images/Lamborghini_Countach_md.jpg",
+              "/images/RRA_8482.jpg",
               "/images/Ferr_512_RRA42.jpg",
               "/images/930 Turbo.jpg",
 
@@ -53,6 +54,7 @@ export default function Home() {
         <AutoFadeImage
             // className="h-[100%]"
             images={["/images/Lamborghini_Countach.jpg",
+              "/images/RRA_8482.jpg",
               "/images/Ferr_512_RRA42.jpg",
               "/images/930 Turbo.jpg",
 
@@ -60,7 +62,7 @@ export default function Home() {
           
         </div>
 
-        <div className="fixed w-[90%] mx-auto z-10">
+        <div className="">
           <Logo />
         </div>
       </main>

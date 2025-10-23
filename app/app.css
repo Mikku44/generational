@@ -35,6 +35,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   @apply bg-white dark:bg-gray-950;
   font-family: "redhat";
   @media (prefers-color-scheme: dark) {
@@ -47,7 +48,15 @@ body {
 }
 
 .container-x {
-  @apply max-w-7xl mx-auto;
+  @apply md:px-10 px-5;
+}
+
+.text-\[72px\] {
+  @apply leading-20; 
+}
+
+.text-\[32px\]{
+  @apply leading-8; 
 }
 
 /* From Uiverse.io by mrhyddenn */ 

@@ -5,7 +5,7 @@ export const APP_MENU = [
         href: "/curation-philosyphy",label : "CURATION PHILOSOPHY"
     },
     {
-        href: "/ourservice",label : "OUR SERVICE"
+        href: "/ourservice",label : "OUR SERVICES"
     },
     {
         href: "/inventory",label : "INVENTORY"

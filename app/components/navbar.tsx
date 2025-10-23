@@ -9,28 +9,28 @@ export default function Navbar() {
   return (
     <nav className={` fixed
       bottom-0 w-full py-3 md:px-10 px-5 z-1 ${isHomePage ? "" : "bg-white"}`}>
-      <div className='flex justify-between gap-3 items-end '>
-        {isHomePage ?  <div className="md:text-xl text-base max-w-[50vw] w-full">
+      <div className='grid grid-cols-12 gap-5 items-end '>
+        {isHomePage ?  <div className="md:text-[22px] col-span-7 font-semibold md:max-w-[50vw] w-full">
       
-          PURVEYOR OF THE MOST BEAUTIFUL, CULTURALLY SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND.
+          PURVEYOR OF THE MOST BEAUTIFUL, CULTURALLY <br/>SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND.
         </div>
       :
-      <Link to={"/"} className='size-[30px] bg-black text-white
+      <Link to={"/"} className='size-[30px] col-span-7 bg-black text-white
        flex items-center justify-center'>
         <img src="/logo.png" alt="GENERATIONAL LOGO" />
        </Link>
       }
         {/* menu */}
-        <div className="lg:flex hidden  md:gap-5 gap-2 flex-wrap">
+        <div className="lg:flex hidden col-span-5 gap-[10px] justify-end flex-wrap">
           {
             APP_MENU?.map((menu) => {
              const isActive = location.pathname === menu.href; 
             return<Link
-             to={menu.href}
+             to={isActive ? "#top" :menu.href}
              key={menu.label}
-              className={`font-medium duration-150 ${
+              className={`font-extrabold text-[16px] duration-150 ${
                     isActive
-                      ? "text-black font-semibold" // ACTIVE
+                      ? "text-black font-extrabold" // ACTIVE
                       : "hover:text-gray-500"
                   }`}
              >

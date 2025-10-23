@@ -111,7 +111,7 @@ const AutoFadeImage = ({
   return (
     <div
       id="slide-container"
-      className="relative w-full h-screen overflow-hidden bg-gray-900"
+      className="relative w-full h-screen overflow-hidden bg-white"
     >
       <AnimatePresence initial={false} custom={direction}>
         <motion.img

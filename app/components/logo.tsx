@@ -7,6 +7,7 @@ export default function Logo() {
       animate={{ opacity: 1,  y: 0 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
       href="/"
+      id="top"
       className="md:text-[120px] text-[50px] h-auto text-wrap relative
        text-center tracking-[30px] z-1 w-full overflow-hidden"
     >

@@ -7,7 +7,7 @@ export default function MobileNav({ menu = [] }: { menu: { label: string; href: 
   const location = useLocation(); // ✅ get current path
 
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden col-span-5 flex justify-end">
       <button
         className="text-2xl font-bold text-black"
         onClick={() => setOpen(!open)}

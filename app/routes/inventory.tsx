@@ -9,24 +9,25 @@ export function meta({ }: Route.MetaArgs) {
 }
 export default function Inventory() {
   return (
-    <main className="min-h-screen w-full md:p-10 p-5">
-      <Logo />
-      {/* content */}
+    <main className="min-h-screen w-full">
+      <div className="md:p-10 p-5">
+        <Logo />
+      </div>
 
-      <div className="grid md:grid-cols-2 justify-items-center justify-center
-       items-center gap-5 md:mt-40 mt-12 mb-20">
+      <div className="grid container-x md:grid-cols-12 justify-items-center justify-center
+       items-center gap-5 md:mt-[220px] mt-12 mb-20">
         {/* image */}
-        <div className="">
-          <div className="md:text-5xl mb-2 font-semibold text-3xl">INVENTORY</div>
+        <div className=" md:col-span-7">
+          <div className="md:text-[72px] text-[48px] mb-2 font-semibold text-3xl">INVENTORY</div>
           <img src="/images/Porsche_911_3L.jpg" alt="3 classic car" />
         </div>
 
         {/* qr-code */}
-        <div className="flex items-center justify-center gap-5 flex-col">
-          <div className=" text-center leading-tight">SCAN OUR QR <br/> TO ACCESS OUR INVENTORY</div>
+        <div className="flex md:col-span-5 items-center justify-center gap-5 flex-col">
+          <div className=" text-center text-[22px] font-semibold leading-tight">SCAN OUR QR <br /> TO ACCESS OUR INVENTORY</div>
           <img src="/images/inventory-qr.png"
-          className="md:size-[200px] size-[40vw]"
-          alt="GENERATIONAL qr code" />
+            className="md:size-[200px] size-[40vw]"
+            alt="GENERATIONAL qr code" />
         </div>
       </div>
 
