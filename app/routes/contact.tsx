@@ -85,9 +85,9 @@ export default function Contact() {
           <div className="text-[26px] -mt-3 font-bold">TALK TO GENERATIONAL</div>
           <div className="grid text-[18px] leading-6 font-semibold mt-5 md:grid-cols-2 gap-2">
             <div className="title break-words">MOBILE & WHATSAPP </div>
-            <a href="tel:+668919911911"
+            <a href="tel:+66891991191"
               target="_blank"
-              className="value break-words md:font-semibold font-normal">+66 8 919 911 911</a>
+              className="value break-words md:font-semibold font-normal">+66 8 919 911 91</a>
 
             <div className="title break-words">EMAIL </div>
             <a
