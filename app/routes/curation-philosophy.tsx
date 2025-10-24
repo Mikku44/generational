@@ -5,7 +5,7 @@ import AnimatedSection from "~/components/AnimationSector";
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "CURATION PHILOSOPHY - GENERATIONAL" },
-    { name: "description", content: "PURVEYOR OF THE MOST BEAUTIFUL, CULTURALLY SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND." },
+    { name: "description", content: "Learn the Generational Curation Philosophy: a commitment to provenance, originality, and cultural significance. We meticulously select only the most beautiful and historically important classic automobiles for Thailand's discerning collectors." },
   ];
 }
 export default function CurationPage() {

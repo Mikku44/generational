@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { toast } from 'sonner';
 import Loading from '~/components/Loading';
 import { loginWithEmail, useAuthListener } from '~/lib/firebase/auth';
 import type { Route } from './+types/login';
-
+import { Eye, EyeOff } from "lucide-react";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -17,22 +17,41 @@ export default function AdminLogin() {
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
-  const handleSubmit = async (e : any) => {
-    // console.log("Login attempt:", { email, password });
+
+  useEffect(() => {
+    const savedEmail = localStorage.getItem('admin_email');
+    const savedPass = localStorage.getItem('admin_password') || "";
+    if (savedEmail) {
+      setEmail(savedEmail);
+      setPassword(savedPass);
+      setRememberMe(true);
+    }
+  }, []);
+
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     setIsLoading(true);
+
+
+    if (rememberMe) {
+      localStorage.setItem('admin_email', email);
+      localStorage.setItem('admin_password', password);
+    } else {
+      localStorage.removeItem('admin_email');
+      localStorage.removeItem('admin_password');
+    }
+
     const result: any = await loginWithEmail({ email, password, rememberMe });
 
     if (result?.errorCode) {
       toast(`Login failed: ${result.errorMessage}`);
-
     } else {
       toast("Login successfully");
-
     }
 
-    setIsLoading(false)
+    setIsLoading(false);
   };
 
   useAuthListener();
@@ -77,19 +96,28 @@ export default function AdminLogin() {
               />
             </div>
 
-            <div>
+            <div className="relative">
               <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
                 Password
               </label>
               <input
                 id="password"
-                type="password"
+                type={showPassword ? "text" : "password"}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition"
                 placeholder="••••••••"
               />
+
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-3 top-11 opacity-60"
+              >
+                {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+              </button>
             </div>
+
 
             <div className="flex items-center justify-between">
               <label className="flex items-center">
@@ -115,7 +143,7 @@ export default function AdminLogin() {
             >
               {isLoading ? <Loading /> : "Sign In"}
             </button>
-           
+
           </form>
 
           <div className="mt-6 text-center text-sm text-gray-500">
