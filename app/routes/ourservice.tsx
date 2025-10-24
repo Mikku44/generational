@@ -92,7 +92,7 @@ export default function OurService() {
         <Logo />
       </div>
 
-      <div className="md:mt-[220px] mt-18">
+      <div className="md:mt-[220px] mt-[200px]">
         {/* HERO IMAGE */}
         <div className="h-[820px] mt-10 overflow-hidden">
           <motion.img
@@ -111,19 +111,19 @@ export default function OurService() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="md:text-[72px] text-[48px] font-semibold md:col-span-7">OUR SERVICES</motion.div>
+            className="md:text-[65px] text-[48px] -mt-3 font-semibold md:col-span-7">OUR SERVICES</motion.div>
           {/* global sourcing */}
           <motion.div className="space-y-4 md:col-span-5">
             <AnimatedSection>
-              <div className=" text-[32px] mb-5 font-bold">GLOBAL SOURCING</div>
+              <div className=" text-[26px] mb-2 font-bold">GLOBAL SOURCING</div>
             </AnimatedSection>
             <AnimatedSection>
-              <div className="text-[22px] font-medium">At Generational, we are devoted to a singular mission:
+              <div className="text-[20px] font-medium">At Generational, we are devoted to a singular mission:
                 to uncover the world's most beautiful and historically significant cars
                 and deliver them into the hands of Thailand's most discerning collectors.</div>
             </AnimatedSection>
             <AnimatedSection>
-              <div className="text-[22px] font-medium">Our team of professionals travels across the globe-chasing the
+              <div className="text-[20px] font-medium">Our team of professionals travels across the globe-chasing the
                 faintest lead-to curate exceptional pieces of automotive history and bring our
                 clients' dream collections to life.</div>
             </AnimatedSection>
@@ -131,13 +131,13 @@ export default function OurService() {
         </div>
         {/* SECTION 2: THE ACQUISITION JOURNEY */}
         <div className="grid md:grid-cols-12 gap-5 mt-28 container-x ">
-          <ImageBox  className="md:col-span-7" src="/images/unnamed.jpg" />
+          <ImageBox  className="md:col-span-7 w-full h-[1280px]" src="/images/unnamed.jpg" />
           <div className="space-y-6 md:col-span-5">
             <AnimatedSection>
-              <h2 className="text-[32px] font-bold ">THE ACQUISITION JOURNEY</h2>
+              <h2 className="text-[26px] font-bold ">THE ACQUISITION JOURNEY</h2>
             </AnimatedSection>
             <AnimatedSection>
-              <p className="text-[22px] font-medium">FROM DISCOVERY TO DELIVERY — WITH CONFIDENCE, CLARITY, AND CARE</p>
+              <p className="text-[20px] font-medium">FROM DISCOVERY TO DELIVERY — WITH CONFIDENCE, CLARITY, AND CARE</p>
             </AnimatedSection>
             {steps.map((step) => (
               <motion.div
@@ -146,9 +146,9 @@ export default function OurService() {
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 key={step.title}>
-                <h3 className="text-[32px] font-medium mb-5">{step.title}</h3>
+                <h3 className="text-[26px] font-medium mb-2">{step.title}</h3>
                 {step.content.map((c, i) => (
-                  <p key={i} className="mb-3 text-[22px] font-medium">
+                  <p key={i} className="mb-3 text-[20px] font-medium">
                     {c}
                   </p>
                 ))}
@@ -229,15 +229,15 @@ function Section({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="w-full grid md:grid-cols-12 mt-18 gap-5 "
+      className="w-full grid md:grid-cols-12 mt-[200px] gap-5 "
     >
       <div className="md:col-span-7"></div>
       <div className="md:col-span-5">
-        <h2 className="text-[32px] font-bold mb-5">{title}</h2>
+        <h2 className="text-[26px] font-bold mb-2">{title}</h2>
         <div className="space-y-4">
-          {subtitle && <div className="text-[22px] font-medium">{subtitle}</div>}
+          {subtitle && <div className="text-[20px] font-medium">{subtitle}</div>}
           {paragraphs.map((text, i) => (
-            <p className="text-[22px] font-medium" key={i}>{text}</p>
+            <p className="text-[20px] font-medium" key={i}>{text}</p>
           ))}
         </div>
       </div>

@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className={` fixed
       bottom-0 w-full py-3 md:px-10 px-5 z-1 ${isHomePage ? "" : "bg-white"}`}>
       <div className='grid grid-cols-12 gap-5 items-end '>
-        {isHomePage ?  <div className="md:text-[22px] col-span-7 font-semibold md:max-w-[50vw] w-full">
+        {isHomePage ?  <div className="md:text-[20px] col-span-7 font-semibold md:max-w-[50vw] w-full">
       
           PURVEYOR OF THE MOST BEAUTIFUL, CULTURALLY <br/>SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND.
         </div>
@@ -21,14 +21,14 @@ export default function Navbar() {
        </Link>
       }
         {/* menu */}
-        <div className="lg:flex hidden col-span-5 gap-[10px] justify-end flex-wrap">
+        <div className="lg:flex hidden col-span-5 gap-[19px] justify-end flex-wrap">
           {
             APP_MENU?.map((menu) => {
              const isActive = location.pathname === menu.href; 
             return<Link
              to={isActive ? "#top" :menu.href}
              key={menu.label}
-              className={`font-extrabold text-[16px] duration-150 ${
+              className={`font-extrabold text-[15px] duration-150 ${
                     isActive
                       ? "text-black font-extrabold" // ACTIVE
                       : "hover:text-gray-500"

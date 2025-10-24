@@ -49,11 +49,11 @@ export default function Contact() {
 
   const textFieldStyles = {
     '& .MuiInputBase-input': {
-      fontSize: '22px',
+      fontSize: '18px',
       fontWeight: 500, // font-medium
     },
     '& .MuiInputLabel-root': {
-      fontSize: '22px',
+      fontSize: '18px',
       fontWeight: 500,
     },
   };
@@ -68,13 +68,13 @@ export default function Contact() {
       {/* content */}
 
       <div className="grid md:grid-cols-12 container-x
-        gap-5 md:mt-[220px] mt-18 mb-20  h-full overflow-hidden">
+        gap-5 md:mt-[220px] mt-[200px] mb-20  h-full overflow-hidden">
         {/* image */}
-        <div className="md:col-span-7  md:text-[72px] text-[48px] md:leading-tight -mt-4 font-semibold -mb-4">CONTACT</div>
+        <div className="md:col-span-7  md:text-[65px] text-[48px] md:leading-tight -mt-4 font-semibold -mb-4">CONTACT</div>
         <div className="md:block hidden"></div>
 
         <div className="md:col-span-7 w-full h-full">
-          <div className="md:max-h-[710px] overflow-hidden h-full ">
+          <div className="md:max-h-[640px] overflow-hidden h-full ">
             <img src="/images/246GTS Dino_crop.jpg" className="w-full h-full object-cover" alt="3 classic car" />
             </div>
           <div className="flex justify-end w-full mt-1 text-[#7C7C7C]">PHOTO CREDITS AND COPYRIGHT BELONG TO ROMAN RÄTZKE</div>
@@ -82,8 +82,8 @@ export default function Contact() {
 
         {/* contact form */}
         <div className="md:mt-0 mt-16 md:col-span-5">
-          <div className="text-[32px] font-bold">TALK TO GENERATIONAL</div>
-          <div className="grid text-[22px] leading-6 font-semibold mt-5 md:grid-cols-2 gap-2">
+          <div className="text-[26px] -mt-3 font-bold">TALK TO GENERATIONAL</div>
+          <div className="grid text-[18px] leading-6 font-semibold mt-5 md:grid-cols-2 gap-2">
             <div className="title break-words">MOBILE&WHATSAPP </div>
             <a href="tel:+668919911911"
               target="_blank"
@@ -110,14 +110,14 @@ export default function Contact() {
 
           {/* form */}
 
-          <div className="mt-10 text-[22px] font-medium">
+          <div className="mt-10 text-[18px] font-medium">
             <Box
               component="form"
               onSubmit={handleSubmit}
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                fontSize: "22px",
+                fontSize: "18px",
                 gap: 2,
               }}
             >
@@ -192,11 +192,11 @@ export default function Contact() {
                 InputProps={{
                   sx: {
                     borderRadius: 0,
-                    fontSize: "22px",
+                    fontSize: "18px",
                   },
                 }}
                 InputLabelProps={{
-                  sx: { borderRadius: 0, fontSize: "22px", },
+                  sx: { borderRadius: 0, fontSize: "18px", },
 
                   required: false,
 
@@ -215,7 +215,7 @@ export default function Contact() {
                   bgcolor: "black",
                   boxShadow: "none",
                   color: "white",
-                  fontSize: "22px",
+                  fontSize: "18px",
                   fontWeight: "medium",
                   borderRadius: 0,
                   py: 1.5,

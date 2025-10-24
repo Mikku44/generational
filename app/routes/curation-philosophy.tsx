@@ -17,9 +17,9 @@ export default function CurationPage() {
 
       {/* content */}
       {/*  */}
-      <div className="grid md:grid-cols-12 gap-5 md:mt-[220px] mt-18 container-x">
+      <div className="grid md:grid-cols-12 gap-5 md:mt-[220px] mt-[200px] container-x">
         <div className=" md:col-span-7">
-          <div className="md:text-[72px] text-[48px] leading-tight -mt-4 font-semibold mb-2">
+          <div className="md:text-[65px] text-[48px] leading-tight -mt-4 font-semibold mb-2">
             CURATION PHILOSOPHY
           </div>
           <img src="/images/M1.jpg"
@@ -28,11 +28,11 @@ export default function CurationPage() {
         {/* text */}
         <div className="md:col-span-5">
           <AnimatedSection>
-            <div className="font-bold text-[32px] mb-5">
+            <div className="font-bold text-[26px] mb-5">
               WHAT MAKES A CAR WORTHY OF GENERATIONS
             </div>
           </AnimatedSection>
-          <div className="space-y-5 text-[22px]">
+          <div className="space-y-5 text-[20px]">
             <AnimatedSection>
               <div className="">Our approach to curation is grounded in the belief that classic cars are more than machines.
                 They are design objects and ultimately -investments of passion. When we evaluate a car,
@@ -55,13 +55,13 @@ export default function CurationPage() {
           {/* Design Above All */}
           <div className="mt-10">
             <AnimatedSection>
-              <div className="text-[32px] font-bold mb-5">
+              <div className="text-[26px] font-bold mb-5">
                 Design Above All
               </div>
             </AnimatedSection>
 
             <AnimatedSection>
-              <div className="text-[22px]">We look for timeless design-sculptural forms, precise lines, and details that have aged with grace.
+              <div className="text-[20px]">We look for timeless design-sculptural forms, precise lines, and details that have aged with grace.
                 From the muscular arches of the Lamborghini Countach LP400, to the sculpted elegance of the Ferrari 250 GT/L "Lusso",
                 and the purity of the Porsche 911,
                 we study these automobiles as if they were architecture on wheels - because they are.</div>
@@ -70,19 +70,19 @@ export default function CurationPage() {
           {/* Provenance & Originality */}
           <div className="mt-10 ">
             <AnimatedSection>
-              <div className="text-[32px] font-bold mb-5">
+              <div className="text-[26px] font-bold mb-5">
                 Provenance & Originality
               </div>
             </AnimatedSection>
 
             <AnimatedSection>
-              <div className="text-[22px]">A car is only as valuable as its condition.
+              <div className="text-[20px]">A car is only as valuable as its condition.
                 We prioritize vehicles with clear provenance, verified histories from previous owners,
                 original components, service records from respected garages,
                 and minimal modifications.</div>
             </AnimatedSection>
             <AnimatedSection>
-              <div className="text-[22px]">We believe art is best left untouched once it has passed through the hands of its creator -
+              <div className="text-[20px]">We believe art is best left untouched once it has passed through the hands of its creator -
                 you don't alter the Mona Lisa's smile. It's perfect as it is.</div>
             </AnimatedSection>
           </div>
@@ -90,13 +90,13 @@ export default function CurationPage() {
           {/* Driving Experience */}
           <div className="mt-10 ">
             <AnimatedSection>
-              <div className="text-[32px] font-bold mb-5">
+              <div className="text-[26px] font-bold mb-5">
                 Driving Experience
               </div>
             </AnimatedSection>
 
             <AnimatedSection>
-              <div className="text-[22px]">We believe a classic car should be driven, not just displayed.
+              <div className="text-[20px]">We believe a classic car should be driven, not just displayed.
                 Every vehicle we source must deliver an emotional response behind the wheel - sound,
                 feel and mechanical character. We don't bring cars all the way to Thailand just for her to sit in the garage waiting for parts -
                 the soul of the car must be alive.</div>
@@ -106,13 +106,13 @@ export default function CurationPage() {
           {/* Rarity with Relevance */}
           <div className="mt-10 ">
             <AnimatedSection>
-              <div className="text-[32px] font-bold mb-5">
+              <div className="text-[26px] font-bold mb-5">
                 Rarity with Relevance
               </div>
             </AnimatedSection>
 
             <AnimatedSection>
-              <div className="text-[22px]">Not every rare car is collectible.
+              <div className="text-[20px]">Not every rare car is collectible.
                 We curate models that matter: culturally significant and racing pedigree,
                 or underappreciated legends whose time</div>
             </AnimatedSection>
@@ -121,20 +121,20 @@ export default function CurationPage() {
           {/* Cars That Belong in Your Future */}
           <div className="mt-10 ">
             <AnimatedSection>
-              <div className="text-[32px] font-bold mb-5">
+              <div className="text-[26px] font-bold mb-5">
                 Cars That Belong in Your Future
               </div>
             </AnimatedSection>
 
             <AnimatedSection>
-              <div className="text-[22px]">Our philosophy is rooted in the long view.
+              <div className="text-[20px]">Our philosophy is rooted in the long view.
                 These are vehicles not just for today - but for tomorrow's curators,
                 collectors, and connoisseurs. We exist to find, protect, and deliver those cars.</div>
             </AnimatedSection>
 
 
             <AnimatedSection>
-              <div className="text-[22px]">This is how we curated GENERATIONAL.</div>
+              <div className="text-[20px]">This is how we curated GENERATIONAL.</div>
             </AnimatedSection>
           </div>
         </div>
