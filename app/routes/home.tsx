@@ -4,13 +4,45 @@ import Logo from "~/components/logo";
 import type { Route } from "./+types/home";
 import AutoFadeImage from "~/components/AutoFadeImage";
 
-  export function meta({ }: Route.MetaArgs) {
-    return [
-      { title: "HOME - GENERATIONAL" },
-      { name: "description", content: "PURVEYOR OF THE MOST BEAUTIFUL, CULTURALLY SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND." },
-    ];
-  }
+export function meta({ }: Route.MetaArgs) {
+  return [
+    { title: "HOME - GENERATIONAL" },
+    {
+      name: "description",
+      content:
+        "PURVEYOR OF THE MOST BEAUTIFUL, CULTURALLY SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND.",
+    },
 
+    // — Open Graph (Facebook / LinkedIn / Line, etc.)
+    { property: "og:title", content: "HOME - GENERATIONAL" },
+    {
+      property: "og:description",
+      content:
+        "Purveyor of the most beautiful, culturally significant classic automobiles in Thailand.",
+    },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://generational-eta.vercel.app" },
+    {
+      property: "og:image",
+      content: "https://generational-eta.vercel.app/images/Lamborghini_Countach_md.jpg", // ← change to your actual image
+    },
+
+    // — Twitter Card
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "HOME - GENERATIONAL" },
+    {
+      name: "twitter:description",
+      content:
+        "Purveyor of the most beautiful, culturally significant classic automobiles in Thailand.",
+    },
+    {
+      name: "twitter:image",
+      content: "https://generational-eta.vercel.app/images/Lamborghini_Countach_md.jpg", // ← same or different image is okay
+    },
+  ];
+}
+
+  // https://generational-eta.vercel.app/images/Lamborghini_Countach_md.jpg
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);

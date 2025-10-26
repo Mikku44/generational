@@ -7,9 +7,41 @@ import { useRef } from "react";
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "OUR SERVICE - GENERATIONAL" },
-    { name: "description", content: "PURVEYOR OF THE MOST BEAUTIFUL, CULTURALLY SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND." },
+    {
+      name: "description",
+      content:
+        "Discover Generational’s services: expert curation, provenance verification, and preservation of the most beautiful and culturally significant classic automobiles in Thailand.",
+    },
+
+    // — Open Graph
+    { property: "og:title", content: "OUR SERVICE - GENERATIONAL" },
+    {
+      property: "og:description",
+      content:
+        "Generational provides expert curation and preservation services for historically significant classic automobiles, ensuring authenticity and excellence.",
+    },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://generational-eta.vercel.app/ourservice" },
+    {
+      property: "og:image",
+      content: "https://generational.co.th/og-service.jpg", // replace with your service image
+    },
+
+    // — Twitter
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "OUR SERVICE - GENERATIONAL" },
+    {
+      name: "twitter:description",
+      content:
+        "Generational provides expert curation and preservation services for historically significant classic automobiles, ensuring authenticity and excellence.",
+    },
+    {
+      name: "twitter:image",
+      content: "https://generational.co.th/og-service.jpg",
+    },
   ];
 }
+
 
 export default function OurService() {
   const ref = useRef<any>(null);

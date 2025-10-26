@@ -6,9 +6,41 @@ import AnimatedSection from "~/components/AnimationSector";
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "OUR TEAM - GENERATIONAL" },
-    { name: "description", content: "PURVEYOR OF THE MOST BEAUTIFUL, CULTURALLY SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND." },
+    {
+      name: "description",
+      content:
+        "Meet the Generational team: dedicated experts curating the most beautiful and culturally significant classic automobiles in Thailand for discerning collectors.",
+    },
+
+    // — Open Graph
+    { property: "og:title", content: "OUR TEAM - GENERATIONAL" },
+    {
+      property: "og:description",
+      content:
+        "Get to know the Generational team — experts committed to sourcing and preserving Thailand’s most historically significant classic automobiles.",
+    },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://generational-eta.vercel.app/ourteam" },
+    {
+      property: "og:image",
+      content: "https://generational-eta.vercel.app/images/Lamborghini_Diablo.jpg", // replace with your team image
+    },
+
+    // — Twitter
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "OUR TEAM - GENERATIONAL" },
+    {
+      name: "twitter:description",
+      content:
+        "Get to know the Generational team — experts committed to sourcing and preserving Thailand’s most historically significant classic automobiles.",
+    },
+    {
+      name: "twitter:image",
+      content: "https://generational-eta.vercel.app/images/Lamborghini_Diablo.jpg",
+    },
   ];
 }
+
 export default function Ourteam() {
   return (
     <main className="min-h-screen mb-20 w-full ">

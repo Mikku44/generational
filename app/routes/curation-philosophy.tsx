@@ -5,9 +5,41 @@ import AnimatedSection from "~/components/AnimationSector";
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "CURATION PHILOSOPHY - GENERATIONAL" },
-    { name: "description", content: "Learn the Generational Curation Philosophy: a commitment to provenance, originality, and cultural significance. We meticulously select only the most beautiful and historically important classic automobiles for Thailand's discerning collectors." },
+    {
+      name: "description",
+      content:
+        "Learn the Generational Curation Philosophy: a commitment to provenance, originality, and cultural significance. We meticulously select only the most beautiful and historically important classic automobiles for Thailand's discerning collectors.",
+    },
+
+    // — Open Graph
+    { property: "og:title", content: "CURATION PHILOSOPHY - GENERATIONAL" },
+    {
+      property: "og:description",
+      content:
+        "Our approach to curation is grounded in the belief that classic cars are more than machines. They are design objects and ultimately -investments of passion.",
+    },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://generational-eta.vercel.app/curation-philosophy" },
+    {
+      property: "og:image",
+      content: "https://generational-eta.vercel.app/images/M1.jpg", // change image if needed
+    },
+
+    // — Twitter
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "CURATION PHILOSOPHY - GENERATIONAL" },
+    {
+      name: "twitter:description",
+      content:
+        "Our approach to curation is grounded in the belief that classic cars are more than machines. They are design objects and ultimately -investments of passion.",
+    },
+    {
+      name: "twitter:image",
+      content: "https://generational-eta.vercel.app/images/M1.jpg",
+    },
   ];
 }
+
 export default function CurationPage() {
   return (
     <main className="min-h-screen w-full mb-20">

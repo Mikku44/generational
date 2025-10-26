@@ -4,9 +4,41 @@ import type { Route } from "./+types/inventory";
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "INVENTORY - GENERATIONAL" },
-    { name: "description", content: "PURVEYOR OF THE MOST BEAUTIFUL, CULTURALLY SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND." },
+    {
+      name: "description",
+      content:
+        "Purveyor of the most beautiful and culturally significant classic automobiles in Thailand. Explore our curated inventory of rare and historically important vehicles.",
+    },
+
+    // — Open Graph
+    { property: "og:title", content: "INVENTORY - GENERATIONAL" },
+    {
+      property: "og:description",
+      content:
+        "Explore Generational’s curated inventory — historically significant, beautifully preserved classic automobiles selected for discerning collectors in Thailand.",
+    },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://generational-eta.vercel.app/inventory" },
+    {
+      property: "og:image",
+      content: "https://generational-eta.vercel.app/images/Porsche_911_3L.jpg", // update if you have one
+    },
+
+    // — Twitter
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "INVENTORY - GENERATIONAL" },
+    {
+      name: "twitter:description",
+      content:
+        "Explore Generational’s curated inventory — historically significant, beautifully preserved classic automobiles selected for discerning collectors in Thailand.",
+    },
+    {
+      name: "twitter:image",
+      content: "https://generational-eta.vercel.app/images/Porsche_911_3L.jpg",
+    },
   ];
 }
+
 export default function Inventory() {
   return (
     <main className="min-h-screen w-full mb-20">
