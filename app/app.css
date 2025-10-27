@@ -40,11 +40,9 @@
 html,
 body {
   scroll-behavior: smooth;
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-white ;
   font-family: "redhat";
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+  
 }
 
 .redhat {
