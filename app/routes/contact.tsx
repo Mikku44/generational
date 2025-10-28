@@ -83,28 +83,28 @@ export default function Contact() {
         {/* contact form */}
         <div className="md:mt-0 mt-16 md:col-span-5">
           <div className="text-[26px] -mt-3 font-bold">TALK TO GENERATIONAL</div>
-          <div className="grid text-[18px] leading-6 font-semibold mt-5 md:grid-cols-2 gap-2">
+          <div className="grid text-[18px] leading-6 font-semibold mt-5 md:grid-cols-3 gap-2">
             <div className="title break-words">MOBILE & WHATSAPP </div>
             <a href="tel:+66891991191"
               target="_blank"
-              className="value break-words md:font-semibold font-normal">+66 8 919 911 91</a>
+              className="value break-words md:col-span-2 md:font-semibold font-normal">+66 8 919 911 91</a>
 
             <div className="title break-words">EMAIL </div>
             <a
               href="mailto:HELLO@GENERATIONAL.CO.TH"
               target="_blank"
-              className="value break-words md:font-semibold font-normal">HELLO@GENERATIONAL.CO.TH</a>
+              className="value break-words md:col-span-2 md:font-semibold font-normal">HELLO@GENERATIONAL.CO.TH</a>
 
             <div className="title break-words">LINE ID </div>
             <a href="#"
               target="_blank"
-              className="value break-words md:font-semibold font-normal">@GENERATIONAL</a>
+              className="value break-words md:col-span-2 md:font-semibold font-normal">@GENERATIONAL</a>
 
             <div className="title break-words">INSTAGRAM </div>
             <a
               href="https://www.instagram.com/drivegenerational/?utm_source=ig_web_button_share_sheet"
               target="_blank"
-              className="value break-words md:font-semibold font-normal">@DRIVEGENERATIONAL</a>
+              className="value break-words md:col-span-2 md:font-semibold font-normal">@DRIVEGENERATIONAL</a>
           </div>
 
 
