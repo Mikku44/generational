@@ -216,7 +216,7 @@ export default function OurService() {
           className="mt-14 col-span-2 h-[680px]"
         />
         {/* DOMESTIC TRANSFERS + FROR */}
-        <div className=" mt-14 container-x ">
+        <div className="mt-[-9px] container-x ">
           <div>
             <Section
               title="DOMESTIC TRANSFERS"
