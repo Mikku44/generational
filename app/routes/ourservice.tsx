@@ -163,7 +163,7 @@ export default function OurService() {
         </div>
         {/* SECTION 2: THE ACQUISITION JOURNEY */}
         <div className="grid md:grid-cols-12 gap-5 mt-28 container-x ">
-          <ImageBox  className="md:col-span-7 w-full h-[1280px]" src="/images/unnamed.jpg" />
+          <ImageBox  className="md:col-span-7 w-full md:h-[1280px] h-[880px]" src="/images/unnamed.jpg" />
           <div className="space-y-6 md:col-span-5">
             <AnimatedSection>
               <h2 className="text-[26px] font-bold ">THE ACQUISITION JOURNEY</h2>
@@ -261,7 +261,7 @@ function Section({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="w-full grid md:grid-cols-12 mt-[200px] gap-5 "
+      className="w-full grid md:grid-cols-12 mt-[48px] gap-5 "
     >
       <div className="md:col-span-7"></div>
       <div className="md:col-span-5">
