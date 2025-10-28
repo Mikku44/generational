@@ -163,7 +163,7 @@ export default function OurService() {
         </div>
         {/* SECTION 2: THE ACQUISITION JOURNEY */}
         <div className="grid md:grid-cols-12 gap-5 mt-28 container-x ">
-          <ImageBox  className="md:col-span-7 w-full md:h-[1280px] h-[800px]" src="/images/unnamed.jpg" />
+          <ImageBox  className="md:col-span-7 w-full md:h-[1280px] h-[720px]" src="/images/unnamed.jpg" />
           <div className="space-y-6 md:col-span-5">
             <AnimatedSection>
               <h2 className="text-[26px] font-bold ">THE ACQUISITION JOURNEY</h2>
