@@ -52,8 +52,8 @@ export default function Ourteam() {
       <section className="md:mt-[220px] mt-[200px] mb-20 container-x">
 
         {/*  */}
-        <div className="grid md:grid-cols-12  gap-5">
-          <div className="md:col-span-7 w-full">
+        <div className="grid md:grid-cols-12 gap-5">
+          <div className="md:col-span-7 w-full max-h-[800px] overflow-clip flex items-end">
             <video src="/videos/founder.mp4" 
           preload="true"
            autoPlay muted loop
