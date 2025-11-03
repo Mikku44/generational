@@ -198,3 +198,20 @@ body {
     background-color: transparent;
   }
 }
+
+@layer utilities {
+  /* Chrome, Safari, and Opera */
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  /* IE and Edge */
+  .scrollbar-hidden {
+    -ms-overflow-style: none  !important;
+  }
+
+  /* Firefox */
+  .scrollbar-hidden {
+    scrollbar-width: none  !important;
+  }
+}

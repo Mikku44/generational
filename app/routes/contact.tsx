@@ -76,8 +76,10 @@ export default function Contact() {
         <div className="md:col-span-7 w-full h-full">
           <div className="md:max-h-[640px] overflow-hidden h-full ">
             <img src="/images/246GTS Dino_crop.jpg" className="w-full h-full object-cover" alt="3 classic car" />
-            </div>
-          <div className="flex justify-end w-full mt-1 text-[#7C7C7C]">PHOTO CREDITS AND COPYRIGHT BELONG TO ROMAN RÄTZKE</div>
+          </div>
+          <div className="flex justify-end w-full mt-1 text-[#7C7C7C]">PHOTO CREDITS AND COPYRIGHT BELONG TO
+            <a href="https://roman-raetzke.de/" target="_blank" className="ml-1 hover:underline">ROMAN RÄTZKE</a>
+          </div>
         </div>
 
         {/* contact form */}
@@ -87,7 +89,7 @@ export default function Contact() {
             <div className="title break-words">MOBILE & WHATSAPP </div>
             <a href="tel:+66891991191"
               target="_blank"
-              className="value break-words md:col-span-2 md:font-semibold font-normal">+66 8 919 911 91</a>
+              className="value break-words md:col-span-2 md:font-semibold font-normal">+66 919 911 911</a>
 
             <div className="title break-words">EMAIL </div>
             <a

@@ -1,24 +1,23 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Loading from "./Loading";
 
-// Variants remain the same for the sliding effect
 const slideVariants = {
   enter: (direction: number) => ({
-    x: direction > 0 ? "100%" : "-100%", 
-    opacity: 1,
-    scale: 1,
+    x: direction > 0 ? "100%" : "-100%",
+
+
   }),
   center: {
-    zIndex: 1,
-    x: "0%", 
-    opacity: 1,
-    scale: 1,
+    
+    x: "0%",
+
+
   },
   exit: (direction: number) => ({
-    zIndex: 0,
-    x: direction < 0 ? "100%" : "-100%", 
-    opacity: 1,
-    scale: 0.98,
+   
+    x: direction < 0 ? "100%" : "-100%",
+
   }),
 };
 
@@ -32,7 +31,7 @@ const AutoFadeImage = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1);
   const [isLoaded, setIsLoaded] = useState(false); // New state for tracking load status
-  
+
   const scrollLock = useRef(false);
   const autoIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -84,8 +83,8 @@ const AutoFadeImage = ({
 
   useEffect(() => {
     // Only start the auto-interval once images are loaded
-    if (isLoaded) { 
-        resetAutoInterval();
+    if (isLoaded) {
+      resetAutoInterval();
     }
     return () => {
       if (autoIntervalRef.current) {
@@ -100,7 +99,7 @@ const AutoFadeImage = ({
     scrollLock.current = true;
     setTimeout(() => {
       scrollLock.current = false;
-    }, 500); 
+    }, 500);
 
     let newIndex = currentIndex;
     if (delta > 0) {
@@ -115,8 +114,8 @@ const AutoFadeImage = ({
 
   const handleWheel = useCallback((event: { preventDefault: () => void; deltaY: number; }) => {
     event.preventDefault();
-    if (Math.abs(event.deltaY) > 0) { 
-        handleManualSlide(event.deltaY > 0 ? 1 : -1);
+    if (Math.abs(event.deltaY) > 0) {
+      handleManualSlide(event.deltaY > 0 ? 1 : -1);
     }
   }, [handleManualSlide]);
 
@@ -136,7 +135,7 @@ const AutoFadeImage = ({
   if (!isLoaded) {
     return (
       <div className="w-full h-screen flex items-center justify-center bg-gray-100">
-        <p>Loading Images...</p> {/* Simple loading indicator */}
+        <Loading />
       </div>
     );
   }
@@ -146,6 +145,16 @@ const AutoFadeImage = ({
       id="slide-container"
       className="relative w-full h-screen overflow-hidden bg-white"
     >
+
+      {images.map((image, index) => (
+        <img
+          key={`preload-${index}`}
+          src={image}
+          alt=""
+          className="hidden"
+          loading="eager"
+        />
+      ))}
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={currentIndex}
@@ -156,8 +165,8 @@ const AutoFadeImage = ({
           animate="center"
           exit="exit"
           transition={{
-            x: { type: "spring", stiffness: 300, damping: 30 },
-            opacity: { duration: 0.2 }, 
+
+            opacity: { duration: 0.2 },
           }}
           className="absolute top-0 left-0 w-full h-full object-cover"
         />

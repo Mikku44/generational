@@ -54,8 +54,10 @@ export default function Ourteam() {
         {/*  */}
         <div className="grid md:grid-cols-12  gap-5">
           <div className="md:col-span-7 w-full">
-            <img src="/images/gray.png"
-              alt="GENERATIONAL FOUNDER IMAGE" className="w-full" />
+            <video src="/videos/founder.mp4" 
+          preload="true"
+           autoPlay muted loop
+               className="w-full" />
           </div>
           {/* text */}
           <div className="md:col-span-5 w-full">

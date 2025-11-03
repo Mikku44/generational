@@ -4,6 +4,7 @@ import Logo from "~/components/logo";
 import type { Route } from "./+types/home";
 import AutoFadeImage from "~/components/AutoFadeImage";
 
+
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "HOME - GENERATIONAL" },
@@ -42,7 +43,7 @@ export function meta({ }: Route.MetaArgs) {
   ];
 }
 
-  // https://generational-eta.vercel.app/images/Lamborghini_Countach_md.jpg
+// https://generational-eta.vercel.app/images/Lamborghini_Countach_md.jpg
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -66,80 +67,88 @@ export default function Home() {
     [isMobile ? "0%" : "0%", isMobile ? "-68%" : "-67.2%"]
   );
 
+  const INTERVAL = 10000; // 10 seconds
+
 
   return (
-    <div ref={containerRef} className="h-screen">
-      <main className="min-h-screen w-full md:p-10 p-5 sticky top-0 flex h-screen justify-between flex-col">
+    <div ref={containerRef} className="h-screen relative">
+
+      <div className="fixed z-10 w-full">
+        <div className="md:p-10 p-5  flex h-screen justify-between flex-col">
+          <Logo />
+        </div>
+      </div>
+      <main className="min-h-screen w-full ">
         {/* image container */}
-        <div className="w-full h-screen lg:block hidden absolute z-0 left-0 top-0 overflow-hidden">
-        <AutoFadeImage
+        <div className="w-full h-screen lg:block hidden ">
+          <AutoFadeImage
             // className="h-[100%]"
             images={["/images/Lamborghini_Countach_md.jpg",
               "/images/RRA_8482.jpg",
               "/images/Ferr_512_RRA42.jpg",
               "/images/930 Turbo.jpg",
 
-            ]} interval={3000} />
-          
+            ]} interval={INTERVAL} />
+
         </div>
-        <div className="w-full h-screen lg:hidden block absolute z-0 left-0 top-0 overflow-hidden">
-        <AutoFadeImage
+        <div className="w-full h-screen lg:hidden block ">
+          <AutoFadeImage
             // className="h-[100%]"
             images={["/images/Lamborghini_Countach.jpg",
               "/images/RRA_8482.jpg",
               "/images/Ferr_512_RRA42.jpg",
               "/images/930 Turbo.jpg",
 
-            ]} interval={3000} />
-          
+            ]} interval={INTERVAL} />
+
         </div>
 
-        <div className="">
-          <Logo />
-        </div>
+
       </main>
+
+
     </div>
   );
 
   return <motion.div
-            style={{ x }}
-            className="flex h-full w-[300%] snap-always snap-proximity snap-x"
-          >
-            {/* Image 1 */}
-            <div className="w-screen h-screen flex-shrink-0 snap-center">
-              <img draggable={false} src="/images/Lamborghini_Countach_md.jpg"
-                alt="yellow car - GENERATIONAL image"
-                className="w-full h-full object-cover hidden md:block"
-              />
-              <img draggable={false} src="/images/Lamborghini_Countach.jpg"
-                alt="yellow car - GENERATIONAL image"
-                className="w-full h-full object-cover md:hidden"
-              />
-            </div>
+    style={{ x }}
+    className="flex h-full w-[300%] snap-always snap-proximity snap-x"
+  >
+    {/* Image 1 */}
+    <div className="w-screen h-screen flex-shrink-0 snap-center">
+      <img draggable={false} src="/images/Lamborghini_Countach_md.jpg"
+        alt="yellow car - GENERATIONAL image"
+        className="w-full h-full object-cover hidden md:block"
+      />
+      <img draggable={false} src="/images/Lamborghini_Countach.jpg"
+        alt="yellow car - GENERATIONAL image"
+        className="w-full h-full object-cover md:hidden"
+      />
+    </div>
 
-            {/* Image 2 */}
-            <div className="w-screen h-screen flex-shrink-0 snap-center">
-              <img draggable={false} src="/images/Ferr_512_RRA42.jpg"
-                alt="yellow car - GENERATIONAL image"
-                className="w-full h-full object-cover hidden md:block"
-              />
-              <img draggable={false} src="/images/Ferr_512_RRA42.jpg"
-                alt="yellow car - GENERATIONAL image"
-                className="w-full h-full object-cover md:hidden"
-              />
-            </div>
+    {/* Image 2 */}
+    <div className="w-screen h-screen flex-shrink-0 snap-center">
+      <img draggable={false} src="/images/Ferr_512_RRA42.jpg"
+        alt="yellow car - GENERATIONAL image"
+        className="w-full h-full object-cover hidden md:block"
+      />
+      <img draggable={false} src="/images/Ferr_512_RRA42.jpg"
+        alt="yellow car - GENERATIONAL image"
+        className="w-full h-full object-cover md:hidden"
+      />
+    </div>
 
-            {/* Image 3 */}
-            <div className="w-screen h-screen flex-shrink-0 snap-center">
-              <img draggable={false} src="/images/930 Turbo.jpg"
-                alt="yellow car - GENERATIONAL image"
-                className="w-full h-full object-cover hidden md:block"
-              />
-              <img draggable={false} src="/images/930 Turbo.jpg"
-                alt="yellow car - GENERATIONAL image"
-                className="w-full h-full object-cover md:hidden"
-              />
-            </div>
-          </motion.div>
+    {/* Image 3 */}
+    <div className="w-screen h-screen flex-shrink-0 snap-center">
+      <img draggable={false} src="/images/930 Turbo.jpg"
+        alt="yellow car - GENERATIONAL image"
+        className="w-full h-full object-cover hidden md:block"
+      />
+      <img draggable={false} src="/images/930 Turbo.jpg"
+        alt="yellow car - GENERATIONAL image"
+        className="w-full h-full object-cover md:hidden"
+      />
+    </div>
+  </motion.div>
 }
 
