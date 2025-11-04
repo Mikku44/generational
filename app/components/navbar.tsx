@@ -21,7 +21,7 @@ export default function Navbar() {
        </Link>
       }
         {/* menu */}
-        <div className="lg:flex hidden col-span-5 xl:gap-x-[19px] md:gap-x-[12px]  justify-end flex-wrap">
+        <div className="lg:flex hidden col-span-5 gap-x-[12px]  justify-end flex-wrap">
           {
             APP_MENU?.map((menu) => {
              const isActive = location.pathname === menu.href; 
