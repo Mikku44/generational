@@ -21,14 +21,14 @@ export default function Navbar() {
        </Link>
       }
         {/* menu */}
-        <div className="lg:flex hidden col-span-5 gap-x-[12px]  justify-end flex-wrap">
+        <div className="lg:flex hidden col-span-5 xl:gap-x-[19px] md:gap-x-[12px]  justify-between flex-wrap">
           {
             APP_MENU?.map((menu) => {
              const isActive = location.pathname === menu.href; 
             return<Link
              to={isActive ? "#top" :menu.href}
              key={menu.label}
-              className={`font-extrabold xl:text-[14px] text-[12px] duration-150 ${
+              className={`font-extrabold  text-[12px] duration-150 ${
                     isActive
                       ? "text-black font-extrabold" // ACTIVE
                       : "hover:text-gray-500"
