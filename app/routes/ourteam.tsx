@@ -53,11 +53,13 @@ export default function Ourteam() {
 
         {/*  */}
         <div className="grid md:grid-cols-12 gap-5">
-          <div className="md:col-span-7 w-full max-h-[800px] overflow-clip flex items-end">
-            <video src="/videos/founder.mp4" 
-          preload="true"
-           autoPlay muted loop
-               className="w-full" />
+          <div className="md:col-span-7 w-full lg:max-h-[490px]">
+            <div className="w-full h-[800px] overflow-hidden flex items-end">
+              <video src="/videos/founder.mp4" 
+                        preload="true"
+                         autoPlay muted loop
+                 className="w-full" />
+            </div>
           </div>
           {/* text */}
           <div className="md:col-span-5 w-full">
@@ -79,7 +81,7 @@ export default function Ourteam() {
                   appreciation for design matured — particularly the sculptural beauty
                   found in automotive form. </div>
               </AnimatedSection>
-              <AnimatedSection>
+              {/* <AnimatedSection>
                 <div className="text-[20px] font-medium">Before founding GENERATIONAL, Gem launched a successful startup
                   and co-founded a professional association, serving as both CEO and
                   President. These years of building, leading, and creating laid the
@@ -91,7 +93,7 @@ export default function Ourteam() {
                   his long-held dream to life: a company devoted to timeless machines,
                   worthy of being passed down through generations. Thus, the name was born.
                 </div>
-              </AnimatedSection>
+              </AnimatedSection> */}
               <AnimatedSection>
                 <div className="text-[20px] font-medium">GENERATIONAL is Gem’s magnum opus — a love letter to the beauty of
                   automotive design, and his belief in cars not only as kinetic art, but as
@@ -150,7 +152,7 @@ export default function Ourteam() {
 
           <div className="md:col-span-5">
             <AnimatedSection>
-              <div className="font-semibold text-[26px] mb-5">
+              <div className="font-semibold text-[26px] mb-5 -mt-2">
                 INTERNATIONAL TEAM
               </div>
             </AnimatedSection>

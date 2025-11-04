@@ -150,7 +150,7 @@ export default function OurService() {
               <div className=" text-[26px] mb-2 font-bold">GLOBAL SOURCING</div>
             </AnimatedSection>
             <AnimatedSection>
-              <div className="text-[20px] font-medium">At Generational, we are devoted to a singular mission:
+              <div className="text-[20px] font-medium">At GENERATIONAL, we are devoted to a singular mission:
                 to uncover the world's most beautiful and historically significant cars
                 and deliver them into the hands of Thailand's most discerning collectors.</div>
             </AnimatedSection>

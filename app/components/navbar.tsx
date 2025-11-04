@@ -28,7 +28,7 @@ export default function Navbar() {
             return<Link
              to={isActive ? "#top" :menu.href}
              key={menu.label}
-              className={`font-extrabold text-[clamp(12px,2vw,14px)] duration-150 ${
+              className={`font-extrabold xl:text-[14px] text-[12px] duration-150 ${
                     isActive
                       ? "text-black font-extrabold" // ACTIVE
                       : "hover:text-gray-500"
