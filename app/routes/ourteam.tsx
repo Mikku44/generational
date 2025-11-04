@@ -9,7 +9,7 @@ export function meta({ }: Route.MetaArgs) {
     {
       name: "description",
       content:
-        "Meet the Generational team: dedicated experts curating the most beautiful and culturally significant classic automobiles in Thailand for discerning collectors.",
+        "Meet the GENERATIONAL team: dedicated experts curating the most beautiful and culturally significant classic automobiles in Thailand for discerning collectors.",
     },
 
     // — Open Graph
@@ -17,7 +17,7 @@ export function meta({ }: Route.MetaArgs) {
     {
       property: "og:description",
       content:
-        "Get to know the Generational team — experts committed to sourcing and preserving Thailand’s most historically significant classic automobiles.",
+        "Get to know the GENERATIONAL team — experts committed to sourcing and preserving Thailand’s most historically significant classic automobiles.",
     },
     { property: "og:type", content: "website" },
     { property: "og:url", content: "https://generational-eta.vercel.app/ourteam" },

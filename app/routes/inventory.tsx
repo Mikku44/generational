@@ -15,7 +15,7 @@ export function meta({ }: Route.MetaArgs) {
     {
       property: "og:description",
       content:
-        "Explore Generational’s curated inventory — historically significant, beautifully preserved classic automobiles selected for discerning collectors in Thailand.",
+        "Explore GENERATIONAL curated inventory — historically significant, beautifully preserved classic automobiles selected for discerning collectors in Thailand.",
     },
     { property: "og:type", content: "website" },
     { property: "og:url", content: "https://generational-eta.vercel.app/inventory" },

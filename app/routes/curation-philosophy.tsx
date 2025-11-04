@@ -8,7 +8,7 @@ export function meta({ }: Route.MetaArgs) {
     {
       name: "description",
       content:
-        "Learn the Generational Curation Philosophy: a commitment to provenance, originality, and cultural significance. We meticulously select only the most beautiful and historically important classic automobiles for Thailand's discerning collectors.",
+        "Learn the GENERATIONAL Curation Philosophy: a commitment to provenance, originality, and cultural significance. We meticulously select only the most beautiful and historically important classic automobiles for Thailand's discerning collectors.",
     },
 
     // — Open Graph

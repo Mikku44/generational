@@ -10,7 +10,7 @@ export function meta({ }: Route.MetaArgs) {
     {
       name: "description",
       content:
-        "Discover Generational’s services: expert curation, provenance verification, and preservation of the most beautiful and culturally significant classic automobiles in Thailand.",
+        "Discover GENERATIONAL services: expert curation, provenance verification, and preservation of the most beautiful and culturally significant classic automobiles in Thailand.",
     },
 
     // — Open Graph
@@ -33,7 +33,7 @@ export function meta({ }: Route.MetaArgs) {
     {
       name: "twitter:description",
       content:
-        "Generational provides expert curation and preservation services for historically significant classic automobiles, ensuring authenticity and excellence.",
+        "GENERATIONAL provides expert curation and preservation services for historically significant classic automobiles, ensuring authenticity and excellence.",
     },
     {
       name: "twitter:image",
