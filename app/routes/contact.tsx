@@ -93,7 +93,7 @@ export default function Contact() {
 
 
             <div className="title break-words">MOBILE (UNITED KINGDOM) </div>
-            <a href="tel:+66891991191"
+            <a href="tel:+447500007008"
               target="_blank"
               className="value break-words md:col-span-2 md:font-semibold font-normal">+44 7500 007 008</a>
 
