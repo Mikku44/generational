@@ -91,6 +91,12 @@ export default function Contact() {
               target="_blank"
               className="value break-words md:col-span-2 md:font-semibold font-normal">+66 919 911 911</a>
 
+
+            <div className="title break-words">MOBILE (UNITED KINGDOM) </div>
+            <a href="tel:+66891991191"
+              target="_blank"
+              className="value break-words md:col-span-2 md:font-semibold font-normal">+44 7500 007 008</a>
+
             <div className="title break-words">EMAIL </div>
             <a
               href="mailto:HELLO@GENERATIONAL.CO.TH"
