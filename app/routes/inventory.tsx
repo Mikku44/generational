@@ -57,7 +57,7 @@ export default function Inventory() {
         {/* qr-code */}
         <div className="flex md:col-span-5 items-center justify-center gap-5 flex-col">
           <div className=" text-center text-[20px] font-semibold leading-tight">SCAN OUR QR <br /> TO ACCESS OUR INVENTORY</div>
-          <img src="/images/inventory-qr.png"
+          <img src="/images/qrcode.jpg"
             className="md:size-[200px] size-[40vw]"
             alt="GENERATIONAL qr code" />
         </div>
