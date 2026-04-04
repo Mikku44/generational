@@ -34,7 +34,7 @@ export function meta({ }: Route.MetaArgs) {
     },
     {
       name: "twitter:image",
-      content: "https://generational-eta.vercel.app/images/Porsche_911_3L.jpg",
+      content: "https://generational-eta.vercel.app/images/_25A0318.webp",
     },
   ];
 }
@@ -51,7 +51,7 @@ export default function Inventory() {
         {/* image */}
         <div className=" md:col-span-7">
           <div className="md:text-[65px] text-[48px] leading-tight -mt-4 font-semibold mb-2">INVENTORY</div>
-          <img src="/images/Porsche_911_3L.jpg" alt="3 classic car" />
+          <img src="/images/_25A0318.webp" alt="Classic Cars" />
         </div>
 
         {/* qr-code */}

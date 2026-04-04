@@ -78,16 +78,17 @@ export default function Ourteam() {
             </AnimatedSection>
             <div className="text-[20px] font-medium space-y-4">
               <AnimatedSection>
-                <div className="">GENERATIONAL was founded by Kajkanit “Gem” Sakdisubha — a lifelong
-                  car enthusiast and entrepreneur — together with a close group of friends
-                  who share his deep passion for classic automobiles.</div>
+                <div className="">GENERATIONAL was founded by “Pam”, Kajkanit “Gem” Sakdisubha,
+                  and Seth “Perth” — two generations of automotive enthusiasts united by
+                  a shared devotion to the world’s most significant classic automobiles.</div>
               </AnimatedSection>
               <AnimatedSection>
-                <div className="text-[20px] font-medium">Gem’s fascination with cars began at the age of six, behind the wheel of a
-                  red toy Countach he drove around his family’s vacation home in Khao Yai.
-                  Years later, while studying architecture in Milan and Bangkok, his
-                  appreciation for design matured — particularly the sculptural beauty
-                  found in automotive form. </div>
+                <div className="text-[20px] font-medium">
+                  Bring with them a full spectrum of experience, knowledge, and genuine passion for automobiles.
+                  <br />
+                  And as prominent members of Thailand’s most exclusive and intellectually engaged car clubs,
+                  they represent Thailand’s pinnacle collector community
+                </div>
               </AnimatedSection>
               {/* <AnimatedSection>
                 <div className="text-[20px] font-medium">Before founding GENERATIONAL, Gem launched a successful startup
@@ -103,10 +104,17 @@ export default function Ourteam() {
                 </div>
               </AnimatedSection> */}
               <AnimatedSection>
-                <div className="text-[20px] font-medium">GENERATIONAL is Gem’s magnum opus — a love letter to the beauty of
-                  automotive design, and his belief in cars not only as kinetic art, but as
-                  meaningful investments, emotional totems, and lifelong dreams made
-                  tangible
+                <div className="text-[20px] font-medium">
+                  Their personal collections and areas of expertise span
+                  an impressive range of marques:
+                  from Alfa Romeo, BMW, Ferrari,
+                  Lamborghini, Mercedes-Benz, and Porsche — to many other significant and storied names
+                </div>
+              </AnimatedSection>
+              <AnimatedSection>
+                <div className="text-[20px] font-medium">
+                  Together, their collective insight and appreciation for heritage and engineering form the foundation that makes
+                  GENERATIONAL a truly versatile and well-rounded presence across all corners of Thailand’s car culture
                 </div>
               </AnimatedSection>
 

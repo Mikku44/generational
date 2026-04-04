@@ -51,7 +51,7 @@ export default function OurService() {
   });
 
   // scale from 1 to 1.1
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.3]);
+  const scale = useTransform(scrollYProgress, [-0.2, 1], [0.92, 1.3]);
 
 
   const steps = [
@@ -130,8 +130,8 @@ export default function OurService() {
           <motion.img
             ref={ref}
             style={{ scale }}
-            src="/images/Lamborghini_Diablo.jpg"
-            alt="pink car generational"
+            src="/images/GRS01247.webp"
+            alt="red car generational"
             className="w-full h-full object-cover"
           />
         </div>
@@ -212,7 +212,7 @@ export default function OurService() {
         </div>
         {/* IMAGE */}
         <ImageBox
-          src="/images/Porsche_964_RS.jpg"
+          src="/images/GRS01060.webp"
           className="mt-14 col-span-2 h-[680px]"
         />
         {/* DOMESTIC TRANSFERS + FROR */}
