@@ -123,7 +123,7 @@ export default function Ourteam() {
 
           </div>
 
-
+{/* 
           <div className="mt-14 md:col-span-7"></div>
           <div className="mt-14  md:col-span-5">
             <AnimatedSection>
@@ -155,7 +155,7 @@ export default function Ourteam() {
 
 
             </div>
-          </div>
+          </div> */}
 
 
           <div className="md:mt-14  md:col-span-7"></div>
