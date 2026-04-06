@@ -78,52 +78,86 @@ export default function Ourteam() {
             </AnimatedSection>
             <div className="text-[20px] font-medium space-y-4">
               <AnimatedSection>
-                <div className="">GENERATIONAL was founded by “Pam”, Kajkanit “Gem” Sakdisubha,
-                  and Seth “Perth” — two generations of automotive enthusiasts united by
+                <div className="">GENERATIONAL was founded by Akkaporn “Pam” Vichitranon, Kajkanit “Gem” Sakdisubha,
+                  and Seth “Perth” Sethaputra — two generations of automotive enthusiasts united by
                   a shared devotion to the world’s most significant classic automobiles.</div>
               </AnimatedSection>
               <AnimatedSection>
-                <div className="text-[20px] font-medium">
-                  Bring with them a full spectrum of experience, knowledge, and genuine passion for automobiles.
-                  <br />
-                  And as prominent members of Thailand’s most exclusive and intellectually engaged car clubs,
-                  they represent Thailand’s pinnacle collector community
+                <div className="text-[20px] font-medium space-y-4">
+                  <p className="font-semibold ">About Akkaporn</p>
+
+                  <p>
+                    A Chulalongkorn and Harvard-trained lawyer, and a serving committee member of the Classic Car Association of Thailand,
+                    Akkaporn brings a rare breadth of legal, commercial, and collector expertise to GENERATIONAL.
+                  </p>
+                  <p>As a deeply respected figure within Thailand’s classic car community,
+                    his real-world experience and intimate knowledge of some of the world’s most significant marques — including Porsche, Ferrari,
+                    and Aston Martin — have long inspired fellow enthusiasts and collectors across the country.</p>
+
+                  <p>His distinctly curatorial approach places profound importance on provenance and the historical narrative of each automobile — values that remain relatively new,
+                    yet increasingly vital,
+                    within Thailand’s evolving collector landscape.</p>
                 </div>
               </AnimatedSection>
-              {/* <AnimatedSection>
-                <div className="text-[20px] font-medium">Before founding GENERATIONAL, Gem launched a successful startup
-                  and co-founded a professional association, serving as both CEO and
-                  President. These years of building, leading, and creating laid the
-                  foundation for what would become his most personal venture.</div>
-              </AnimatedSection>
+
               <AnimatedSection>
-                <div className="text-[20px] font-medium">At what he calls the “ripe moment” — with enough experience behind him
-                  and encouragement from the people around him — Gem set out to bring
-                  his long-held dream to life: a company devoted to timeless machines,
-                  worthy of being passed down through generations. Thus, the name was born.
-                </div>
-              </AnimatedSection> */}
-              <AnimatedSection>
-                <div className="text-[20px] font-medium">
-                  Their personal collections and areas of expertise span
-                  an impressive range of marques:
-                  from Alfa Romeo, BMW, Ferrari,
-                  Lamborghini, Mercedes-Benz, and Porsche — to many other significant and storied names
+                <div className="text-[20px] font-medium space-y-4">
+                  <p className="font-semibold ">About Kajkanit</p>
+
+                  <p>
+                    The driving force behind GENERATIONAL,
+                    Kajkanit is the originator of its vision and the catalyst who brought the founding team together.
+                  </p>
+
+                  <p>
+                    An architect by training, his lifelong appreciation for form, proportion,
+                    and aesthetic beauty has naturally extended from the world of buildings to the world of automobiles.
+                  </p>
+
+                  <p>
+                    His early years as Chief Executive Officer of a venture-backed startup, followed by his tenure as president of an industry association,
+                    helped shape the company-building mentality and philosophy that underpin GENERATIONAL today.
+                  </p>
+
+                  <p>
+                    Regarded as his magnum opus,
+                    GENERATIONAL reflects Kajkanit’s commitment to curating the world’s most beautiful and significant automobiles for Thailand’s most discerning collectors.
+                  </p>
                 </div>
               </AnimatedSection>
+
+
               <AnimatedSection>
-                <div className="text-[20px] font-medium">
-                  Together, their collective insight and appreciation for heritage and engineering form the foundation that makes
-                  GENERATIONAL a truly versatile and well-rounded presence across all corners of Thailand’s car culture
+                <div className="text-[20px] font-medium space-y-4">
+                  <p className="font-semibold ">About Seth</p>
+
+                  <p>
+                    Born into a family of classic car collectors,
+                    Seth’s passion for automobiles was shaped from an early age,
+                    nurtured by a lifelong immersion in the world of significant motor cars.
+                  </p>
+
+                  <p>
+                    Born into a family of classic car collectors,
+                    Seth’s passion for automobiles was shaped from an early age,
+                    nurtured by a lifelong immersion in the world of significant motor cars.
+                  </p>
+
+                  <p>
+                    Today, Seth plays a pivotal role in the stewardship of GENERATIONAL’s collection,
+                     bringing both operational discipline and an authentic collector’s sensibility to every automobile under our care.
+                  </p>
+
                 </div>
               </AnimatedSection>
+
 
             </div>
 
 
           </div>
 
-{/* 
+          {/* 
           <div className="mt-14 md:col-span-7"></div>
           <div className="mt-14  md:col-span-5">
             <AnimatedSection>
