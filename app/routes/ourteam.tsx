@@ -137,11 +137,7 @@ export default function Ourteam() {
                     nurtured by a lifelong immersion in the world of significant motor cars.
                   </p>
 
-                  <p>
-                    Born into a family of classic car collectors,
-                    Seth’s passion for automobiles was shaped from an early age,
-                    nurtured by a lifelong immersion in the world of significant motor cars.
-                  </p>
+                
 
                   <p>
                     Today, Seth plays a pivotal role in the stewardship of GENERATIONAL’s collection,
