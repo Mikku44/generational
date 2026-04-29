@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function Logo() {
+export default function Logo({className}: {className?: string}) {
   return (
     <motion.a
       initial={{ opacity: 1,  y: 20 }}
@@ -13,7 +13,7 @@ export default function Logo() {
     >
       <img
         src="/logo/generational.svg"
-        className="w-full"
+        className={"w-full " + className}
         alt="GENERATIONAL FULL TEXT"
       />
     </motion.a>

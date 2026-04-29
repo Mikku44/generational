@@ -8,7 +8,7 @@ export default function Navbar() {
    const isHomePage = location.pathname === "/";
   return (
     <nav className={` fixed
-      bottom-0 w-full py-3 md:px-10 px-5 z-[15] ${isHomePage ? "" : "bg-white"}`}>
+      bottom-0 w-full py-3 md:px-10 px-5 z-[15] ${isHomePage ? "invert" : "bg-white"}`}>
       <div className='lg:grid flex justify-between   grid-cols-12 gap-5 xl:items-end lg:items-end md:items-center items-end '>
         {isHomePage ?  <div className="md:text-[20px] text-[12px] col-span-7 font-semibold md:max-w-[70vw] w-full">
       

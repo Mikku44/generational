@@ -75,7 +75,7 @@ export default function Home() {
 
       <div className="fixed z-10 w-full">
         <div className="md:p-10 p-5  flex h-screen justify-between flex-col">
-          <Logo />
+          <Logo className="invert" />
         </div>
       </div>
       <main className="min-h-screen w-full ">
@@ -120,7 +120,6 @@ export default function Home() {
             loop
             muted
             webkit-playsinline 
-
             playsInline 
             className="h-full w-full object-cover"
           />
