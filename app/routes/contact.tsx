@@ -88,14 +88,21 @@ export default function Contact() {
         <div className="md:mt-0 mt-16 md:col-span-5">
           <div className="text-[26px] -mt-3 font-bold">TALK TO GENERATIONAL</div>
           <div className="grid text-[18px] leading-6 font-semibold mt-5 md:grid-cols-3 gap-2">
-            <div className="title break-words">MOBILE & WHATSAPP </div>
+            <div className="title break-words">MOBILE</div>
             <div className="grid md:col-span-2">
               <a href="tel:+66891991191"
                 target="_blank"
                 className="value break-words hover:opacity-60 md:font-semibold font-normal">+66 919 911 911</a>
-              <a href="tel:+66851661256"
+
+            </div>
+
+
+            <div className="title break-words">WHATSAPP </div>
+            <div className="grid md:col-span-2">
+              <a href="https://wa.me/66851661256"
                 target="_blank"
                 className="value break-words hover:opacity-60 md:font-semibold font-normal">+66 851 661 256</a>
+
             </div>
 
 
