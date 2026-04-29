@@ -54,9 +54,9 @@ export default function Ourteam() {
         {/*  */}
         <div className="grid md:grid-cols-12 gap-5">
           <div className="md:col-span-7 w-full lg:max-h-[490px]">
-            <div className="w-full h-[800px] overflow-hidden flex items-end">
+            <div className="w-full h-auto overflow-hidden flex items-end">
               <video
-                src="/videos/founder.mp4"
+                src="/videos/9_16.mp4"
                 preload="true"
                 autoPlay
                 muted

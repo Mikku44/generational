@@ -22,7 +22,7 @@ export function meta({ }: Route.MetaArgs) {
     { property: "og:url", content: "https://generational-eta.vercel.app/curation-philosophy" },
     {
       property: "og:image",
-      content: "https://generational-eta.vercel.app/images/M1.jpg", // change image if needed
+      content: "https://generational-eta.vercel.app/images/nsx.jpg", // change image if needed
     },
 
     // — Twitter
@@ -35,7 +35,7 @@ export function meta({ }: Route.MetaArgs) {
     },
     {
       name: "twitter:image",
-      content: "https://generational-eta.vercel.app/images/M1.jpg",
+      content: "https://generational-eta.vercel.app/images/nsx.jpg",
     },
   ];
 }
@@ -54,7 +54,7 @@ export default function CurationPage() {
           <div className="md:text-[65px] text-[48px] leading-tight -mt-4 font-semibold mb-2">
             CURATION PHILOSOPHY
           </div>
-          <img src="/images/M1.jpg"
+          <img src="/images/nsx.jpg"
             alt="" className="w-full" />
         </div>
         {/* text */}

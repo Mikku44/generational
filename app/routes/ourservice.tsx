@@ -239,6 +239,11 @@ export default function OurService() {
             />
           </div>
         </div>
+
+         <ImageBox
+          src="/images/m3cs.jpg"
+          className="mt-14 col-span-2 h-[980px]"
+        />
       </div>
     </main>
   );

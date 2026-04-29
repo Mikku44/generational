@@ -80,7 +80,7 @@ export default function Home() {
       </div>
       <main className="min-h-screen w-full ">
         {/* image container */}
-        <div className="w-full h-screen lg:block hidden ">
+        {/* <div className="w-full h-screen lg:block hidden ">
           <AutoFadeImage
             // className="h-[100%]"
             images={["/images/Lamborghini_Countach_md.jpg",
@@ -101,6 +101,30 @@ export default function Home() {
 
             ]} interval={INTERVAL} />
 
+        </div> */}
+        {/* <div className="w-full h-screen ">
+          <AutoFadeImage
+            // className="h-[100%]"
+            images={[
+              "/videos/generational.webp",
+              
+
+            ]} interval={INTERVAL} />
+
+        </div>  */}
+
+        <div className="absolute inset-0 left-0 top-0 h-screen w-full overflow-hidden">
+          <video
+            src="/videos/generational.mp4"
+            autoPlay
+            loop
+            muted
+            webkit-playsinline 
+
+            playsInline 
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/20" />
         </div>
 
 

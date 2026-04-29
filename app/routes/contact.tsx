@@ -73,14 +73,14 @@ export default function Contact() {
         <div className="md:col-span-7  md:text-[65px] text-[48px] md:leading-tight -mt-4 font-semibold -mb-4">CONTACT</div>
         <div className="md:block hidden"></div>
 
-        <div className="md:col-span-7 w-full h-full">
+        <div className="md:col-span-7 w-full h-full md:text-base text-[clamp(10px,0.575rem+0.25vw,12px)]">
           <div className="md:max-h-[640px] overflow-hidden h-full ">
             <img src="/images/GRS00991.webp" className="w-full h-full object-cover" alt="3 classic car" />
           </div>
           <div className="lg:flex justify-end w-full mt-1 text-[#7C7C7C]">
             PHOTO CREDITS AND COPYRIGHT BELONG TO
-            <a href="https://roman-raetzke.de/" target="_blank" className="ml-1 hover:underline">ROMAN RÄTZKE</a>
-            <span className="pl-1"> AND GENERATIONAL</span>
+            {/* <a href="https://roman-raetzke.de/" target="_blank" className="ml-1 hover:underline">ROMAN RÄTZKE</a> */}
+            <span className="pl-1"> GENERATIONAL</span>
           </div>
         </div>
 
@@ -89,32 +89,37 @@ export default function Contact() {
           <div className="text-[26px] -mt-3 font-bold">TALK TO GENERATIONAL</div>
           <div className="grid text-[18px] leading-6 font-semibold mt-5 md:grid-cols-3 gap-2">
             <div className="title break-words">MOBILE & WHATSAPP </div>
-            <a href="tel:+66891991191"
-              target="_blank"
-              className="value break-words md:col-span-2 md:font-semibold font-normal">+66 919 911 911</a>
+            <div className="grid md:col-span-2">
+              <a href="tel:+66891991191"
+                target="_blank"
+                className="value break-words hover:opacity-60 md:font-semibold font-normal">+66 919 911 911</a>
+              <a href="tel:+66851661256"
+                target="_blank"
+                className="value break-words hover:opacity-60 md:font-semibold font-normal">+66 851 661 256</a>
+            </div>
 
 
             <div className="title break-words">MOBILE (UNITED KINGDOM) </div>
             <a href="tel:+447500007008"
               target="_blank"
-              className="value break-words md:col-span-2 md:font-semibold font-normal">+44 7500 007 008</a>
+              className="value break-words hover:opacity-60 md:col-span-2 md:font-semibold font-normal">+44 7500 007 008</a>
 
             <div className="title break-words">EMAIL </div>
             <a
               href="mailto:HELLO@GENERATIONAL.CO.TH"
               target="_blank"
-              className="value break-words md:col-span-2 md:font-semibold font-normal">HELLO@GENERATIONAL.CO.TH</a>
+              className="value break-words hover:opacity-60 md:col-span-2 md:font-semibold font-normal">HELLO@GENERATIONAL.CO</a>
 
             <div className="title break-words">LINE ID </div>
             <a href="#"
               target="_blank"
-              className="value break-words md:col-span-2 md:font-semibold font-normal">@GENERATIONAL</a>
+              className="value break-words hover:opacity-60 md:col-span-2 md:font-semibold font-normal">@GENERATIONAL</a>
 
             <div className="title break-words">INSTAGRAM </div>
             <a
               href="https://www.instagram.com/drivegenerational/?utm_source=ig_web_button_share_sheet"
               target="_blank"
-              className="value break-words md:col-span-2 md:font-semibold font-normal">@DRIVEGENERATIONAL</a>
+              className="value break-words hover:opacity-60 md:col-span-2 md:font-semibold font-normal">@DRIVEGENERATIONAL</a>
           </div>
 
 

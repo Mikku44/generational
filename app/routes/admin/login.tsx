@@ -62,7 +62,7 @@ export default function AdminLogin() {
       {/* Left Side - Image */}
       <div className="hidden lg:flex lg:w-1/2 relative">
         <img
-          src="/images/M1.jpg"
+          src="/images/nsx.jpg"
           alt="Classic Car"
           className="w-full h-full object-cover"
         />
