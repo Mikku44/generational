@@ -115,7 +115,7 @@ export default function Home() {
 
         <div className="absolute inset-0 left-0 top-0 h-screen w-full overflow-hidden">
           <video
-            src="/videos/generational.mp4"
+            src="/videos/generational.webm"
             autoPlay
             loop
             muted
