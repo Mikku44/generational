@@ -130,7 +130,7 @@ export default function OurService() {
           <motion.img
             ref={ref}
             style={{ scale }}
-            src="/images/GRS01247.webp"
+            src="/images/red.webp"
             alt="red car generational"
             className="w-full h-full object-cover"
           />
@@ -163,7 +163,7 @@ export default function OurService() {
         </div>
         {/* SECTION 2: THE ACQUISITION JOURNEY */}
         <div className="grid md:grid-cols-12 gap-5 mt-28 container-x ">
-          <ImageBox  className="md:col-span-7 w-full md:h-[1280px] h-[720px]" src="/images/unnamed.jpg" />
+          <ImageBox className="md:col-span-7 w-full md:h-[1280px] h-[720px]" src="/images/unnamed.jpg" />
           <div className="space-y-6 md:col-span-5">
             <AnimatedSection>
               <h2 className="text-[26px] font-bold ">THE ACQUISITION JOURNEY</h2>
@@ -186,7 +186,16 @@ export default function OurService() {
                 ))}
               </motion.div>
             ))}
+
+
           </div>
+
+        </div>
+
+        {/* IMAGE */}
+        <div className="grid grid-cols-2 pt-10">
+          <img src="/images/red2.webp" alt="Ferrari" className="w-full h-full object-cover" />
+          <img src="/images/white.webp" alt="Honda" className="w-full h-full object-cover" />
         </div>
         {/* SECTION 3: SELLING BACK TO THE WORLD */}
         <div className="container-x">
@@ -240,8 +249,8 @@ export default function OurService() {
           </div>
         </div>
 
-         <ImageBox
-          src="/images/m3cs.jpg"
+        <ImageBox
+          src="/images/blue.webp"
           className="mt-14 col-span-2 h-[980px]"
         />
       </div>

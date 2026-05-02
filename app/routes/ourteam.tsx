@@ -137,11 +137,11 @@ export default function Ourteam() {
                     nurtured by a lifelong immersion in the world of significant motor cars.
                   </p>
 
-                
+
 
                   <p>
                     Today, Seth plays a pivotal role in the stewardship of GENERATIONAL’s collection,
-                     bringing both operational discipline and an authentic collector’s sensibility to every automobile under our care.
+                    bringing both operational discipline and an authentic collector’s sensibility to every automobile under our care.
                   </p>
 
                 </div>
@@ -191,9 +191,24 @@ export default function Ourteam() {
           <div className="md:mt-14  md:col-span-7"></div>
           <div className="md:mt-14 md:col-span-5"></div>
 
-          <div className="md:col-span-7">
+          {/* <div className="md:col-span-7">
             <img src="/images/ourteam-map.png"
               alt="" />
+          </div> */}
+
+          <div className="w-full h-auto bg-black md:col-span-7 overflow-hidden flex items-end">
+            <video
+              src="/videos/ourteam.mov"
+              preload="true"
+              autoPlay
+              muted
+              loop
+              playsInline
+              webkit-playsinline="true"
+              className="w-full h-full object-cover"
+            />
+
+
           </div>
 
           <div className="md:col-span-5">

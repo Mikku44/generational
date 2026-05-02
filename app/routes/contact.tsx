@@ -74,8 +74,8 @@ export default function Contact() {
         <div className="md:block hidden"></div>
 
         <div className="md:col-span-7 w-full h-full md:text-base text-[clamp(10px,0.575rem+0.25vw,12px)]">
-          <div className="md:max-h-[640px] overflow-hidden h-full ">
-            <img src="/images/GRS00991.webp" className="w-full h-full object-cover" alt="3 classic car" />
+          <div className="md:max-h-[780px] overflow-hidden h-full flex bg-black ">
+            <img src="/images/GRS00991.webp" className="w-full h-full object-cover object-[50%_30%]" alt="3 classic car" />
           </div>
           <div className="lg:flex justify-end w-full mt-1 text-[#7C7C7C]">
             PHOTO CREDITS AND COPYRIGHT BELONG TO
