@@ -47,25 +47,25 @@ export default function Inventory() {
         <Logo />
       </div>
 
-      <div className="grid container-x md:grid-cols-12 justify-items-center justify-center
+      {/* <div className="grid container-x md:grid-cols-12 justify-items-center justify-center
        items-center gap-5 md:mt-[220px]  mt-[200px] mb-20">
-        {/* image */}
+       
         <div className=" md:col-span-7">
           <div className="md:text-[65px] text-[48px] leading-tight -mt-4 font-semibold mb-2">INVENTORY</div>
           <img src="/images/inventory.jpg" alt="Classic Cars" />
         </div>
 
-        {/* qr-code */}
+      
         <div className="flex md:col-span-5 items-center justify-center gap-5 flex-col">
           <div className=" text-center text-[20px] font-semibold leading-tight">SCAN OUR QR <br /> TO ACCESS OUR INVENTORY</div>
           <img src="/images/qrcode.jpg"
             className="md:size-[200px] size-[40vw]"
             alt="GENERATIONAL qr code" />
         </div>
-      </div>
+      </div> */}
 
       {/* INVENTORY CARDS */}
-      <div className="container-x grid md:gap-24 gap-10">
+      <div className="container-x grid md:gap-24 gap-10 md:mt-[220px]  mt-[200px]">
         {[1].map((item,index)=><InventoryCard 
         key={index}
         index={index}

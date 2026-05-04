@@ -31,34 +31,23 @@ export default function InventoryCard({ index, item }: InventoryCardProps) {
     };
 
     const fullDescription = `
-Ferrari F355 Berlinetta 
+Ferrari 348 TB
 
-* Gated Manual 
-* Rosso Corsa over Nero 
-* Factory carbon fiber bucket seats — believed to have been specified on fewer than 4% of total F355 production 
-* Period-correct BBS Iding Power 19” wheels 
-* Desirable early three-spoke non-airbag steering wheel 
-* Early Bosch Motronic 2.7, OBDI car with sharper throttle response and a more aggressive exhaust note 
-* Odometer: 38,483 kilometers 
+* Rosso Corsa over Tan 
+* Full matching numbers 
+* Odometer: 36,673 Miles 
 * Authorized dealer car 
 
-The F355 Berlinetta remains one of Maranello’s purest expressions of the analog era — a car defined by the perfect balance between purity and practicality. 
+The Ferrari 348 TB stands as one of the final truly raw expressions in Maranello’s V8 lineage — the last V8 sign-off by Enzo Ferrari and the last of the dog-leg gated shifter. All amazing traits before refinement began to take center stage in her younger sister, F355.
 
-Equipped with one of the most tactile open-gate manual transmissions ever fitted to a road car, along with a flat-plane V8 that screams a high pitch F1-style exhaust note to her redline at 8500 rpm. 
+Retaining the mechanical spirit and intimacy of the earlier Ferraris, the 348 introduced a new level of performance and design language that unmistakably echoed the icon of the 1980s — the Testarossa.
 
-What makes this particular example truly special is her specification — unquestionably one of the highest-specced F355s in Thailand, and in the World. 
+Enhanced by a monocoque chassis and Ferrari’s Formula 1-inspired longitudinal flat-plane V8, paired with a transverse gearbox — the very architecture that gave the model her TB (Trasversale Berlinetta) designation and her unmistakable roar — the 348 marked the beginning of a new technical chapter for Maranello’s mid-engined V8 cars.
 
-**Gated manual.**  
-**Carbon bucket seats.**  
-**Motronic 2.7.**  
-**Three-spoke steering wheel.**
-
-Every box ticked — exactly as Ferrari collectors would want.
-
-The perfectly specced car from the perfect analog model.
+The Tipo F119, with her sharper wedge profile, signature ’80s side strakes, and wider stance signaled the arrival of a more modern supercar identity, while never abandoning the rawness that defined Ferrari’s golden analog era. 
 
 **GENERATIONAL proudly presents**  
-**Ferrari F355 Berlinetta — The Perfection**  
+**Ferrari 348 TB — The Rebellion**  
 *From our Analog Ferrari Collection*`;
 
     return (
@@ -67,7 +56,7 @@ The perfectly specced car from the perfect analog model.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid md:grid-cols-12 gap-4 py-8 border-b border-white/10"
+            className="grid md:grid-cols-12 gap-4 pb-8 border-b border-white/10"
         >
             {/* DESKTOP HEADER */}
             <div className="md:block hidden">
@@ -86,7 +75,7 @@ The perfectly specced car from the perfect analog model.
 
             {/* IMAGE CAROUSEL */}
             <div className="md:col-span-6 group relative overflow-hidden bg-neutral-900">
-                <div className="bg-black px-4 w-fit py-2 text-white absolute z-10 m-2 text-sm">SOLD</div>
+                <div className="bg-black px-4 w-fit py-2 text-white absolute z-10 m-2 text-sm">Available</div>
                 <div className="overflow-hidden h-full" ref={emblaRef}>
                     <div className="flex h-full ">
                         {/* Replace with item.images if available in your model */}
@@ -120,7 +109,7 @@ The perfectly specced car from the perfect analog model.
 
             {/* DETAIL PART (Kept exactly as your old design) */}
             <div className="md:col-span-3 flex flex-col justify-between">
-                <div className="md:text-5xl text-2xl font-[600]">Ferrari F355 Berlinetta</div>
+                <div className="md:text-5xl text-2xl font-[600]">Ferrari 348 TB</div>
 
                 <div className="relative">
                     <Remark >
@@ -165,7 +154,7 @@ The perfectly specced car from the perfect analog model.
                             <div className="space-y-8">
                                 {/* Badge */}
                                 <div className="text-sm tracking-[0.3em] uppercase text-white bg-black w-fit px-4 py-2 font-bold">
-                                    {"SOLD"}
+                                    {"Available"}
                                 </div>
 
                                 {/* Title */}
