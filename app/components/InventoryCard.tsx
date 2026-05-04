@@ -79,7 +79,7 @@ The Tipo F119, with her sharper wedge profile, signature ’80s side strakes, an
                 <div className="overflow-hidden h-full" ref={emblaRef}>
                     <div className="flex h-full ">
                         {/* Replace with item.images if available in your model */}
-                        {["1.jpg", "2.jpg", "3.jpg"].map((src, i) => (
+                        {["1.jpg", "2.jpg", "3.jpg","4.jpg","5.jpg","6.jpg"].map((src, i) => (
                             <div key={i} className="flex-[0_0_100%] min-w-0 relative">
                                 <img
                                     src={`/inventory/ferrari/${src}`}
