@@ -159,7 +159,7 @@ The Tipo F119, with her sharper wedge profile, signature ’80s side strakes, an
 
                                 {/* Title */}
                                 <h2 className="text-4xl md:text-6xl font-bold uppercase leading-none">
-                                    {"Ferrari F355 Berlinetta"}
+                                    {"Ferrari 348 TB"}
                                 </h2>
 
                                 {/* Markdown Content */}
