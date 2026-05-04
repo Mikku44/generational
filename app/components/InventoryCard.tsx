@@ -94,7 +94,7 @@ The perfectly specced car from the perfect analog model.
                             <div key={i} className="flex-[0_0_100%] min-w-0 relative">
                                 <img
                                     src={`/inventory/ferrari/${src}`}
-                                    className="aspect-[9/16] object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                                    className="aspect-auto object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                                 //   alt={`${item.name} - image ${i}`}
                                 />
                             </div>
