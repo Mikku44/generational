@@ -5,21 +5,18 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { Remark } from "react-remark";
 import { useCallback, useState } from "react";
 
-
-
 interface InventoryCardProps {
     index: number;
     item: Inventory;
 }
 
-
-
 export default function InventoryCard({ index, item }: InventoryCardProps) {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+    const [isOpen, setIsOpen] = useState(false);
 
     const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
     const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
-    const [isOpen, setIsOpen] = useState(false);
+
     // Animation variants
     const containerVariants = {
         hidden: { opacity: 0, y: 20 },
@@ -30,25 +27,10 @@ export default function InventoryCard({ index, item }: InventoryCardProps) {
         }
     };
 
-    const fullDescription = `
-Ferrari 348 TB
-
-* Rosso Corsa over Tan 
-* Full matching numbers 
-* Odometer: 36,673 Miles 
-* Authorized dealer car 
-
-The Ferrari 348 TB stands as one of the final truly raw expressions in Maranello’s V8 lineage — the last V8 sign-off by Enzo Ferrari and the last of the dog-leg gated shifter. All amazing traits before refinement began to take center stage in her younger sister, F355.
-
-Retaining the mechanical spirit and intimacy of the earlier Ferraris, the 348 introduced a new level of performance and design language that unmistakably echoed the icon of the 1980s — the Testarossa.
-
-Enhanced by a monocoque chassis and Ferrari’s Formula 1-inspired longitudinal flat-plane V8, paired with a transverse gearbox — the very architecture that gave the model her TB (Trasversale Berlinetta) designation and her unmistakable roar — the 348 marked the beginning of a new technical chapter for Maranello’s mid-engined V8 cars.
-
-The Tipo F119, with her sharper wedge profile, signature ’80s side strakes, and wider stance signaled the arrival of a more modern supercar identity, while never abandoning the rawness that defined Ferrari’s golden analog era. 
-
-**GENERATIONAL proudly presents**  
-**Ferrari 348 TB — The Rebellion**  
-*From our Analog Ferrari Collection*`;
+    // Helper to strip markdown for the short preview (prevents broken syntax)
+    const getPreviewText = (text: string) => {
+        return text.replace(/[#*`]/g, "").slice(0, 100) + "...";
+    };
 
     return (
         <motion.div
@@ -75,16 +57,17 @@ The Tipo F119, with her sharper wedge profile, signature ’80s side strakes, an
 
             {/* IMAGE CAROUSEL */}
             <div className="md:col-span-6 group relative overflow-hidden bg-neutral-900">
-                <div className="bg-black px-4 w-fit py-2 text-white absolute z-10 m-2 text-sm">Available</div>
+                <div className="bg-black px-4 w-fit py-2 text-white absolute z-10 m-2 text-sm uppercase tracking-wider font-bold">
+                    {item.status}
+                </div>
                 <div className="overflow-hidden h-full" ref={emblaRef}>
-                    <div className="flex h-full ">
-                        {/* Replace with item.images if available in your model */}
-                        {["1.jpg", "2.jpg", "3.jpg","4.jpg","5.jpg","6.jpg"].map((src, i) => (
+                    <div className="flex h-full">
+                        {item.images.map((src, i) => (
                             <div key={i} className="flex-[0_0_100%] min-w-0 relative">
                                 <img
-                                    src={`/inventory/ferrari/${src}`}
+                                    src={src}
+                                    alt={`${item.name} - view ${i + 1}`}
                                     className="aspect-auto object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-                                //   alt={`${item.name} - image ${i}`}
                                 />
                             </div>
                         ))}
@@ -92,39 +75,43 @@ The Tipo F119, with her sharper wedge profile, signature ’80s side strakes, an
                 </div>
 
                 {/* Carousel Controls */}
-                <button
-                    onClick={scrollPrev}
-                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-                >
-                    <ChevronLeft className="size-5 text-white" />
-                </button>
-                <button
-                    onClick={scrollNext}
-                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-                >
-                    <ChevronRight className="size-5 text-white" />
-                </button>
+                {item.images.length > 1 && (
+                    <>
+                        <button
+                            onClick={scrollPrev}
+                            className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-20"
+                        >
+                            <ChevronLeft className="size-5 text-white" />
+                        </button>
+                        <button
+                            onClick={scrollNext}
+                            className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-20"
+                        >
+                            <ChevronRight className="size-5 text-white" />
+                        </button>
+                    </>
+                )}
             </div>
 
-
-            {/* DETAIL PART (Kept exactly as your old design) */}
+            {/* DETAIL PART */}
             <div className="md:col-span-3 flex flex-col justify-between">
-                <div className="md:text-5xl text-2xl font-[600]">Ferrari 348 TB</div>
+                <div className="md:text-5xl text-2xl font-[600] leading-tight">
+                    {item.name}
+                </div>
 
-                <div className="relative">
-                    <Remark >
-                        {fullDescription.slice(0, 100) + "..."}
-                    </Remark>
+                <div className="relative mt-4">
+                    <p className="font-medium">
+                        {getPreviewText(item.description)}
+                    </p>
                     <button
                         onClick={() => setIsOpen(true)}
-                        className="text-xs uppercase tracking-widest font-bold mt-2 hover:opacity-90 transition-colors cursor-pointer"
+                        className="text-xs uppercase tracking-widest font-bold hover:opacity-70 transition-opacity cursor-pointer block"
                     >
                         See More
                     </button>
                 </div>
-
-
             </div>
+
             {/* MODAL */}
             <AnimatePresence>
                 {isOpen && (
@@ -132,15 +119,13 @@ The Tipo F119, with her sharper wedge profile, signature ’80s side strakes, an
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        // 1. Trigger close when clicking this backdrop
                         onClick={() => setIsOpen(false)}
-                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 md:p-10 cursor-pointer"
+                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4 md:p-10 cursor-pointer"
                     >
                         <motion.div
                             initial={{ scale: 0.95, opacity: 0, y: 20 }}
                             animate={{ scale: 1, opacity: 1, y: 0 }}
                             exit={{ scale: 0.95, opacity: 0, y: 20 }}
-                            // 2. Prevent the click from "bubbling up" to the backdrop
                             onClick={(e) => e.stopPropagation()}
                             className="bg-white w-full max-w-4xl max-h-[90vh] overflow-y-auto relative p-8 md:p-16 text-black cursor-default"
                         >
@@ -152,30 +137,28 @@ The Tipo F119, with her sharper wedge profile, signature ’80s side strakes, an
                             </button>
 
                             <div className="space-y-8">
-                                {/* Badge */}
                                 <div className="text-sm tracking-[0.3em] uppercase text-white bg-black w-fit px-4 py-2 font-bold">
-                                    {"Available"}
+                                    {item.status}
                                 </div>
 
-                                {/* Title */}
                                 <h2 className="text-4xl md:text-6xl font-bold uppercase leading-none">
-                                    {"Ferrari 348 TB"}
+                                    {item.name}
                                 </h2>
 
-                                {/* Markdown Content */}
-                                <div className="prose prose-lg max-w-none prose-p:leading-relaxed prose-p:mb-4 prose-strong:font-bold">
+                                <div className="prose prose-lg max-w-none">
                                     <Remark
                                         remarkParseOptions={{ commonmark: true }}
                                         rehypeReactOptions={{
                                             components: {
-                                                p: (props) => <p className="text-lg font-light mb-6" {...props} />,
+                                                p: (props) => <p className="text-lg font-light mb-6 leading-relaxed" {...props} />,
                                                 ul: (props) => <ul className="list-disc pl-5 mb-6 space-y-2 font-light" {...props} />,
                                                 li: (props) => <li className="text-lg" {...props} />,
-                                                h3: (props) => <h3 className="text-2xl font-bold uppercase mt-8 mb-4" {...props} />,
+                                                h3: (props) => <h3 className="text-2xl font-bold uppercase mt-12 mb-4 border-b border-black/10 pb-2" {...props} />,
+                                                strong: (props) => <strong className="font-bold" {...props} />,
                                             }
                                         }}
                                     >
-                                        {fullDescription}
+                                        {item.description}
                                     </Remark>
                                 </div>
                             </div>

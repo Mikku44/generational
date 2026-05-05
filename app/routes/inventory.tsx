@@ -1,6 +1,7 @@
 import Logo from "~/components/logo";
 import type { Route } from "./+types/inventory";
 import InventoryCard from "~/components/InventoryCard";
+import { inventoryData } from "~/data/InventoryRepo";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -66,10 +67,10 @@ export default function Inventory() {
 
       {/* INVENTORY CARDS */}
       <div className="container-x grid md:gap-24 gap-10 md:mt-[220px]  mt-[200px]">
-        {[1].map((item,index)=><InventoryCard 
+        {inventoryData.map((item,index)=><InventoryCard 
         key={index}
         index={index}
-        item={undefined as any}  />)}
+        item={item}  />)}
       </div>
 
     </main>
