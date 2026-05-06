@@ -13,7 +13,10 @@ export const inventoryData: Inventory[] = [
             "/inventory/ferrari/3.jpg",
             "/inventory/ferrari/4.jpg",
             "/inventory/ferrari/5.jpg",
-            "/inventory/ferrari/6.jpg"
+            "/inventory/ferrari/6.jpg",
+            "/inventory/ferrari/7.jpg",
+            "/inventory/ferrari/8.jpg",
+            "/inventory/ferrari/9.jpg",
         ]
     },
     {
