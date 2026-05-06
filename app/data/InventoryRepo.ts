@@ -16,7 +16,25 @@ export const inventoryData: Inventory[] = [
             "/inventory/ferrari/6.jpg"
         ]
     },
-   {
+    {
+        "id": "ferrari-f355-berlinetta-02",
+        "name": "Ferrari F355 Berlinetta",
+        "status": "Available",
+        "description": "### Ferrari F355 Berlinetta\n\n* **Gated Manual**\n* Rosso Corsa over Nero\n* Factory carbon fiber bucket seats — believed to have been specified on fewer than 4% of total F355 production\n* Period-correct BBS Iding Power 19” wheels\n* Desirable early three-spoke non-airbag steering wheel\n* Early Bosch Motronic 2.7, OBDI car with sharper throttle response and a more aggressive exhaust note\n* Odometer: 38,483 kilometers\n* Authorized dealer car\n\nThe F355 Berlinetta remains one of Maranello’s purest expressions of the analog era — a car defined by the perfect balance between purity and practicality.\n\nEquipped with one of the most tactile open-gate manual transmissions ever fitted to a road car, along with a flat-plane V8 that screams a high pitch F1-style exhaust note to her redline at 8500 rpm.\n\nWhat makes this particular example truly special is her specification — unquestionably one of the highest-specced F355s in Thailand, and in the World.\n\n**Gated manual.**\n**Carbon bucket seats.**\n**Motronic 2.7.**\n**Three-spoke steering wheel.**\n\nEvery box ticked — exactly as Ferrari collectors would want.\n\nThe perfectly specced car from the perfect analog model.\n\n**GENERATIONAL proudly presents**\n**Ferrari F355 Berlinetta — The Perfection**\n*From our Analog Ferrari Collection*",
+        "images": [
+            "/inventory/ferrari_f355/1.jpg",
+            "/inventory/ferrari_f355/2.jpg",
+            "/inventory/ferrari_f355/3.jpg",
+            "/inventory/ferrari_f355/4.jpg",
+            "/inventory/ferrari_f355/5.jpg",
+            "/inventory/ferrari_f355/6.jpg",
+            "/inventory/ferrari_f355/7.jpg",
+            "/inventory/ferrari_f355/8.jpg",
+            "/inventory/ferrari_f355/9.jpg",
+            "/inventory/ferrari_f355/10.jpg",
+        ]
+    },
+    {
         "id": "bmw-m3-cs-interlagos-01",
         "name": "BMW M3 CS",
         "status": "Available",
