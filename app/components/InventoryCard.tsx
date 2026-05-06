@@ -120,7 +120,7 @@ export default function InventoryCard({ index, item }: InventoryCardProps) {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         onClick={() => setIsOpen(false)}
-                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4 md:p-10 cursor-pointer"
+                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 md:p-10 cursor-pointer"
                     >
                         <motion.div
                             initial={{ scale: 0.95, opacity: 0, y: 20 }}
