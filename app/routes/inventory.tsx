@@ -23,7 +23,7 @@ export function meta({ }: Route.MetaArgs) {
     { property: "og:url", content: "https://generational-eta.vercel.app/inventory" },
     {
       property: "og:image",
-      content: "https://generational-eta.vercel.app/inventory/bmw_m3_cs/1.jpg", // update if you have one
+      content: "https://generational-eta.vercel.app/images/inventory.jpg", // update if you have one
     },
 
     // — Twitter
@@ -36,7 +36,7 @@ export function meta({ }: Route.MetaArgs) {
     },
     {
       name: "twitter:image",
-      content: "https://generational-eta.vercel.app/inventory/bmw_m3_cs/1.jpg",
+      content: "https://generational-eta.vercel.app/images/inventory.jpg",
     },
   ];
 }
