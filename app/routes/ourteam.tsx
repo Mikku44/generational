@@ -146,6 +146,27 @@ export default function Ourteam() {
 
                 </div>
               </AnimatedSection>
+              <AnimatedSection>
+                <div className="text-[20px] font-medium space-y-4">
+                  <p className="font-semibold ">Our Angels</p>
+
+                  <p>
+                   GENERATIONAL is proudly supported and co-owned by a select group of angel investors — respected collectors whose personal networks and collections span across the worlds of Lamborghini, McLaren, and BMW.
+                  </p>
+
+
+
+                  <p>
+                    Through their longstanding presence within Thailand’s most established owners’ circles, they extend GENERATIONAL’s reach deep into the country’s collector community — opening doors to rare automobiles, private collections, and relationships built over decades of trust and shared passion.
+                  </p>
+
+
+                  <p>
+                   heir support not only strengthens our access to exceptional cars, but further reinforces GENERATIONAL’s position within the upper echelon of Thailand’s automotive culture.
+                  </p>
+
+                </div>
+              </AnimatedSection>
 
 
             </div>
