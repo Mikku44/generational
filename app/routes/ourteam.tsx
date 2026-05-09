@@ -20,10 +20,10 @@ export function meta({ }: Route.MetaArgs) {
         "Get to know the GENERATIONAL team — experts committed to sourcing and preserving Thailand’s most historically significant classic automobiles.",
     },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://generational-eta.vercel.app/ourteam" },
+    { property: "og:url", content: "https://generational.co/ourteam" },
     {
       property: "og:image",
-      content: "https://generational-eta.vercel.app/images/Lamborghini_Diablo.jpg", // replace with your team image
+      content: "https://generational.co/images/Lamborghini_Diablo.jpg", // replace with your team image
     },
 
     // — Twitter
@@ -36,7 +36,7 @@ export function meta({ }: Route.MetaArgs) {
     },
     {
       name: "twitter:image",
-      content: "https://generational-eta.vercel.app/images/Lamborghini_Diablo.jpg",
+      content: "https://generational.co/images/Lamborghini_Diablo.jpg",
     },
   ];
 }
@@ -162,7 +162,7 @@ export default function Ourteam() {
 
 
                   <p>
-                   heir support not only strengthens our access to exceptional cars, but further reinforces GENERATIONAL’s position within the upper echelon of Thailand’s automotive culture.
+                   Their support not only strengthens our access to exceptional cars, but further reinforces GENERATIONAL’s position within the upper echelon of Thailand’s automotive culture.
                   </p>
 
                 </div>
@@ -212,10 +212,7 @@ export default function Ourteam() {
           <div className="md:mt-14  md:col-span-7"></div>
           <div className="md:mt-14 md:col-span-5"></div>
 
-          {/* <div className="md:col-span-7">
-            <img src="/images/ourteam-map.png"
-              alt="" />
-          </div> */}
+          
 
           <div className="w-full h-auto bg-black md:col-span-7 overflow-hidden flex items-end">
             <video
@@ -262,6 +259,10 @@ export default function Ourteam() {
             </div>
           </div>
 
+            <div className="md:col-span-7">
+            <img src="/images/ourteam-map.png"
+              alt="" />
+          </div>
 
         </div>
       </section>

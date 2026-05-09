@@ -22,10 +22,10 @@ export function meta({ }: Route.MetaArgs) {
         "Purveyor of the most beautiful, culturally significant classic automobiles in Thailand.",
     },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://generational-eta.vercel.app" },
+    { property: "og:url", content: "https://generational.co" },
     {
       property: "og:image",
-      content: "https://generational-eta.vercel.app/images/Lamborghini_Countach_md.jpg", // ← change to your actual image
+      content: "https://generational.co/images/red2.webp", // ← change to your actual image
     },
 
     // — Twitter Card
@@ -38,12 +38,12 @@ export function meta({ }: Route.MetaArgs) {
     },
     {
       name: "twitter:image",
-      content: "https://generational-eta.vercel.app/images/Lamborghini_Countach_md.jpg", // ← same or different image is okay
+      content: "https://generational.co/images/red2.webp", // ← same or different image is okay
     },
   ];
 }
 
-// https://generational-eta.vercel.app/images/Lamborghini_Countach_md.jpg
+// https://generational.co/images/Lamborghini_Countach_md.jpg
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);

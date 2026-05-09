@@ -19,10 +19,10 @@ export function meta({ }: Route.MetaArgs) {
         "Our approach to curation is grounded in the belief that classic cars are more than machines. They are design objects and ultimately -investments of passion.",
     },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://generational-eta.vercel.app/curation-philosophy" },
+    { property: "og:url", content: "https://generational.co/curation-philosophy" },
     {
       property: "og:image",
-      content: "https://generational-eta.vercel.app/images/nsx.jpg", // change image if needed
+      content: "https://generational.co/images/nsx.jpg", // change image if needed
     },
 
     // — Twitter
@@ -35,7 +35,7 @@ export function meta({ }: Route.MetaArgs) {
     },
     {
       name: "twitter:image",
-      content: "https://generational-eta.vercel.app/images/nsx.jpg",
+      content: "https://generational.co/images/nsx.jpg",
     },
   ];
 }

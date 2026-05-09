@@ -21,7 +21,7 @@ export function meta({ }: Route.MetaArgs) {
         "Generational provides expert curation and preservation services for historically significant classic automobiles, ensuring authenticity and excellence.",
     },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://generational-eta.vercel.app/ourservice" },
+    { property: "og:url", content: "https://generational.co/ourservice" },
     {
       property: "og:image",
       content: "https://generational.co.th/og-service.jpg", // replace with your service image
@@ -37,7 +37,7 @@ export function meta({ }: Route.MetaArgs) {
     },
     {
       name: "twitter:image",
-      content: "https://generational.co.th/og-service.jpg",
+      content: "https://generational.co/images/red.webp",
     },
   ];
 }
@@ -193,8 +193,8 @@ export default function OurService() {
         </div>
 
         {/* IMAGE */}
-        <div className="grid grid-cols-2 pt-10">
-          <img src="/images/red2.webp" alt="Ferrari" className="w-full h-full object-cover" />
+        <div className="grid max-h-[700px] overflow-clip pt-10">
+
           <img src="/images/white.webp" alt="Honda" className="w-full h-full object-cover" />
         </div>
         {/* SECTION 3: SELLING BACK TO THE WORLD */}
@@ -210,6 +210,15 @@ export default function OurService() {
             ]}
           />
           {/* SECTION 4: TAX CREDIT BENEFITS */}
+
+        </div>
+
+        <div className="max-h-[750px] overflow-clip mt-10 flex items-center">
+
+          <img src="/images/red2.webp" alt="ferrari" className="w-full h-full object-cover" />
+        </div>
+
+        <div className="container-x">
           <Section
             title="TAX CREDIT BENEFITS FOR EXPORTING"
             paragraphs={[

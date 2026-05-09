@@ -20,10 +20,10 @@ export function meta({ }: Route.MetaArgs) {
         "Explore GENERATIONAL curated inventory — historically significant, beautifully preserved classic automobiles selected for discerning collectors in Thailand.",
     },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://generational-eta.vercel.app/inventory" },
+    { property: "og:url", content: "https://generational.co/inventory" },
     {
       property: "og:image",
-      content: "https://generational-eta.vercel.app/images/inventory.jpg", // update if you have one
+      content: "https://generational.co/images/inventory.jpg", // update if you have one
     },
 
     // — Twitter
@@ -36,7 +36,7 @@ export function meta({ }: Route.MetaArgs) {
     },
     {
       name: "twitter:image",
-      content: "https://generational-eta.vercel.app/images/inventory.jpg",
+      content: "https://generational.co/images/inventory.jpg",
     },
   ];
 }
