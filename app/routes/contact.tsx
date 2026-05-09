@@ -80,7 +80,7 @@ export default function Contact() {
           <div className="lg:flex justify-end w-full mt-1 text-[#7C7C7C]">
             PHOTO CREDITS AND COPYRIGHT BELONG TO
             {/* <a href="https://roman-raetzke.de/" target="_blank" className="ml-1 hover:underline">ROMAN RÄTZKE</a> */}
-            <span className=""> GENERATIONAL</span>
+            <span className=""> GENERATIONAL CO.,LTD.</span>
           </div>
         </div>
 
