@@ -1,6 +1,8 @@
 import Logo from "~/components/logo";
 import type { Route } from "./+types/ourteam";
 import AnimatedSection from "~/components/AnimationSector";
+import { useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 
 export function meta({ }: Route.MetaArgs) {
@@ -42,6 +44,22 @@ export function meta({ }: Route.MetaArgs) {
 }
 
 export default function Ourteam() {
+
+  const videoRef = useRef(null);
+  const isInView = useInView(videoRef, { amount: 0.5 });
+
+  useEffect(() => {
+    if (videoRef.current) {
+      if (isInView) {
+        videoRef.current.play().catch((error) => {
+          console.log("Autoplay prevented:", error);
+        });
+      } else {
+        videoRef.current.pause();
+      }
+    }
+  }, [isInView]);
+
   return (
     <main className="min-h-screen mb-20 w-full ">
       <div className="md:p-10 p-5">
@@ -151,7 +169,7 @@ export default function Ourteam() {
                   <p className="font-semibold ">Our Angels</p>
 
                   <p>
-                   GENERATIONAL is proudly supported and co-owned by a select group of angel investors — respected collectors whose personal networks and collections span across the worlds of Lamborghini, McLaren, and BMW.
+                    GENERATIONAL is proudly supported and co-owned by a select group of angel investors — respected collectors whose personal networks and collections span across the worlds of Lamborghini, McLaren, and BMW.
                   </p>
 
 
@@ -162,7 +180,7 @@ export default function Ourteam() {
 
 
                   <p>
-                   Their support not only strengthens our access to exceptional cars, but further reinforces GENERATIONAL’s position within the upper echelon of Thailand’s automotive culture.
+                    Their support not only strengthens our access to exceptional cars, but further reinforces GENERATIONAL’s position within the upper echelon of Thailand’s automotive culture.
                   </p>
 
                 </div>
@@ -212,13 +230,13 @@ export default function Ourteam() {
           <div className="md:mt-14  md:col-span-7"></div>
           <div className="md:mt-14 md:col-span-5"></div>
 
-          
 
-          <div className="w-full h-auto bg-black md:col-span-7 overflow-hidden flex items-end">
+
+          <div className="w-full h-auto  md:col-span-7 overflow-hidden flex items-end">
             <video
+              ref={videoRef}
               src="/videos/ourteam.mov"
-              preload="true"
-              autoPlay
+              preload="auto"
               muted
               loop
               playsInline
@@ -259,7 +277,7 @@ export default function Ourteam() {
             </div>
           </div>
 
-            <div className="md:col-span-7">
+          <div className="md:col-span-7">
             <img src="/images/ourteam-map.png"
               alt="" />
           </div>
