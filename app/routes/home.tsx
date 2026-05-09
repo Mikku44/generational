@@ -25,7 +25,7 @@ export function meta({ }: Route.MetaArgs) {
     { property: "og:url", content: "https://generational.co" },
     {
       property: "og:image",
-      content: "https://generational.co/images/red2.webp", // ← change to your actual image
+      content: "https://generational.co/images/og.jpg", // ← change to your actual image
     },
 
     // — Twitter Card
@@ -38,7 +38,7 @@ export function meta({ }: Route.MetaArgs) {
     },
     {
       name: "twitter:image",
-      content: "https://generational.co/images/red2.webp", // ← same or different image is okay
+      content: "https://generational.co/images/og.jpg", // ← same or different image is okay
     },
   ];
 }
