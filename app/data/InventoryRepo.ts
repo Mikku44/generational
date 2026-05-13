@@ -54,5 +54,23 @@ export const inventoryData: Inventory[] = [
             "/inventory/bmw_m3_cs/9.jpg",
             "/inventory/bmw_m3_cs/10.jpg"
         ]
-    }
+    },
+    {
+    "id": "honda-nsx-r-03",
+    "name": "Honda NSX-R",
+    "status": "Available",
+    "description": "### Honda NSX-R\n\n* **NA1 Model**\n* Championship White\n* 1 of 483 Manufactured, Car #30\n* Odometer: 31,395 Kilometers\n\nCreated in 1992 as Honda’s purest expression of performance from the NSX platform, the NA1 NSX-R underwent a meticulous factory weight-reduction program: sound deadening removed, thinner glass, lightweight components, titanium shift knob, Recaro carbon-kevlar seats, and a hand-balanced version of Honda’s legendary C30A VTEC V6.\n\nPower remained officially unchanged at 280 HP — but that was never the point. Perfection was never about power.\n\nOnly 483 examples of the NA1 NSX-R were ever produced, placing her in the same rarity league as the Ferrari Enzo (40X) and BMW M1 (453). The 4XX Club.\n\nOur example is finished in Championship White — Honda’s historic motorsport color first earned through its inaugural Formula One victory. The NSX-R remains not merely a Japanese classic, but one of the most important — perhaps the most important — analog performance cars ever created by Japan.\n\nThe NSX-R became the machine that quietly forced the world’s greatest manufacturers to rethink how a driver’s car should feel. Italy, Germany, and the United Kingdom suddenly found themselves relearning what they had spent decades mastering.\n\nThe rulebook was rewritten by Japan.\n\n**The Sweet Payback**",
+    "images": [
+        "/inventory/nsx-r/1.jpg",
+        "/inventory/nsx-r/2.jpg",
+        "/inventory/nsx-r/3.jpg",
+        "/inventory/nsx-r/4.jpg",
+        "/inventory/nsx-r/5.jpg",
+        "/inventory/nsx-r/6.jpg",
+        "/inventory/nsx-r/7.jpg",
+        "/inventory/nsx-r/8.jpg",
+        "/inventory/nsx-r/9.jpg",
+        "/inventory/nsx-r/10.jpg"
+    ]
+}
 ]
