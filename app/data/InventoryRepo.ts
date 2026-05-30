@@ -56,21 +56,39 @@ export const inventoryData: Inventory[] = [
         ]
     },
     {
-    "id": "honda-nsx-r-03",
-    "name": "Honda NSX-R",
-    "status": "Available",
-    "description": "### Honda NSX-R\n\n* **NA1 Model**\n* Championship White\n* 1 of 483 Manufactured, Car #30\n* Odometer: 31,395 Kilometers\n\nCreated in 1992 as Honda’s purest expression of performance from the NSX platform, the NA1 NSX-R underwent a meticulous factory weight-reduction program: sound deadening removed, thinner glass, lightweight components, titanium shift knob, Recaro carbon-kevlar seats, and a hand-balanced version of Honda’s legendary C30A VTEC V6.\n\nPower remained officially unchanged at 280 HP — but that was never the point. Perfection was never about power.\n\nOnly 483 examples of the NA1 NSX-R were ever produced, placing her in the same rarity league as the Ferrari Enzo (40X) and BMW M1 (453). The 4XX Club.\n\nOur example is finished in Championship White — Honda’s historic motorsport color first earned through its inaugural Formula One victory. The NSX-R remains not merely a Japanese classic, but one of the most important — perhaps the most important — analog performance cars ever created by Japan.\n\nThe NSX-R became the machine that quietly forced the world’s greatest manufacturers to rethink how a driver’s car should feel. Italy, Germany, and the United Kingdom suddenly found themselves relearning what they had spent decades mastering.\n\nThe rulebook was rewritten by Japan.\n\n**The Sweet Payback**",
-    "images": [
-        "/inventory/nsx-r/1.jpg",
-        "/inventory/nsx-r/2.jpg",
-        "/inventory/nsx-r/3.jpg",
-        "/inventory/nsx-r/4.jpg",
-        "/inventory/nsx-r/5.jpg",
-        "/inventory/nsx-r/6.jpg",
-        "/inventory/nsx-r/7.jpg",
-        "/inventory/nsx-r/8.jpg",
-        "/inventory/nsx-r/9.jpg",
-        "/inventory/nsx-r/10.jpg"
-    ]
-}
+        "id": "honda-nsx-r-03",
+        "name": "Honda NSX-R",
+        "status": "Available",
+        "description": "### Honda NSX-R\n\n* **NA1 Model**\n* Championship White\n* 1 of 483 Manufactured, Car #30\n* Odometer: 31,395 Kilometers\n\nCreated in 1992 as Honda’s purest expression of performance from the NSX platform, the NA1 NSX-R underwent a meticulous factory weight-reduction program: sound deadening removed, thinner glass, lightweight components, titanium shift knob, Recaro carbon-kevlar seats, and a hand-balanced version of Honda’s legendary C30A VTEC V6.\n\nPower remained officially unchanged at 280 HP — but that was never the point. Perfection was never about power.\n\nOnly 483 examples of the NA1 NSX-R were ever produced, placing her in the same rarity league as the Ferrari Enzo (40X) and BMW M1 (453). The 4XX Club.\n\nOur example is finished in Championship White — Honda’s historic motorsport color first earned through its inaugural Formula One victory. The NSX-R remains not merely a Japanese classic, but one of the most important — perhaps the most important — analog performance cars ever created by Japan.\n\nThe NSX-R became the machine that quietly forced the world’s greatest manufacturers to rethink how a driver’s car should feel. Italy, Germany, and the United Kingdom suddenly found themselves relearning what they had spent decades mastering.\n\nThe rulebook was rewritten by Japan.\n\n**The Sweet Payback**",
+        "images": [
+            "/inventory/nsx-r/1.jpg",
+            "/inventory/nsx-r/2.jpg",
+            "/inventory/nsx-r/3.jpg",
+            "/inventory/nsx-r/4.jpg",
+            "/inventory/nsx-r/5.jpg",
+            "/inventory/nsx-r/6.jpg",
+            "/inventory/nsx-r/7.jpg",
+            "/inventory/nsx-r/8.jpg",
+            "/inventory/nsx-r/9.jpg",
+            "/inventory/nsx-r/10.jpg"
+        ]
+    },
+    {
+        "id": "alfa-romeo-alfasud-sprint-01",
+        "name": "Alfa Romeo Alfasud Sprint",
+        "status": "Available",
+        "description": "### Alfa Romeo Alfasud Sprint\n\n* **Series 1**\n* Finished in White\n* Boxer Engine and Sunroof Configuration\n* Odometer: 96,809 Kilometers\n* 1 of Only 2 Examples known by us in Thailand\n\nCreated during the 1970s — an era where Europe was still obsessed with lightweight engineering and mechanical intimacy — the Alfa Romeo Alfasud Sprint arrived as Alfa Romeo’s radical answer to what an affordable sporting coupé could become.\n\nBeneath the delicate Giugiaro-designed hatchback-styled body sat one of the most advanced layouts ever engineered into an entry-level coupé of her era: front-wheel drive paired with Alfa Romeo’s low-mounted flat-four boxer engine.\n\nThe boxer configuration allowed the engine to sit impossibly low in the chassis, lowering the center of gravity and giving the Sprint a character few cars of its class could replicate. The steering felt alive. The nose reacted instantly. The car rotated with an eagerness that reminded the world that lightweight engineering was still an art form in Italy.\n\nToday, surviving Alfasud Sprints remain extraordinarily scarce worldwide, with only two examples currently known by us in Thailand.\n\nOne of the rarest Alfa Romeo models in Thailand.",
+        "images": [
+            "/inventory/alfa-romeo/1.jpg",
+            "/inventory/alfa-romeo/2.jpg",
+            "/inventory/alfa-romeo/3.jpg",
+            "/inventory/alfa-romeo/4.jpg",
+            "/inventory/alfa-romeo/5.jpg",
+            "/inventory/alfa-romeo/6.jpg",
+            "/inventory/alfa-romeo/7.jpg",
+            "/inventory/alfa-romeo/8.jpg",
+            "/inventory/alfa-romeo/9.jpg",
+            "/inventory/alfa-romeo/10.jpg"
+        ]
+    }
 ]
