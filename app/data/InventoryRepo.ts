@@ -90,5 +90,41 @@ export const inventoryData: Inventory[] = [
             "/inventory/alfa-romeo/9.jpg",
             "/inventory/alfa-romeo/10.jpg"
         ]
+    },
+    {
+        "id": "toyota-celica-1600-gtv",
+        "name": "Toyota Celica 1600 GTV",
+        "status": "Available",
+        "description": "### Toyota Celica 1600 GTV\n\n* **Japanese Domestic Market “Flat Nose” TA22 Model**\n* Coral Red\n* 1600cc 2T-G DOHC Twin-Cam Engine\n* Weber 50 DCO Carburetors with Hayashi Racing Headers\n* Engine and Full Panel Restored in 2018\n\nBy 1974, Japan had stopped trying to imitate Europe.\n\nIt had begun competing with it.\n\nThe Toyota Celica 1600 GTV represented the very best of Toyota’s emerging performance philosophy during the golden age of Japanese motoring — lightweight, reliable, mechanically honest, and engineered to deliver maximum enjoyment from modest displacement.\n\nAt her heart sits Toyota’s 2T-G twin-cam engine, developed with Yamaha and inspired by the same engineering ambition that would later define some of Japan’s most celebrated performance cars. Fed by Weber 50 DCO carburetors and breathing through Hayashi Racing headers, the soundtrack is every bit as important as the numbers.\n\nOur example was restored in 2018 by Vintage JDM specialist and thoughtfully upgraded with period-correct performance modifications but remains faithful to the spirit of Japanese tuning culture that emerged during the 1970s.",
+        "images": [
+            "/inventory/toyota-celica-1600-gtv/1.jpg",
+            "/inventory/toyota-celica-1600-gtv/2.jpg",
+            "/inventory/toyota-celica-1600-gtv/3.jpg",
+            "/inventory/toyota-celica-1600-gtv/4.jpg",
+            "/inventory/toyota-celica-1600-gtv/5.jpg",
+            "/inventory/toyota-celica-1600-gtv/6.jpg",
+            "/inventory/toyota-celica-1600-gtv/7.jpg",
+            "/inventory/toyota-celica-1600-gtv/8.jpg",
+            "/inventory/toyota-celica-1600-gtv/9.jpg",
+            "/inventory/toyota-celica-1600-gtv/10.jpg"
+        ]
+    },
+    {
+        "id": "bently-brooklands",
+        "name": "Bentley Brooklands",
+        "status": "Available",
+        "description": "### Bentley Brooklands\n\n* **AAS Authorised Dealer Car**\n* Navy Blue with Red Coachline\n* Cream Connolly Leather with Navy Piping\n* 6.75-Litre Rolls-Royce V8\n* Hand-Built in Crewe\n\nGENERATIONAL proudly presents a land yacht from the United Kingdom — the Bentley Brooklands.\n\nShe was conceived not as a sports car, but as a gentleman’s express: a motorcar designed to cross continents in near silence while carrying the unmistakable presence of Crewe’s finest. Retailing at approximately £82,000 in 1992, the Brooklands occupied a very different league of luxury — at a time when a new Porsche 964 Carrera could be purchased for around £48,000.\n\nOur example is finished in deep Navy Blue with a hand-painted red coachline, over a Cream Connolly leather interior accented by matching Navy piping.\nTogether, the specification captures the understated elegance that defined Bentley during the final years of its traditional coachbuilt era.\n\nFor us, the Brooklands serves as a reminder of an era when luxury was measured not by screens, gadgets or software, but by Connolly leather, polished walnut, and the quiet confidence of a five-foot bonnet leading the way.",
+        "images": [
+            "/inventory/bently-brooklands/1.jpg",
+            "/inventory/bently-brooklands/2.jpg",
+            "/inventory/bently-brooklands/3.jpg",
+            "/inventory/bently-brooklands/4.jpg",
+            "/inventory/bently-brooklands/5.jpg",
+            "/inventory/bently-brooklands/6.jpg",
+            "/inventory/bently-brooklands/7.jpg",
+            "/inventory/bently-brooklands/8.jpg",
+            "/inventory/bently-brooklands/9.jpg",
+            "/inventory/bently-brooklands/10.jpg"
+        ]
     }
 ]
