@@ -126,5 +126,41 @@ export const inventoryData: Inventory[] = [
             "/inventory/bently-brooklands/9.jpg",
             "/inventory/bently-brooklands/10.jpg"
         ]
+    },
+    {
+        "id": "lambo-diablo-vt",
+        "name": "Lamborghini Diablo VT",
+        "status": "Available",
+        "description": "### Lamborghini Diablo VT\n\n* **VT (Viscous Traction) All-Wheel Drive**\n* Giallo Orion over Nero with Giallo Piping\n* Only 6,252 Kilometers from New\n* Early Pop-Up Headlight, Low Dash Model\n* Full Chassis & Paint Restoration\n* Mechanical Service by Renazzo Motor\n\nThe Diablo VT was Lamborghini’s answer to a simple problem: how to harness the fury of a naturally aspirated V12 without taming her character. Through its innovative Viscous Traction system, up to 25% of torque could be transferred to the front wheels when required, creating the blueprint that would later define every flagship V12 Lamborghini from the Murciélago and Aventador to today’s Revuelto.\n\nBeneath the engine cover sits a 5.7-litre, 48-valve V12 descended directly from the original masterpiece conceived by Giotto Bizzarrini in 1963. No turbochargers. No traction control. No ABS. Just twelve cylinders, 485 horsepower, and outrageous 335 mm-wide rear tyres.\n\nThe name Diablo translates to “Devil” in Spanish. A fitting title for a machine that rewards courage and demands absolute respect from her driver.\n\nA car built for brave men willing to tame her.\n\nSince the founding of GENERATIONAL, many extraordinary automobiles have passed through our showroom. Few possess the theatre, presence, and sheer intimidation factor of the Diablo VT.\n\nOur example has undergone a comprehensive body and paint restoration by one of Thailand’s leading restoration specialists, while all mechanical works have been entrusted to Renazzo Motor, Thailand’s official Lamborghini authorised dealer. No detail has been overlooked.\n\nGENERATIONAL proudly presents the Lamborghini Diablo VT.\n\nFrom The Natee Masathienvong Collection.",
+        "images": [
+            "/inventory/lambo-diablo-vt/1.jpg",
+            "/inventory/lambo-diablo-vt/2.jpg",
+            "/inventory/lambo-diablo-vt/3.jpg",
+            "/inventory/lambo-diablo-vt/4.jpg",
+            "/inventory/lambo-diablo-vt/5.jpg",
+            "/inventory/lambo-diablo-vt/6.jpg",
+            "/inventory/lambo-diablo-vt/7.jpg",
+            "/inventory/lambo-diablo-vt/8.jpg",
+            "/inventory/lambo-diablo-vt/9.jpg",
+            "/inventory/lambo-diablo-vt/10.jpg"
+        ]
+    },
+    {
+        "id": "ferrari-512-tr",
+        "name": "Ferrari 512 TR",
+        "status": "Available",
+        "description": "### Ferrari 512 TR\n\n* **1 of only 88 RHD ever produced**\n* Authorized Dealer\n* Rosso Corsa over Tan\n* Odometer displays 6,166 kilometres following a factory instrument replacement; documented original mileage ~ 38,000 kilometres\n\nThe Testarossa changed everything about Ferrari‘s 12 cylinders flagship.\n\nIntroduced in 1984, the F110 platform represented Ferrari’s complete departure from the traditional front-engined V12 flagship. Its dramatic “cheese grater” side strakes, impossibly wide rear track and flat-twelve engine created an entirely new identity for the marque. The Testarossa became a cultural phenomenon. Immortalised by Miami Vice, celebrated by celebrities and entrepreneurs, it became the definitive symbol of the excess, ambition and optimism that characterised America’s economic boom of the 1980s.\n\nThe 512 TR arrived in 1991 as a comprehensive evolution rather than a simple facelift. The flat-twelve was repositioned lower within the chassis, improving the centre of gravity and significantly enhancing handling characteristics. Aerodynamic revisions reduced lift and increased stability at speed, while the interior was redesigned to provide greater comfort and usability without sacrificing the drama that defined the model.\n\nSince acquiring the car, Khun Natee has driven it regularly over the past 10 years, covering 6,166 kilometres to ensure the car remained active and properly exercised. During his stewardship, the car has benefited from extensive mechanical and cosmetic attention. A NOS steering rack, as well as the main shaft, layshaft and synchromesh components. The engine has also undergone a comprehensive refresh to ensure the car performs as intended when the car was new.\n\nThe bodywork has been thoroughly restored and remains free from corrosion in the areas commonly prone to rust on the model, including the door sills, floors and pillars. Together with the extensively refreshed suspension and paintwork, the result is an exceptionally well-presented example of Ferrari’s celebrated flat-twelve GT.\n\nGENERATIONAL proudly presents The Ferrari 512 TR.\n\nFrom The Natee Masathienvong Collection.",
+        "images": [
+            "/inventory/ferrari-512-tr/1.jpg",
+            "/inventory/ferrari-512-tr/2.jpg",
+            "/inventory/ferrari-512-tr/3.jpg",
+            "/inventory/ferrari-512-tr/4.jpg",
+            "/inventory/ferrari-512-tr/5.jpg",
+            "/inventory/ferrari-512-tr/6.jpg",
+            "/inventory/ferrari-512-tr/7.jpg",
+            "/inventory/ferrari-512-tr/8.jpg",
+            "/inventory/ferrari-512-tr/9.jpg",
+            "/inventory/ferrari-512-tr/10.jpg"
+        ]
     }
 ]
