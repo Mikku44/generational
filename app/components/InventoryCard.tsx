@@ -42,7 +42,7 @@ export default function InventoryCard({ index, item }: InventoryCardProps) {
         >
             {/* DESKTOP HEADER */}
             <div className="md:block hidden">
-                <img src="/logo.png" alt="Logo" className="size-5 invert" />
+                <img src="/logo.png" alt="Logo"  className="size-5 invert" />
             </div>
 
             <div className="md:block hidden col-span-2 place-items-end">
@@ -66,6 +66,8 @@ export default function InventoryCard({ index, item }: InventoryCardProps) {
                             <div key={i} className="flex-[0_0_100%] min-w-0 relative">
                                 <img
                                     src={src}
+                                    loading="lazy"
+                                    title={item.name}
                                     alt={`${item.name} - view ${i + 1}`}
                                     className="aspect-auto object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                                 />

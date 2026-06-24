@@ -162,5 +162,41 @@ export const inventoryData: Inventory[] = [
             "/inventory/ferrari-512-tr/9.jpg",
             "/inventory/ferrari-512-tr/10.jpg"
         ]
+    },
+    {
+        "id": "porsche-911-turbo",
+        "name": "Porsche 911 Turbo",
+        "status": "Available",
+        "description": "### Porsche 911 Turbo\n\n• **993 Turbo S in all but name — and a little more**\n• Specified through Porsche’s highest level of personalization, the “Sonderwunsch” (Special Wishes) programme\n• Factory X50 WLS II package, increasing output to 450 horsepower — matching the Turbo S\n• Equipped with the corresponding Turbo S air intakes, rear wing and front bumper\n• Ocean Blue Metallic over Tan Leather with bespoke Walnut interior\n• A genuine one-off specification\n\nThe Porsche 993 Turbo occupies a unique position in the history of the 911. She was the first turbocharged 911 to feature twin turbochargers and all-wheel drive, combining supercar performance with everyday usability in a way no previous Turbo had achieved.\n\nYet for a select group of customers, even the standard Turbo was not enough.\n\nToday, personalization has become the cornerstone of the supercar industry. Programmes such as McLaren Special Operations (MSO), Ferrari Tailor Made and Lamborghini Ad Personam allow customers to commission vehicles tailored to their individual tastes, transforming exclusivity into a key selling point.\n\nBut this car was doing exactly that nearly three decades earlier.\n\nLong benevolence bespoke commissions became a marketing strategy, Porsche’s Sonderwunsch programme quietly offered a select group of VIP clients the opportunity to work directly with the factory to create truly individual motorcars. In many ways, it was the blueprint for the personalization programmes that define the modern supercar market today.\n\nFinished in Ocean Blue Metallic over Tan Leather with a bespoke Walnut interior, she embodies a period when Porsche would build almost anything a VIP customer desired, provided they were willing to ask.\n\nA Turbo S in all but name, and more.\n\nGENERATIONAL proudly presents The Porsche 911 Turbo.\n\nFrom The Natee Masathienvong Collection.",
+        "images": [
+            "/inventory/porsche-911-turbo/1.jpg",
+            "/inventory/porsche-911-turbo/2.jpg",
+            "/inventory/porsche-911-turbo/3.jpg",
+            "/inventory/porsche-911-turbo/4.jpg",
+            "/inventory/porsche-911-turbo/5.jpg",
+            "/inventory/porsche-911-turbo/6.jpg",
+            "/inventory/porsche-911-turbo/7.jpg",
+            "/inventory/porsche-911-turbo/8.jpg",
+            "/inventory/porsche-911-turbo/9.jpg",
+            "/inventory/porsche-911-turbo/10.jpg"
+        ]
+    },
+    {
+        "id": "porsche-911-supersport-cabriolet",
+        "name": "Porsche 911 SuperSport Cabriolet",
+        "status": "Available",
+        "description": "### Porsche 911 SuperSport Cabriolet\n\n• **Factory M491 “Works Turbo Look” specification**\n• Features the Turbo’s distinctive fender flares, front spoiler and Tea Tray rear wing\n• Factory fitted with the 930 Turbo’s uprated suspension, braking system and Fuchs alloy wheels\n• Silver Metallic over Red Interior\n• Odometer reads 39,267 miles\n\nFew shapes in automotive history are as iconic as the Porsche 930 Turbo. The sexy rear arches. The Tea Tray rear wing. Two unmistakable design elements that came to define the excess and optimism of the 1980s. It was the poster car of a generation.\n\nIt was also one of the most intimidating road cars ever built.\n\nThe combination of a rear-mounted engine, short wheelbase and explosive turbocharged power delivery earned the 930 its infamous “Widowmaker” reputation. When the boost arrived, it arrived all at once.\n\nFor those who desired the look without the risk, Porsche introduced option code M491, better known as the “SuperSport”.\n\nDelivering all the visual drama of the Turbo while retaining the balance, predictability and usability of the naturally aspirated Carrera, the M491 was far more than a cosmetic package. It received the Turbo’s wider bodywork, uprated brakes, suspension and Fuchs wheels, combined with Porsche’s proven 3.2-litre flat-six, G50 transmission, open-top cabriolet, to create one of the most complete air-cooled cabriolet 911.\n\nEverything people loved about the 930 Turbo, without the thing they fear.\n\nFinished in timeless Silver Metallic over Red Leather, our example represents one of the most elegant interpretations of Porsche’s celebrated Turbo Look formula.\n\nGENERATIONAL proudly presents The Porsche 911 SuperSport Cabriolet.\n\nFrom The Natee Masathienvong Collection.",
+        "images": [
+            "/inventory/porsche-911-supersport-cabriolet/1.jpg",
+            "/inventory/porsche-911-supersport-cabriolet/2.jpg",
+            "/inventory/porsche-911-supersport-cabriolet/3.jpg",
+            "/inventory/porsche-911-supersport-cabriolet/4.jpg",
+            "/inventory/porsche-911-supersport-cabriolet/5.jpg",
+            "/inventory/porsche-911-supersport-cabriolet/6.jpg",
+            "/inventory/porsche-911-supersport-cabriolet/7.jpg",
+            "/inventory/porsche-911-supersport-cabriolet/8.jpg",
+            "/inventory/porsche-911-supersport-cabriolet/9.jpg",
+            "/inventory/porsche-911-supersport-cabriolet/10.jpg"
+        ]
     }
 ]
