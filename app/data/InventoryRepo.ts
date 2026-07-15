@@ -163,7 +163,7 @@ export const inventoryData: Inventory[] = [
             "/inventory/ferrari-512-tr/10.jpg"
         ]
     },
-{
+    {
         "id": "porsche-911-turbo",
         "name": "Porsche 911 Turbo",
         "status": "Available",
@@ -197,6 +197,24 @@ export const inventoryData: Inventory[] = [
             "/inventory/porsche-911-supersport-cabriolet/8.jpg",
             "/inventory/porsche-911-supersport-cabriolet/9.jpg",
             "/inventory/porsche-911-supersport-cabriolet/10.jpg"
+        ]
+    },
+    {
+        "id": "porsche-718-cayman-gt4rs",
+        "name": "Porsche 718 Cayman GT4 RS",
+        "status": "Available",
+        "description": "### Porsche 718 Cayman GT4 RS\n\n* **The pinnacle of the 718 model range**\n* Powered by the 4.0-litre naturally aspirated flat-six directly from the 992 GT3\n* Configured with motorsport-focused options, including steel brakes similar to GT3R and GT3 RSR\n* AAS Authorised Dealer Car\n* White over Black with Blue inserts and matching Indigo Blue wheels\n* Odometer: 3,882 kilometres\n\nThe Porsche RS badge has never been more desirable.\n\nHowever, in our humble opinion, RS models have become increasingly expressive. Contrasting colours, exposed carbon, oversized decals and bold accent packages have transformed many modern RS into rolling statements. They are spectacular machines, but increasingly, they are also statements of one’s taste.\n\nMany seasoned Porsche enthusiasts have begun gravitating back towards subtler specifications. GT3 Touring rather than GT3 RS. Specification that whisper rather than shout. Cars that prioritise purpose over presence.\n\nThis GT4 RS is exactly that.\n\nFinished in White, her specification is restrained yet deeply considered. Indigo Blue wheels are echoed by matching blue seatbelts, roll cage and interior details, creating a cohesive motorsport-inspired theme rather than a collection of contrasting options.\n\nMore importantly, she was configured by a Motorsport-focused mind.\n\nInstead of Porsche Ceramic Composite Brakes, she is equipped with steel brakes—the choice favoured by many experienced track drivers and endurance racing teams, including Porsche Works Race cars as seen in GT3 R and GT3 RSR programmes, for their consistency, serviceability and ease of replacement under sustained circuit use.\n\nGENERATIONAL proudly presents\n\n The Porsche 718 Cayman GT4 RS.",
+        "images": [
+            "/inventory/porsche-718-cayman-gt4rs/1.jpg",
+            "/inventory/porsche-718-cayman-gt4rs/2.jpg",
+            "/inventory/porsche-718-cayman-gt4rs/3.jpg",
+            "/inventory/porsche-718-cayman-gt4rs/4.jpg",
+            "/inventory/porsche-718-cayman-gt4rs/5.jpg",
+            "/inventory/porsche-718-cayman-gt4rs/6.jpg",
+            "/inventory/porsche-718-cayman-gt4rs/7.jpg",
+            "/inventory/porsche-718-cayman-gt4rs/8.jpg",
+            "/inventory/porsche-718-cayman-gt4rs/9.jpg",
+            "/inventory/porsche-718-cayman-gt4rs/10.jpg",
         ]
     }
 ]
