@@ -4,17 +4,57 @@ import type { Route } from "./+types/ourservice";
 import AnimatedSection from "~/components/AnimationSector";
 import { useRef } from "react";
 
+const FAQ_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How does GENERATIONAL source classic cars?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Our specialists scan respected showrooms, private collections and auctions worldwide and list curated opportunities in a live global inventory for clients to explore.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does GENERATIONAL verify provenance and condition?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We provide detailed photography, live video walkthroughs and optional marque-specific mechanical inspections before any commitment.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does GENERATIONAL handle import and registration in Thailand?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We manage international shipping, customs, Thai import duties, license registration, compliance, mechanical checkups and detailing through to delivery.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can GENERATIONAL help sell or export my classic car?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We connect sellers with qualified overseas buyers and dealers, and advise on Thailand's Classic Car Act export tax-credit benefits.",
+      },
+    },
+  ],
+};
+
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "OUR SERVICE - GENERATIONAL" },
+    { title: "Our Services: Sourcing, Import & Preservation — GENERATIONAL Thailand" },
     {
       name: "description",
       content:
-        "Discover GENERATIONAL services: expert curation, provenance verification, and preservation of the most beautiful and culturally significant classic automobiles in Thailand.",
+        "Global sourcing, provenance verification, Thai import and registration, preservation and resale support for culturally significant classic automobiles.",
     },
+    { tagName: "link", rel: "canonical", href: "https://generational.co/ourservice" },
 
     // — Open Graph
-    { property: "og:title", content: "OUR SERVICE - GENERATIONAL" },
+    { property: "og:title", content: "Our Services: Sourcing, Import & Preservation — GENERATIONAL Thailand" },
     {
       property: "og:description",
       content:
@@ -24,12 +64,14 @@ export function meta({ }: Route.MetaArgs) {
     { property: "og:url", content: "https://generational.co/ourservice" },
     {
       property: "og:image",
-      content: "https://generational.co.th/og-service.jpg", // replace with your service image
+      content: "https://generational.co/images/red.webp",
     },
+    { property: "og:image:alt", content: "Red classic sports car curated by GENERATIONAL" },
+    { property: "og:site_name", content: "GENERATIONAL" },
 
     // — Twitter
     { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:title", content: "OUR SERVICE - GENERATIONAL" },
+    { name: "twitter:title", content: "Our Services: Sourcing, Import & Preservation — GENERATIONAL Thailand" },
     {
       name: "twitter:description",
       content:
@@ -39,6 +81,7 @@ export function meta({ }: Route.MetaArgs) {
       name: "twitter:image",
       content: "https://generational.co/images/red.webp",
     },
+    { name: "twitter:image:alt", content: "Red classic sports car curated by GENERATIONAL" },
   ];
 }
 
@@ -119,6 +162,19 @@ export default function OurService() {
 
   return (
     <main className="min-h-screen mb-20 w-full mx-auto ">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }}
+      />
+      {/* AEO direct answer */}
+      <section className="sr-only" aria-label="Service summary">
+        <h1>Classic Car Sourcing, Import and Preservation Services in Thailand</h1>
+        <p>
+          GENERATIONAL sources historically significant classic cars worldwide,
+          verifies provenance and condition, manages shipping, Thai import and
+          registration, and supports resale or export — from discovery to delivery.
+        </p>
+      </section>
       {/* HERO TITLE */}
       <div className="md:p-10 p-5">
         <Logo />
@@ -131,19 +187,19 @@ export default function OurService() {
             ref={ref}
             style={{ scale }}
             src="/images/red.webp"
-            alt="red car generational"
+            alt="Red classic sports car sourced and preserved by GENERATIONAL Thailand"
             className="w-full h-full object-cover"
           />
         </div>
         {/* SECTION 1: OUR SERVICES */}
         {/* our service */}
         <div className="w-full md:px-0 px-5 grid md:grid-cols-12 container-x mt-10 gap-5">
-          <motion.div
+          <motion.h2
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="md:text-[65px] text-[48px] -mt-3 font-semibold md:col-span-7">OUR SERVICES</motion.div>
+            className="md:text-[65px] text-[48px] -mt-3 font-semibold md:col-span-7">OUR SERVICES</motion.h2>
           {/* global sourcing */}
           <motion.div className="space-y-4 md:col-span-5">
             <AnimatedSection>
@@ -163,7 +219,7 @@ export default function OurService() {
         </div>
         {/* SECTION 2: THE ACQUISITION JOURNEY */}
         <div className="grid md:grid-cols-12 gap-5 mt-28 container-x ">
-          <ImageBox className="md:col-span-7 w-full md:h-[1280px] h-[720px]" src="/images/unnamed.jpg" />
+          <ImageBox className="md:col-span-7 w-full md:h-[1280px] h-[720px]" src="/images/unnamed.jpg" alt="Collector inspecting a classic car during GENERATIONAL acquisition journey in Thailand" />
           <div className="space-y-6 md:col-span-5">
             <AnimatedSection>
               <h2 className="text-[26px] font-bold ">THE ACQUISITION JOURNEY</h2>
@@ -195,7 +251,7 @@ export default function OurService() {
         {/* IMAGE */}
         <div className="grid max-h-[700px] overflow-clip pt-10">
 
-          <img src="/images/white.webp" alt="Honda" className="w-full h-full object-cover" />
+          <img src="/images/white.webp" alt="White Honda classic car after GENERATIONAL import preparation in Thailand" className="w-full h-full object-cover" />
         </div>
         {/* SECTION 3: SELLING BACK TO THE WORLD */}
         <div className="container-x">
@@ -215,7 +271,7 @@ export default function OurService() {
 
         <div className="max-h-[750px] overflow-clip mt-10 flex items-center">
 
-          <img src="/images/red2.webp" alt="ferrari" className="w-full h-full object-cover" />
+          <img src="/images/red2.webp" alt="Red Ferrari classic car eligible for GENERATIONAL export and tax-credit support" className="w-full h-full object-cover" />
         </div>
 
         <div className="container-x">
@@ -232,6 +288,7 @@ export default function OurService() {
         <ImageBox
           src="/images/GRS01060.webp"
           className="mt-14 col-span-2 h-[680px]"
+          alt="GENERATIONAL team preparing a classic car for Thai registration and delivery"
         />
         {/* DOMESTIC TRANSFERS + FROR */}
         <div className="mt-[-9px] container-x ">
@@ -261,6 +318,7 @@ export default function OurService() {
         <ImageBox
           src="/images/blue.webp"
           className="mt-14 col-span-2 h-[980px]"
+          alt="Blue classic collector car preserved by GENERATIONAL Thailand"
         />
       </div>
     </main>
@@ -305,14 +363,14 @@ interface ImageBoxProps {
   className?: string;
 }
 
-function ImageBox({ src, className = "" }: ImageBoxProps) {
+function ImageBox({ src, className = "", alt }: ImageBoxProps & { alt?: string }) {
 
   return (
     <div
       className={`w-full h-[500px] overflow-hidden ${className}`}
     >
       <img
-        src={src} alt="" className="w-full h-full object-cover" />
+        src={src} alt={alt ?? "Curated classic automobile by GENERATIONAL Thailand"} className="w-full h-full object-cover" loading="lazy" />
     </div>
   );
 }

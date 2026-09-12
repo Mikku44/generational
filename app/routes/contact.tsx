@@ -7,8 +7,33 @@ import { toast } from "sonner";
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "CONTACT - GENERATIONAL" },
-    { name: "description", content: "PURVEYOR OF THE MOST BEAUTIFUL, CULTURALLY SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND." },
+    { title: "Contact GENERATIONAL Bangkok | Classic Car Enquiries — Thailand" },
+    {
+      name: "description",
+      content:
+        "Contact GENERATIONAL in Bangkok for classic car sourcing, sales and preservation. Call +66 91 991 1911, WhatsApp, LINE @generational or email HELLO@GENERATIONAL.CO.",
+    },
+    { tagName: "link", rel: "canonical", href: "https://generational.co/contact" },
+    { property: "og:title", content: "Contact GENERATIONAL Bangkok | Classic Car Enquiries — Thailand" },
+    {
+      property: "og:description",
+      content:
+        "Talk to GENERATIONAL — Bangkok curators of culturally significant classic automobiles. Phone, WhatsApp, LINE, Instagram and email.",
+    },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://generational.co/contact" },
+    { property: "og:image", content: "https://generational.co/images/GRS00991.webp" },
+    { property: "og:image:alt", content: "Classic cars curated by GENERATIONAL Thailand — contact us" },
+    { property: "og:site_name", content: "GENERATIONAL" },
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "Contact GENERATIONAL Bangkok | Classic Car Enquiries — Thailand" },
+    {
+      name: "twitter:description",
+      content:
+        "Talk to GENERATIONAL — Bangkok curators of culturally significant classic automobiles.",
+    },
+    { name: "twitter:image", content: "https://generational.co/images/GRS00991.webp" },
+    { name: "twitter:image:alt", content: "Classic cars curated by GENERATIONAL Thailand — contact us" },
   ];
 }
 
@@ -60,8 +85,20 @@ export default function Contact() {
 
 
 
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact GENERATIONAL",
+    url: "https://generational.co/contact",
+    about: { "@id": "https://generational.co/#organization" },
+  };
+
   return (
     <main className="min-h-screen w-full mb-20 relative ">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
       <div className="md:p-10 p-5">
         <Logo />
       </div>
@@ -70,12 +107,12 @@ export default function Contact() {
       <div className="grid md:grid-cols-12 container-x
         gap-5 md:mt-[220px] mt-[200px] mb-20  h-full overflow-hidden">
         {/* image */}
-        <div className="md:col-span-7  md:text-[65px] text-[48px] md:leading-tight -mt-4 font-semibold -mb-4">CONTACT</div>
+        <h1 className="md:col-span-7  md:text-[65px] text-[48px] md:leading-tight -mt-4 font-semibold -mb-4">CONTACT</h1>
         <div className="md:block hidden"></div>
 
         <div className="md:col-span-7 w-full h-full md:text-base text-[clamp(10px,0.575rem+0.25vw,12px)]">
           <div className="md:max-h-[780px] overflow-hidden h-full flex bg-black ">
-            <img src="/images/GRS00991.webp" className="w-full h-full object-cover object-[50%_30%]" alt="3 classic car" />
+            <img src="/images/GRS00991.webp" className="w-full h-full object-cover object-[50%_30%]" alt="Three curated classic cars by GENERATIONAL Thailand — contact our Bangkok showroom" />
           </div>
           <div className="lg:flex justify-end w-full mt-1 text-[#7C7C7C]">
             PHOTO CREDITS AND COPYRIGHT BELONG TO
@@ -113,13 +150,14 @@ export default function Contact() {
 
             <div className="title break-words">EMAIL </div>
             <a
-              href="mailto:HELLO@GENERATIONAL.CO.TH"
+              href="mailto:HELLO@GENERATIONAL.CO"
               target="_blank"
               className="value break-words hover:opacity-60 md:col-span-2 md:font-semibold font-normal">HELLO@GENERATIONAL.CO</a>
 
             <div className="title break-words">LINE ID </div>
-            <a href="#"
+            <a href="https://line.me/R/ti/p/@generational"
               target="_blank"
+              rel="noopener"
               className="value break-words hover:opacity-60 md:col-span-2 md:font-semibold font-normal">@GENERATIONAL</a>
 
             <div className="title break-words">INSTAGRAM </div>

@@ -4,39 +4,43 @@ import AnimatedSection from "~/components/AnimationSector";
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "CURATION PHILOSOPHY - GENERATIONAL" },
+    { title: "Curation Philosophy: Design, Provenance & Legacy — GENERATIONAL" },
     {
       name: "description",
       content:
-        "Learn the GENERATIONAL Curation Philosophy: a commitment to provenance, originality, and cultural significance. We meticulously select only the most beautiful and historically important classic automobiles for Thailand's discerning collectors.",
+        "How GENERATIONAL selects classic cars for Thailand: timeless design, verified provenance and originality, emotional driving character and lasting cultural relevance.",
     },
+    { tagName: "link", rel: "canonical", href: "https://generational.co/curation-philosophy" },
 
     // — Open Graph
-    { property: "og:title", content: "CURATION PHILOSOPHY - GENERATIONAL" },
+    { property: "og:title", content: "Curation Philosophy: Design, Provenance & Legacy — GENERATIONAL" },
     {
       property: "og:description",
       content:
-        "Our approach to curation is grounded in the belief that classic cars are more than machines. They are design objects and ultimately -investments of passion.",
+        "Our approach to curation is grounded in the belief that classic cars are more than machines. They are design objects and ultimately investments of passion.",
     },
     { property: "og:type", content: "website" },
     { property: "og:url", content: "https://generational.co/curation-philosophy" },
     {
       property: "og:image",
-      content: "https://generational.co/images/nsx.jpg", // change image if needed
+      content: "https://generational.co/images/nsx.jpg",
     },
+    { property: "og:image:alt", content: "Honda NSX curated by GENERATIONAL Thailand — design above all" },
+    { property: "og:site_name", content: "GENERATIONAL" },
 
     // — Twitter
     { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:title", content: "CURATION PHILOSOPHY - GENERATIONAL" },
+    { name: "twitter:title", content: "Curation Philosophy: Design, Provenance & Legacy — GENERATIONAL" },
     {
       name: "twitter:description",
       content:
-        "Our approach to curation is grounded in the belief that classic cars are more than machines. They are design objects and ultimately -investments of passion.",
+        "Our approach to curation is grounded in the belief that classic cars are more than machines. They are design objects and ultimately investments of passion.",
     },
     {
       name: "twitter:image",
       content: "https://generational.co/images/nsx.jpg",
     },
+    { name: "twitter:image:alt", content: "Honda NSX curated by GENERATIONAL Thailand — design above all" },
   ];
 }
 
@@ -51,18 +55,18 @@ export default function CurationPage() {
       {/*  */}
       <div className="grid md:grid-cols-12 gap-5 md:mt-[220px] mt-[200px] container-x">
         <div className=" md:col-span-7">
-          <div className="md:text-[65px] text-[48px] leading-tight -mt-4 font-semibold mb-2">
+          <h1 className="md:text-[65px] text-[48px] leading-tight -mt-4 font-semibold mb-2">
             CURATION PHILOSOPHY
-          </div>
+          </h1>
           <img src="/images/nsx.jpg"
-            alt="" className="w-full" />
+            alt="Honda NSX — example of timeless design curated by GENERATIONAL Thailand" className="w-full" loading="eager" />
         </div>
         {/* text */}
         <div className="md:col-span-5">
           <AnimatedSection>
-            <div className="font-bold text-[26px] mb-5">
+            <h2 className="font-bold text-[26px] mb-5">
               WHAT MAKES A CAR WORTHY OF GENERATIONS
-            </div>
+            </h2>
           </AnimatedSection>
           <div className="space-y-5 text-[20px]">
             <AnimatedSection>
@@ -87,9 +91,8 @@ export default function CurationPage() {
           {/* Design Above All */}
           <div className="mt-10">
             <AnimatedSection>
-              <div className="text-[26px] font-bold mb-5">
-                Design Above All
-              </div>
+              <h2 className="text-[26px] font-bold mb-5">
+                Design Above All</h2>
             </AnimatedSection>
 
             <AnimatedSection>
@@ -102,9 +105,8 @@ export default function CurationPage() {
           {/* Provenance & Originality */}
           <div className="mt-10 ">
             <AnimatedSection>
-              <div className="text-[26px] font-bold mb-5">
-                Provenance & Originality
-              </div>
+              <h2 className="text-[26px] font-bold mb-5">
+                Provenance & Originality</h2>
             </AnimatedSection>
 
             <AnimatedSection>
@@ -122,9 +124,8 @@ export default function CurationPage() {
           {/* Driving Experience */}
           <div className="mt-10 ">
             <AnimatedSection>
-              <div className="text-[26px] font-bold mb-5">
-                Driving Experience
-              </div>
+              <h2 className="text-[26px] font-bold mb-5">
+                Driving Experience</h2>
             </AnimatedSection>
 
             <AnimatedSection>
@@ -138,9 +139,8 @@ export default function CurationPage() {
           {/* Rarity with Relevance */}
           <div className="mt-10 ">
             <AnimatedSection>
-              <div className="text-[26px] font-bold mb-5">
-                Rarity with Relevance
-              </div>
+              <h2 className="text-[26px] font-bold mb-5">
+                Rarity with Relevance</h2>
             </AnimatedSection>
 
             <AnimatedSection>
@@ -153,9 +153,8 @@ export default function CurationPage() {
           {/* Cars That Belong in Your Future */}
           <div className="mt-10 ">
             <AnimatedSection>
-              <div className="text-[26px] font-bold mb-5">
-                Cars That Belong in Your Future
-              </div>
+              <h2 className="text-[26px] font-bold mb-5">
+                Cars That Belong in Your Future</h2>
             </AnimatedSection>
 
             <AnimatedSection>

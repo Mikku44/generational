@@ -8,7 +8,9 @@ export default [
         route("/inventory/:slug", "routes/inventoryDetail.tsx"),
         route("/ourteam", "routes/ourteam.tsx"),
         route("/contact", "routes/contact.tsx"),
-        route("/curation-philosyphy", "routes/curation-philosophy.tsx"),
+        route("/curation-philosophy", "routes/curation-philosophy.tsx"),
+        // Legacy misspelled URL — kept for backlinks / old sitemap
+        route("/curation-philosyphy", "routes/curation-legacy.tsx"),
     ]),
     
 

@@ -7,30 +7,34 @@ import AutoFadeImage from "~/components/AutoFadeImage";
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "HOME - GENERATIONAL" },
+    { title: "Classic Cars Thailand | Curated Collector Automobiles — GENERATIONAL" },
     {
       name: "description",
       content:
-        "PURVEYOR OF THE MOST BEAUTIFUL, CULTURALLY SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND.",
+        "GENERATIONAL curates the most beautiful, culturally significant classic cars in Thailand — global sourcing, provenance verification, import and preservation.",
     },
+    { tagName: "link", rel: "canonical", href: "https://generational.co/" },
 
     // — Open Graph (Facebook / LinkedIn / Line, etc.)
-    { property: "og:title", content: "HOME - GENERATIONAL" },
+    { property: "og:title", content: "Classic Cars Thailand | Curated Collector Automobiles — GENERATIONAL" },
     {
       property: "og:description",
       content:
         "Purveyor of the most beautiful, culturally significant classic automobiles in Thailand.",
     },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://generational.co" },
+    { property: "og:url", content: "https://generational.co/" },
     {
       property: "og:image",
-      content: "https://generational.co/images/og.jpg", // ← change to your actual image
+      content: "https://generational.co/images/og.jpg",
     },
+    { property: "og:image:alt", content: "Curated classic automobiles by GENERATIONAL Thailand" },
+    { property: "og:site_name", content: "GENERATIONAL" },
+    { property: "og:locale", content: "en_US" },
 
     // — Twitter Card
     { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:title", content: "HOME - GENERATIONAL" },
+    { name: "twitter:title", content: "Classic Cars Thailand | Curated Collector Automobiles — GENERATIONAL" },
     {
       name: "twitter:description",
       content:
@@ -38,8 +42,10 @@ export function meta({ }: Route.MetaArgs) {
     },
     {
       name: "twitter:image",
-      content: "https://generational.co/images/og.jpg", // ← same or different image is okay
+      content: "https://generational.co/images/og.jpg",
     },
+    { name: "twitter:image:alt", content: "Curated classic automobiles by GENERATIONAL Thailand" },
+    { name: "robots", content: "index, follow" },
   ];
 }
 
@@ -119,13 +125,39 @@ export default function Home() {
             autoPlay
             loop
             muted
-            webkit-playsinline 
-            playsInline 
+            webkit-playsinline
+            playsInline
+            preload="auto"
+            title="GENERATIONAL curated classic cars in Thailand — showroom film"
+            aria-label="Showreel of culturally significant classic automobiles curated by GENERATIONAL Thailand"
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-black/20" />
         </div>
 
+        {/* SEO / AEO crawlable intro — visually hidden, keeps fullscreen design intact */}
+        <section className="sr-only" aria-label="About GENERATIONAL">
+          <h1>Classic Cars in Thailand — Curated Collector Automobiles by GENERATIONAL</h1>
+          <p>
+            GENERATIONAL is a Bangkok-based purveyor of the most beautiful, culturally
+            significant classic automobiles in Thailand, offering global sourcing,
+            provenance verification, import, registration and preservation for
+            discerning collectors.
+          </p>
+          <h2>What does GENERATIONAL do?</h2>
+          <p>
+            We discover historically important cars worldwide, verify provenance and
+            condition, manage shipping, Thai import and registration, and preserve
+            each car for long-term collector value.
+          </p>
+          <nav aria-label="Primary">
+            <a href="/curation-philosophy">Curation philosophy</a>
+            <a href="/ourservice">Our services</a>
+            <a href="/inventory">Inventory</a>
+            <a href="/ourteam">Our team</a>
+            <a href="/contact">Contact</a>
+          </nav>
+        </section>
 
       </main>
 

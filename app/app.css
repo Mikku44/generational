@@ -1,5 +1,53 @@
 @import "tailwindcss";
 
+/* Embla filmstrip layout and parallax layers. */
+.embla {
+  --slide-spacing: 0.5rem;
+  width: 100%;
+  margin: auto;
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  align-items: center;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 auto;
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+
+.embla__parallax {
+  height: 100%;
+  overflow: hidden;
+}
+
+.embla__parallax__layer {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 120%;
+  margin-left: -10%;
+  justify-content: center;
+  will-change: transform;
+}
+
+.embla__parallax__img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  max-width: none;
+  object-fit: contain;
+}
+
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

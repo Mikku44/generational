@@ -7,51 +7,55 @@ import { useEffect, useRef } from "react";
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "OUR TEAM - GENERATIONAL" },
+    { title: "Our Team: Founders & Global Specialists — GENERATIONAL Thailand" },
     {
       name: "description",
       content:
-        "Meet the GENERATIONAL team: dedicated experts curating the most beautiful and culturally significant classic automobiles in Thailand for discerning collectors.",
+        "Meet GENERATIONAL's founders and global team in Bangkok, the UK and Japan — lawyers, collectors and marque specialists curating classic cars for Thailand.",
     },
+    { tagName: "link", rel: "canonical", href: "https://generational.co/ourteam" },
 
     // — Open Graph
-    { property: "og:title", content: "OUR TEAM - GENERATIONAL" },
+    { property: "og:title", content: "Our Team: Founders & Global Specialists — GENERATIONAL Thailand" },
     {
       property: "og:description",
       content:
-        "Get to know the GENERATIONAL team — experts committed to sourcing and preserving Thailand’s most historically significant classic automobiles.",
+        "Get to know the GENERATIONAL team — experts committed to sourcing and preserving Thailand's most historically significant classic automobiles.",
     },
     { property: "og:type", content: "website" },
     { property: "og:url", content: "https://generational.co/ourteam" },
     {
       property: "og:image",
-      content: "https://generational.co/images/Lamborghini_Diablo.jpg", // replace with your team image
+      content: "https://generational.co/images/Lamborghini_Diablo.jpg",
     },
+    { property: "og:image:alt", content: "GENERATIONAL team Lamborghini Diablo VT in Thailand" },
+    { property: "og:site_name", content: "GENERATIONAL" },
 
     // — Twitter
     { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:title", content: "OUR TEAM - GENERATIONAL" },
+    { name: "twitter:title", content: "Our Team: Founders & Global Specialists — GENERATIONAL Thailand" },
     {
       name: "twitter:description",
       content:
-        "Get to know the Generational team — experts committed to sourcing and preserving Thailand’s most historically significant classic automobiles.",
+        "Get to know the Generational team — experts committed to sourcing and preserving Thailand's most historically significant classic automobiles.",
     },
     {
       name: "twitter:image",
       content: "https://generational.co/images/Lamborghini_Diablo.jpg",
     },
+    { name: "twitter:image:alt", content: "GENERATIONAL team Lamborghini Diablo VT in Thailand" },
   ];
 }
 
 export default function Ourteam() {
 
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const isInView = useInView(videoRef, { amount: 0.5 });
 
   useEffect(() => {
     if (videoRef.current) {
       if (isInView) {
-        videoRef.current.play().catch((error) => {
+        videoRef.current.play().catch((error: unknown) => {
           console.log("Autoplay prevented:", error);
         });
       } else {
@@ -60,14 +64,33 @@ export default function Ourteam() {
     }
   }, [isInView]);
 
+  const teamSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "Our Team — GENERATIONAL",
+    url: "https://generational.co/ourteam",
+    about: { "@id": "https://generational.co/#organization" },
+  };
+
   return (
     <main className="min-h-screen mb-20 w-full ">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(teamSchema) }}
+      />
       <div className="md:p-10 p-5">
         <Logo />
       </div>
 
       {/* content */}
-      <section className="md:mt-[220px] mt-[200px] mb-20 container-x">
+      <section className="md:mt-[220px] mt-[200px] mb-20 container-x" aria-label="Our team">
+        <h1 className="sr-only">Our Team — Founders and Global Classic Car Specialists at GENERATIONAL Thailand</h1>
+        <p className="sr-only">
+          GENERATIONAL was founded in Bangkok by Akkaporn Vichitranon, Kajkanit
+          Sakdisubha and Seth Sethaputra, supported by specialists in the United
+          Kingdom and Japan sourcing culturally significant classic automobiles
+          for Thai collectors.
+        </p>
 
         {/*  */}
         <div className="grid md:grid-cols-12 gap-5">
@@ -81,6 +104,8 @@ export default function Ourteam() {
                 loop
                 playsInline
                 webkit-playsinline="true"
+                title="GENERATIONAL founder story — classic car curation in Thailand"
+                aria-label="Video introducing GENERATIONAL founders"
                 className="w-full"
               />
 
@@ -241,6 +266,8 @@ export default function Ourteam() {
               loop
               playsInline
               webkit-playsinline="true"
+              title="GENERATIONAL international team sourcing classic cars in the UK and Japan"
+              aria-label="Video of GENERATIONAL international sourcing team"
               className="w-full h-full object-cover"
             />
 
@@ -279,7 +306,7 @@ export default function Ourteam() {
 
           <div className="md:col-span-7">
             <img src="/images/ourteam-map.png"
-              alt="" />
+              alt="Map of GENERATIONAL global presence — Bangkok, United Kingdom and Japan classic car sourcing hubs" loading="lazy" />
           </div>
 
         </div>

@@ -4,6 +4,9 @@ import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { Remark } from "react-remark";
 import { useCallback, useState } from "react";
+import { Link } from "react-router";
+import { MdOutlineFullscreen } from "react-icons/md";
+import { ImagePreview } from "../../components/ui/image-preview";
 
 interface InventoryCardProps {
     index: number;
@@ -13,19 +16,10 @@ interface InventoryCardProps {
 export default function InventoryCard({ index, item }: InventoryCardProps) {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
     const [isOpen, setIsOpen] = useState(false);
+    const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
     const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
     const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
-
-    // Animation variants
-    const containerVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.6, ease: "easeOut", delay: index * 0.1 }
-        }
-    };
 
     // Helper to strip markdown for the short preview (prevents broken syntax)
     const getPreviewText = (text: string) => {
@@ -33,11 +27,7 @@ export default function InventoryCard({ index, item }: InventoryCardProps) {
     };
 
     return (
-        <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
+        <div
             className="grid md:grid-cols-12 gap-4 pb-8 border-b border-white/10"
         >
             {/* DESKTOP HEADER */}
@@ -63,7 +53,11 @@ export default function InventoryCard({ index, item }: InventoryCardProps) {
                 <div className="overflow-hidden h-full" ref={emblaRef}>
                     <div className="flex h-full">
                         {item.images.map((src, i) => (
-                            <div key={i} className="flex-[0_0_100%] min-w-0 relative">
+                            <div
+                                key={i}
+                                className="flex-[0_0_100%] min-w-0 relative cursor-pointer"
+                                onClick={() => setSelectedIndex(i)}
+                            >
                                 <img
                                     src={src}
                                     loading="lazy"
@@ -71,6 +65,9 @@ export default function InventoryCard({ index, item }: InventoryCardProps) {
                                     alt={`${item.name} - view ${i + 1}`}
                                     className="aspect-auto object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                                 />
+                                <div className="absolute inset-0 bg-black/0 hover:bg-black/20 transition flex items-end justify-end p-3">
+                                    <MdOutlineFullscreen className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition" />
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -97,9 +94,11 @@ export default function InventoryCard({ index, item }: InventoryCardProps) {
 
             {/* DETAIL PART */}
             <div className="md:col-span-3 flex flex-col justify-between">
-                <div className="md:text-5xl text-2xl font-[600] leading-tight">
-                    {item.name}
-                </div>
+                <h2 className="md:text-5xl text-2xl font-[600] leading-tight">
+                    <Link to={`/inventory/${item.id}`} className="hover:opacity-70 transition-opacity">
+                        {item.name}
+                    </Link>
+                </h2>
 
                 <div className="relative mt-4">
                     <p className="font-medium">
@@ -168,6 +167,15 @@ export default function InventoryCard({ index, item }: InventoryCardProps) {
                     </motion.div>
                 )}
             </AnimatePresence>
-        </motion.div>
+
+            {/* FULLSCREEN FILMSTRIP IMAGE PREVIEW */}
+            <ImagePreview
+                images={item.images}
+                name={item.name}
+                index={selectedIndex}
+                onSelect={setSelectedIndex}
+                onClose={() => setSelectedIndex(null)}
+            />
+        </div>
     );
 }

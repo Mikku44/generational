@@ -2,7 +2,7 @@ import type { Inventory } from "~/models/inventoryModel";
 
 export const APP_MENU = [
     {
-        href: "/curation-philosyphy",label : "CURATION PHILOSOPHY"
+        href: "/curation-philosophy",label : "CURATION PHILOSOPHY"
     },
     {
         href: "/ourservice",label : "OUR SERVICES"
