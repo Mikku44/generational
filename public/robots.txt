@@ -12,4 +12,4 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: https://generational.co/sitemap.xml
+Sitemap: https://www.generational.co/sitemap.xml

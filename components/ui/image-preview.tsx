@@ -5,14 +5,22 @@
  * Click any frame, use the arrows, or use the keyboard to navigate.
  */
 
-import { useCallback, useEffect } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { EmblaCarouselType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ZoomIn, ZoomOut } from "lucide-react";
+import { motion } from "framer-motion";
+import { Link } from "react-router";
+import {
+  TransformComponent,
+  TransformWrapper,
+  type ReactZoomPanPinchRef,
+} from "react-zoom-pan-pinch";
 
 export function ImagePreview({
   images,
   name,
+  detailHref,
   index,
   onSelect,
   onClose,
@@ -20,6 +28,7 @@ export function ImagePreview({
 }: {
   images: string[];
   name: string;
+  detailHref?: string;
   /** Active frame index, or null when closed. */
   index: number | null;
   onSelect: (index: number) => void;
@@ -27,11 +36,15 @@ export function ImagePreview({
   /** Parallax strength used while Embla slides transition. */
   tweenFactor?: number;
 }) {
+  const [isZoomed, setIsZoomed] = useState(false);
+  const [backdropFocus, setBackdropFocus] = useState<"idle" | "image" | "arrow">("idle");
+  const zoomControls = useRef<ReactZoomPanPinchRef | null>(null);
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "center",
     containScroll: false,
     dragFree: false,
-    duration: 45,
+    // A slightly longer scroll gives the full-screen viewer a softer glide.
+    duration: 60,
     loop: images.length > 2,
     watchDrag: false,
   });
@@ -48,8 +61,15 @@ export function ImagePreview({
   // center. Dragging is disabled so the image cannot be left between slides.
   useEffect(() => {
     if (index === null || !emblaApi) return;
+    setIsZoomed(false);
+    zoomControls.current?.resetTransform(0);
     emblaApi.scrollTo(index);
   }, [emblaApi, index]);
+
+  const toggleZoom = useCallback(() => {
+    if (isZoomed) zoomControls.current?.resetTransform();
+    else zoomControls.current?.zoomIn(1.5);
+  }, [isZoomed]);
 
   // Apply Embla's parallax motion to the image layers while the carousel
   // scrolls. The loop-point handling keeps the effect smooth at the edges.
@@ -113,9 +133,16 @@ export function ImagePreview({
 
   if (index === null || !images[index]) return null;
 
+  const backdropClass =
+    backdropFocus === "image"
+      ? "bg-black/90"
+      : backdropFocus === "arrow"
+        ? "bg-black/55"
+        : "bg-black/75";
+
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden bg-black/95 p-4"
+      className={`fixed inset-0 z-50 flex items-center justify-center overflow-hidden p-4 transition-colors duration-500 ease-out ${backdropClass}`}
       onClick={onClose}
     >
       <button
@@ -125,11 +152,31 @@ export function ImagePreview({
       >
         ×
       </button>
+      <button
+        className="absolute top-5 right-16 z-10 rounded-full bg-white/10 p-3 text-white transition hover:bg-white/20"
+        onClick={(e) => { e.stopPropagation(); toggleZoom(); }}
+        aria-label={isZoomed ? "Zoom out" : "Zoom in"}
+        title={isZoomed ? "Zoom out" : "Zoom in"}
+      >
+        {isZoomed ? <ZoomOut className="size-5" /> : <ZoomIn className="size-5" />}
+      </button>
+      {detailHref && (
+        <Link
+          to={detailHref}
+          onClick={(e) => e.stopPropagation()}
+          title={name}
+          className="absolute top-5 right-32 z-10 max-w-[min(58vw,32rem)] truncate rounded-full bg-white/10 px-4 py-3 text-sm font-medium text-white transition hover:bg-white/20"
+        >
+          {name}
+        </Link>
+      )}
       {images.length > 1 && (
         <>
           <button
             className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 bg-black/50 p-3 rounded-full hover:bg-black/80 transition z-10"
             onClick={(e) => { e.stopPropagation(); step(-1); }}
+            onMouseEnter={() => setBackdropFocus("arrow")}
+            onMouseLeave={() => setBackdropFocus("idle")}
             aria-label="Previous image"
           >
             <ChevronLeft className="size-6 text-white" />
@@ -137,6 +184,8 @@ export function ImagePreview({
           <button
             className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 bg-black/50 p-3 rounded-full hover:bg-black/80 transition z-10"
             onClick={(e) => { e.stopPropagation(); step(1); }}
+            onMouseEnter={() => setBackdropFocus("arrow")}
+            onMouseLeave={() => setBackdropFocus("idle")}
             aria-label="Next image"
           >
             <ChevronRight className="size-6 text-white" />
@@ -157,27 +206,78 @@ export function ImagePreview({
               <div
                 key={i}
                 data-index={i}
-                className={`embla__slide ${
-                  isActive
-                    ? "relative h-[55vh] w-[62vw] overflow-hidden opacity-100 transition-[height,width,opacity] delay-100 duration-500 ease-out md:h-[70vh] md:w-[48vw] lg:w-[44vw] xl:w-[40vw]"
-                    : isAdjacent
-                      ? "relative h-36 w-[20vw] cursor-pointer overflow-hidden opacity-70 transition-[height,width,opacity] delay-100 duration-500 ease-out hover:opacity-100 md:h-56 md:w-[16vw] lg:w-[14vw]"
-                      : "relative h-20 w-20 cursor-pointer overflow-hidden opacity-40 transition-[height,width,opacity] delay-100 duration-500 ease-out hover:opacity-80 md:h-28 md:w-28 lg:h-32 lg:w-32"
-                }`}
-                onClick={() => onSelect(i)}
-              >
-                <div className="embla__parallax h-full">
-                  <div data-parallax-layer className="embla__parallax__layer">
-                  <img
-                    src={src}
-                    alt={`${name} — full size view ${i + 1} of ${images.length}`}
-                onLoad={() => {
-                  emblaApi?.reInit();
+                className={`embla__slide relative h-[calc(100dvh-2rem)] w-[62vw] overflow-hidden md:w-[48vw] lg:w-[44vw] xl:w-[40vw] ${!isActive ? "cursor-pointer" : ""}`}
+                onMouseEnter={() => isActive && setBackdropFocus("image")}
+                onMouseLeave={() => isActive && setBackdropFocus("idle")}
+                onClick={() => {
+                  if (i !== index) setIsZoomed(false);
+                  onSelect(i);
                 }}
-                    className="embla__parallax__img"
-                  />
+              >
+                <motion.div
+                  className="h-full w-full"
+                  animate={{
+                    scale: isActive
+                      ? backdropFocus === "image"
+                        ? 1.04
+                        : backdropFocus === "arrow"
+                          ? 0.97
+                          : 1
+                      : isAdjacent
+                        ? backdropFocus === "image" ? 0.62 : 0.72
+                        : backdropFocus === "image" ? 0.32 : 0.42,
+                    opacity: isActive
+                      ? 1
+                      : backdropFocus === "image"
+                        ? isAdjacent ? 0.48 : 0.22
+                        : isAdjacent ? 0.65 : 0.35,
+                    filter: isActive && backdropFocus === "arrow"
+                      ? "brightness(0.88)"
+                      : !isActive && backdropFocus === "image"
+                        ? "brightness(0.7)"
+                        : "brightness(1)",
+                  }}
+                  transition={{ type: "spring", stiffness: 220, damping: 30, mass: 0.9 }}
+                >
+                  <div className="embla__parallax h-full">
+                    <div data-parallax-layer className="embla__parallax__layer">
+                    {isActive ? (
+                      <TransformWrapper
+                        key={`${index}-${src}`}
+                        initialScale={1}
+                        minScale={1}
+                        maxScale={4}
+                        centerOnInit
+                        limitToBounds
+                        wheel={{ step: 0.2 }}
+                        pinch={{ step: 5, allowPanning: true }}
+                        doubleClick={{ mode: "toggle", step: 1.5, animationTime: 250 }}
+                        onInit={(ref) => { zoomControls.current = ref; }}
+                        onTransform={(_, state) => setIsZoomed(state.scale > 1.01)}
+                      >
+                        <TransformComponent
+                          wrapperStyle={{ width: "100%", height: "100%", overflow: "hidden" }}
+                          contentStyle={{ width: "100%", height: "100%" }}
+                        >
+                          <img
+                            src={src}
+                            alt={`${name} — full size view ${i + 1} of ${images.length}`}
+                            onLoad={() => emblaApi?.reInit()}
+                            className="h-full w-full cursor-zoom-in object-contain"
+                          />
+                        </TransformComponent>
+                      </TransformWrapper>
+                    ) : (
+                      <img
+                        src={src}
+                        alt={`${name} — full size view ${i + 1} of ${images.length}`}
+                        onLoad={() => emblaApi?.reInit()}
+                        className="embla__parallax__img"
+                      />
+                    )}
+                    </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             );
           })}

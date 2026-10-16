@@ -13,7 +13,7 @@ export function meta({ }: Route.MetaArgs) {
       content:
         "Contact GENERATIONAL in Bangkok for classic car sourcing, sales and preservation. Call +66 91 991 1911, WhatsApp, LINE @generational or email HELLO@GENERATIONAL.CO.",
     },
-    { tagName: "link", rel: "canonical", href: "https://generational.co/contact" },
+    { tagName: "link", rel: "canonical", href: "https://www.generational.co/contact" },
     { property: "og:title", content: "Contact GENERATIONAL Bangkok | Classic Car Enquiries — Thailand" },
     {
       property: "og:description",
@@ -21,8 +21,8 @@ export function meta({ }: Route.MetaArgs) {
         "Talk to GENERATIONAL — Bangkok curators of culturally significant classic automobiles. Phone, WhatsApp, LINE, Instagram and email.",
     },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://generational.co/contact" },
-    { property: "og:image", content: "https://generational.co/images/GRS00991.webp" },
+    { property: "og:url", content: "https://www.generational.co/contact" },
+    { property: "og:image", content: "https://www.generational.co/images/GRS00991.webp" },
     { property: "og:image:alt", content: "Classic cars curated by GENERATIONAL Thailand — contact us" },
     { property: "og:site_name", content: "GENERATIONAL" },
     { name: "twitter:card", content: "summary_large_image" },
@@ -32,7 +32,7 @@ export function meta({ }: Route.MetaArgs) {
       content:
         "Talk to GENERATIONAL — Bangkok curators of culturally significant classic automobiles.",
     },
-    { name: "twitter:image", content: "https://generational.co/images/GRS00991.webp" },
+    { name: "twitter:image", content: "https://www.generational.co/images/GRS00991.webp" },
     { name: "twitter:image:alt", content: "Classic cars curated by GENERATIONAL Thailand — contact us" },
   ];
 }
@@ -89,8 +89,8 @@ export default function Contact() {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     name: "Contact GENERATIONAL",
-    url: "https://generational.co/contact",
-    about: { "@id": "https://generational.co/#organization" },
+    url: "https://www.generational.co/contact",
+    about: { "@id": "https://www.generational.co/#organization" },
   };
 
   return (

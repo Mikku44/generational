@@ -8,15 +8,15 @@ export const inventoryData: Inventory[] = [
         "status": "Available",
         "description": "### Ferrari 348 TB\n\n* Rosso Corsa over Tan \n* Full matching numbers \n* Odometer: 36,673 Miles \n* Authorized dealer car \n\nThe Ferrari 348 TB stands as one of the final truly raw expressions in Maranello’s V8 lineage — the last V8 sign-off by Enzo Ferrari and the last of the dog-leg gated shifter. All amazing traits before refinement began to take center stage in her younger sister, F355.\n\nRetaining the mechanical spirit and intimacy of the earlier Ferraris, the 348 introduced a new level of performance and design language that unmistakably echoed the icon of the 1980s — the Testarossa.\n\nEnhanced by a monocoque chassis and Ferrari’s Formula 1-inspired longitudinal flat-plane V8, paired with a transverse gearbox — the very architecture that gave the model her TB (Trasversale Berlinetta) designation and her unmistakable roar — the 348 marked the beginning of a new technical chapter for Maranello’s mid-engined V8 cars.\n\nThe Tipo F119, with her sharper wedge profile, signature ’80s side strakes, and wider stance signaled the arrival of a more modern supercar identity, while never abandoning the rawness that defined Ferrari’s golden analog era. \n\n**GENERATIONAL proudly presents**  \n**Ferrari 348 TB — The Rebellion**  \n*From our Analog Ferrari Collection*",
         "images": [
-            "/inventory/ferrari/1.jpg",
-            "/inventory/ferrari/2.jpg",
-            "/inventory/ferrari/3.jpg",
-            "/inventory/ferrari/4.jpg",
-            "/inventory/ferrari/5.jpg",
-            "/inventory/ferrari/6.jpg",
-            "/inventory/ferrari/7.jpg",
-            "/inventory/ferrari/8.jpg",
-            "/inventory/ferrari/9.jpg",
+            "/inventory/ferrari/1.webp",
+            "/inventory/ferrari/2.webp",
+            "/inventory/ferrari/3.webp",
+            "/inventory/ferrari/4.webp",
+            "/inventory/ferrari/5.webp",
+            "/inventory/ferrari/6.webp",
+            "/inventory/ferrari/7.webp",
+            "/inventory/ferrari/8.webp",
+            "/inventory/ferrari/9.webp",
         ]
     },
     {
@@ -25,34 +25,34 @@ export const inventoryData: Inventory[] = [
         "status": "Available",
         "description": "### Ferrari F355 Berlinetta\n\n* **Gated Manual**\n* Rosso Corsa over Nero\n* Factory carbon fiber bucket seats — believed to have been specified on fewer than 4% of total F355 production\n* Period-correct BBS Iding Power 19” wheels\n* Desirable early three-spoke non-airbag steering wheel\n* Early Bosch Motronic 2.7, OBDI car with sharper throttle response and a more aggressive exhaust note\n* Odometer: 38,483 kilometers\n* Authorized dealer car\n\nThe F355 Berlinetta remains one of Maranello’s purest expressions of the analog era — a car defined by the perfect balance between purity and practicality.\n\nEquipped with one of the most tactile open-gate manual transmissions ever fitted to a road car, along with a flat-plane V8 that screams a high pitch F1-style exhaust note to her redline at 8500 rpm.\n\nWhat makes this particular example truly special is her specification — unquestionably one of the highest-specced F355s in Thailand, and in the World.\n\n**Gated manual.**\n**Carbon bucket seats.**\n**Motronic 2.7.**\n**Three-spoke steering wheel.**\n\nEvery box ticked — exactly as Ferrari collectors would want.\n\nThe perfectly specced car from the perfect analog model.\n\n**GENERATIONAL proudly presents**\n**Ferrari F355 Berlinetta — The Perfection**\n*From our Analog Ferrari Collection*",
         "images": [
-            "/inventory/ferrari_f355/1.jpg",
-            "/inventory/ferrari_f355/2.jpg",
-            "/inventory/ferrari_f355/3.jpg",
-            "/inventory/ferrari_f355/4.jpg",
-            "/inventory/ferrari_f355/5.jpg",
-            "/inventory/ferrari_f355/6.jpg",
-            "/inventory/ferrari_f355/7.jpg",
-            "/inventory/ferrari_f355/8.jpg",
-            "/inventory/ferrari_f355/9.jpg",
-            "/inventory/ferrari_f355/10.jpg",
+            "/inventory/ferrari_f355/1.webp",
+            "/inventory/ferrari_f355/2.webp",
+            "/inventory/ferrari_f355/3.webp",
+            "/inventory/ferrari_f355/4.webp",
+            "/inventory/ferrari_f355/5.webp",
+            "/inventory/ferrari_f355/6.webp",
+            "/inventory/ferrari_f355/7.webp",
+            "/inventory/ferrari_f355/8.webp",
+            "/inventory/ferrari_f355/9.webp",
+            "/inventory/ferrari_f355/10.webp",
         ]
     },
     {
         "id": "bmw-m3-cs-interlagos-01",
         "name": "BMW M3 CS",
         "status": "Available",
-        "description": "### BMW M3 CS\n\n* **Manual**\n* Odometer: 9,799 miles\n* Interlagos Blue (A30), an exclusive paint option for the CS\n* Cinnamon interior\n* 1 of 275 RHD M3 CS manufactured, rarer than the M3 CSL\n* Factory-equipped with the “ZCP” Competition Package, derived from the M3 CSL\n\nSome say the only thing that stopped the M3 CSL from being the perfect car was the fact that it was offered only with SMG II, not a manual transmission.\n\nGENERATIONAL proudly presents the BMW M3 CS — carrying major features from the CSL, and a bit more: 13.7” cross-drilled brake rotors, a sharper 14.5:1 steering rack, M Track Mode for DSC, and 19” CSL wheels.\n\nMost importantly, however, is the Getrag Type D S6S420G. For the lucky few who have had the privilege of shifting through the gears of the S6S420G, it is often described as cutting a hot knife through butter — engaging and highly satisfying. Almost as if the gearbox draws your hand in, welcoming and hungry for the next shift.\n\nTastefully optioned from the factory in Interlagos Blue — exclusive to the M3 CS — over a beautiful Cinnamon interior. A combination that even the talent of our photographers cannot fully capture, and must truly be seen in the flesh.",
+        "description": "### BMW M3 CS\n\n* **Manual**\n* Odometer: 9,799 miles\n* Interlagos Blue (A30), an exclusive paint option for the CS\n* Cinnamon interior\n* 1 of 275 RHD M3 CS manufactured, rarer than the M3 CSL\n* Factory-equipped with the “ZCP” Competition Package, derived from the M3 CSL\n\nSome say the only thing that stopped the M3 CSL from being the perfect car was the fact that it was offered only with SMG II, not a manual transmission.\n\n**GENERATIONAL proudly presents the BMW M3 CS — carryi**ng major features from the CSL, and a bit more: 13.7” cross-drilled brake rotors, a sharper 14.5:1 steering rack, M Track Mode for DSC, and 19” CSL wheels.\n\nMost importantly, however, is the Getrag Type D S6S420G. For the lucky few who have had the privilege of shifting through the gears of the S6S420G, it is often described as cutting a hot knife through butter — engaging and highly satisfying. Almost as if the gearbox draws your hand in, welcoming and hungry for the next shift.\n\nTastefully optioned from the factory in Interlagos Blue — exclusive to the M3 CS — over a beautiful Cinnamon interior. A combination that even the talent of our photographers cannot fully capture, and must truly be seen in the flesh.",
         "images": [
-            "/inventory/bmw_m3_cs/1.jpg",
-            "/inventory/bmw_m3_cs/2.jpg",
-            "/inventory/bmw_m3_cs/3.jpg",
-            "/inventory/bmw_m3_cs/4.jpg",
-            "/inventory/bmw_m3_cs/5.jpg",
-            "/inventory/bmw_m3_cs/6.jpg",
-            "/inventory/bmw_m3_cs/7.jpg",
-            "/inventory/bmw_m3_cs/8.jpg",
-            "/inventory/bmw_m3_cs/9.jpg",
-            "/inventory/bmw_m3_cs/10.jpg"
+            "/inventory/bmw_m3_cs/1.webp",
+            "/inventory/bmw_m3_cs/2.webp",
+            "/inventory/bmw_m3_cs/3.webp",
+            "/inventory/bmw_m3_cs/4.webp",
+            "/inventory/bmw_m3_cs/5.webp",
+            "/inventory/bmw_m3_cs/6.webp",
+            "/inventory/bmw_m3_cs/7.webp",
+            "/inventory/bmw_m3_cs/8.webp",
+            "/inventory/bmw_m3_cs/9.webp",
+            "/inventory/bmw_m3_cs/10.webp"
         ]
     },
     {
@@ -61,16 +61,16 @@ export const inventoryData: Inventory[] = [
         "status": "Available",
         "description": "### Honda NSX-R\n\n* **NA1 Model**\n* Championship White\n* 1 of 483 Manufactured, Car #30\n* Odometer: 31,395 Kilometers\n\nCreated in 1992 as Honda’s purest expression of performance from the NSX platform, the NA1 NSX-R underwent a meticulous factory weight-reduction program: sound deadening removed, thinner glass, lightweight components, titanium shift knob, Recaro carbon-kevlar seats, and a hand-balanced version of Honda’s legendary C30A VTEC V6.\n\nPower remained officially unchanged at 280 HP — but that was never the point. Perfection was never about power.\n\nOnly 483 examples of the NA1 NSX-R were ever produced, placing her in the same rarity league as the Ferrari Enzo (40X) and BMW M1 (453). The 4XX Club.\n\nOur example is finished in Championship White — Honda’s historic motorsport color first earned through its inaugural Formula One victory. The NSX-R remains not merely a Japanese classic, but one of the most important — perhaps the most important — analog performance cars ever created by Japan.\n\nThe NSX-R became the machine that quietly forced the world’s greatest manufacturers to rethink how a driver’s car should feel. Italy, Germany, and the United Kingdom suddenly found themselves relearning what they had spent decades mastering.\n\nThe rulebook was rewritten by Japan.\n\n**The Sweet Payback**",
         "images": [
-            "/inventory/nsx-r/1.jpg",
-            "/inventory/nsx-r/2.jpg",
-            "/inventory/nsx-r/3.jpg",
-            "/inventory/nsx-r/4.jpg",
-            "/inventory/nsx-r/5.jpg",
-            "/inventory/nsx-r/6.jpg",
-            "/inventory/nsx-r/7.jpg",
-            "/inventory/nsx-r/8.jpg",
-            "/inventory/nsx-r/9.jpg",
-            "/inventory/nsx-r/10.jpg"
+            "/inventory/nsx-r/1.webp",
+            "/inventory/nsx-r/2.webp",
+            "/inventory/nsx-r/3.webp",
+            "/inventory/nsx-r/4.webp",
+            "/inventory/nsx-r/5.webp",
+            "/inventory/nsx-r/6.webp",
+            "/inventory/nsx-r/7.webp",
+            "/inventory/nsx-r/8.webp",
+            "/inventory/nsx-r/9.webp",
+            "/inventory/nsx-r/10.webp"
         ]
     },
     {
@@ -79,16 +79,16 @@ export const inventoryData: Inventory[] = [
         "status": "Available",
         "description": "### Alfa Romeo Alfasud Sprint\n\n* **Series 1**\n* Finished in White\n* Boxer Engine and Sunroof Configuration\n* Odometer: 96,809 Kilometers\n* 1 of Only 2 Examples known by us in Thailand\n\nCreated during the 1970s — an era where Europe was still obsessed with lightweight engineering and mechanical intimacy — the Alfa Romeo Alfasud Sprint arrived as Alfa Romeo’s radical answer to what an affordable sporting coupé could become.\n\nBeneath the delicate Giugiaro-designed hatchback-styled body sat one of the most advanced layouts ever engineered into an entry-level coupé of her era: front-wheel drive paired with Alfa Romeo’s low-mounted flat-four boxer engine.\n\nThe boxer configuration allowed the engine to sit impossibly low in the chassis, lowering the center of gravity and giving the Sprint a character few cars of its class could replicate. The steering felt alive. The nose reacted instantly. The car rotated with an eagerness that reminded the world that lightweight engineering was still an art form in Italy.\n\nToday, surviving Alfasud Sprints remain extraordinarily scarce worldwide, with only two examples currently known by us in Thailand.\n\nOne of the rarest Alfa Romeo models in Thailand.",
         "images": [
-            "/inventory/alfa-romeo/1.jpg",
-            "/inventory/alfa-romeo/2.jpg",
-            "/inventory/alfa-romeo/3.jpg",
-            "/inventory/alfa-romeo/4.jpg",
-            "/inventory/alfa-romeo/5.jpg",
-            "/inventory/alfa-romeo/6.jpg",
-            "/inventory/alfa-romeo/7.jpg",
-            "/inventory/alfa-romeo/8.jpg",
-            "/inventory/alfa-romeo/9.jpg",
-            "/inventory/alfa-romeo/10.jpg"
+            "/inventory/alfa-romeo/1.webp",
+            "/inventory/alfa-romeo/2.webp",
+            "/inventory/alfa-romeo/3.webp",
+            "/inventory/alfa-romeo/4.webp",
+            "/inventory/alfa-romeo/5.webp",
+            "/inventory/alfa-romeo/6.webp",
+            "/inventory/alfa-romeo/7.webp",
+            "/inventory/alfa-romeo/8.webp",
+            "/inventory/alfa-romeo/9.webp",
+            "/inventory/alfa-romeo/10.webp"
         ]
     },
     {
@@ -97,106 +97,106 @@ export const inventoryData: Inventory[] = [
         "status": "Available",
         "description": "### Toyota Celica 1600 GTV\n\n* **Japanese Domestic Market “Flat Nose” TA22 Model**\n* Coral Red\n* 1600cc 2T-G DOHC Twin-Cam Engine\n* Weber 50 DCO Carburetors with Hayashi Racing Headers\n* Engine and Full Panel Restored in 2018\n\nBy 1974, Japan had stopped trying to imitate Europe.\n\nIt had begun competing with it.\n\nThe Toyota Celica 1600 GTV represented the very best of Toyota’s emerging performance philosophy during the golden age of Japanese motoring — lightweight, reliable, mechanically honest, and engineered to deliver maximum enjoyment from modest displacement.\n\nAt her heart sits Toyota’s 2T-G twin-cam engine, developed with Yamaha and inspired by the same engineering ambition that would later define some of Japan’s most celebrated performance cars. Fed by Weber 50 DCO carburetors and breathing through Hayashi Racing headers, the soundtrack is every bit as important as the numbers.\n\nOur example was restored in 2018 by Vintage JDM specialist and thoughtfully upgraded with period-correct performance modifications but remains faithful to the spirit of Japanese tuning culture that emerged during the 1970s.",
         "images": [
-            "/inventory/toyota-celica-1600-gtv/1.jpg",
-            "/inventory/toyota-celica-1600-gtv/2.jpg",
-            "/inventory/toyota-celica-1600-gtv/3.jpg",
-            "/inventory/toyota-celica-1600-gtv/4.jpg",
-            "/inventory/toyota-celica-1600-gtv/5.jpg",
-            "/inventory/toyota-celica-1600-gtv/6.jpg",
-            "/inventory/toyota-celica-1600-gtv/7.jpg",
-            "/inventory/toyota-celica-1600-gtv/8.jpg",
-            "/inventory/toyota-celica-1600-gtv/9.jpg",
-            "/inventory/toyota-celica-1600-gtv/10.jpg"
+            "/inventory/toyota-celica-1600-gtv/1.webp",
+            "/inventory/toyota-celica-1600-gtv/2.webp",
+            "/inventory/toyota-celica-1600-gtv/3.webp",
+            "/inventory/toyota-celica-1600-gtv/4.webp",
+            "/inventory/toyota-celica-1600-gtv/5.webp",
+            "/inventory/toyota-celica-1600-gtv/6.webp",
+            "/inventory/toyota-celica-1600-gtv/7.webp",
+            "/inventory/toyota-celica-1600-gtv/8.webp",
+            "/inventory/toyota-celica-1600-gtv/9.webp",
+            "/inventory/toyota-celica-1600-gtv/10.webp"
         ]
     },
     {
         "id": "bently-brooklands",
         "name": "Bentley Brooklands",
         "status": "Available",
-        "description": "### Bentley Brooklands\n\n* **AAS Authorised Dealer Car**\n* Navy Blue with Red Coachline\n* Cream Connolly Leather with Navy Piping\n* 6.75-Litre Rolls-Royce V8\n* Hand-Built in Crewe\n\nGENERATIONAL proudly presents a land yacht from the United Kingdom — the Bentley Brooklands.\n\nShe was conceived not as a sports car, but as a gentleman’s express: a motorcar designed to cross continents in near silence while carrying the unmistakable presence of Crewe’s finest. Retailing at approximately £82,000 in 1992, the Brooklands occupied a very different league of luxury — at a time when a new Porsche 964 Carrera could be purchased for around £48,000.\n\nOur example is finished in deep Navy Blue with a hand-painted red coachline, over a Cream Connolly leather interior accented by matching Navy piping.\nTogether, the specification captures the understated elegance that defined Bentley during the final years of its traditional coachbuilt era.\n\nFor us, the Brooklands serves as a reminder of an era when luxury was measured not by screens, gadgets or software, but by Connolly leather, polished walnut, and the quiet confidence of a five-foot bonnet leading the way.",
+        "description": "### Bentley Brooklands\n\n* **AAS Authorised Dealer Car**\n* Navy Blue with Red Coachline\n* Cream Connolly Leather with Navy Piping\n* 6.75-Litre Rolls-Royce V8\n* Hand-Built in Crewe\n\n**GENERATIONAL proudly presents a la**nd yacht from the United Kingdom — the Bentley Brooklands.\n\nShe was conceived not as a sports car, but as a gentleman’s express: a motorcar designed to cross continents in near silence while carrying the unmistakable presence of Crewe’s finest. Retailing at approximately £82,000 in 1992, the Brooklands occupied a very different league of luxury — at a time when a new Porsche 964 Carrera could be purchased for around £48,000.\n\nOur example is finished in deep Navy Blue with a hand-painted red coachline, over a Cream Connolly leather interior accented by matching Navy piping.\nTogether, the specification captures the understated elegance that defined Bentley during the final years of its traditional coachbuilt era.\n\nFor us, the Brooklands serves as a reminder of an era when luxury was measured not by screens, gadgets or software, but by Connolly leather, polished walnut, and the quiet confidence of a five-foot bonnet leading the way.",
         "images": [
-            "/inventory/bently-brooklands/1.jpg",
-            "/inventory/bently-brooklands/2.jpg",
-            "/inventory/bently-brooklands/3.jpg",
-            "/inventory/bently-brooklands/4.jpg",
-            "/inventory/bently-brooklands/5.jpg",
-            "/inventory/bently-brooklands/6.jpg",
-            "/inventory/bently-brooklands/7.jpg",
-            "/inventory/bently-brooklands/8.jpg",
-            "/inventory/bently-brooklands/9.jpg",
-            "/inventory/bently-brooklands/10.jpg"
+            "/inventory/bently-brooklands/1.webp",
+            "/inventory/bently-brooklands/2.webp",
+            "/inventory/bently-brooklands/3.webp",
+            "/inventory/bently-brooklands/4.webp",
+            "/inventory/bently-brooklands/5.webp",
+            "/inventory/bently-brooklands/6.webp",
+            "/inventory/bently-brooklands/7.webp",
+            "/inventory/bently-brooklands/8.webp",
+            "/inventory/bently-brooklands/9.webp",
+            "/inventory/bently-brooklands/10.webp"
         ]
     },
     {
         "id": "lambo-diablo-vt",
         "name": "Lamborghini Diablo VT",
         "status": "Available",
-        "description": "### Lamborghini Diablo VT\n\n* **VT (Viscous Traction) All-Wheel Drive**\n* Giallo Orion over Nero with Giallo Piping\n* Only 6,252 Kilometers from New\n* Early Pop-Up Headlight, Low Dash Model\n* Full Chassis & Paint Restoration\n* Mechanical Service by Renazzo Motor\n\nThe Diablo VT was Lamborghini’s answer to a simple problem: how to harness the fury of a naturally aspirated V12 without taming her character. Through its innovative Viscous Traction system, up to 25% of torque could be transferred to the front wheels when required, creating the blueprint that would later define every flagship V12 Lamborghini from the Murciélago and Aventador to today’s Revuelto.\n\nBeneath the engine cover sits a 5.7-litre, 48-valve V12 descended directly from the original masterpiece conceived by Giotto Bizzarrini in 1963. No turbochargers. No traction control. No ABS. Just twelve cylinders, 485 horsepower, and outrageous 335 mm-wide rear tyres.\n\nThe name Diablo translates to “Devil” in Spanish. A fitting title for a machine that rewards courage and demands absolute respect from her driver.\n\nA car built for brave men willing to tame her.\n\nSince the founding of GENERATIONAL, many extraordinary automobiles have passed through our showroom. Few possess the theatre, presence, and sheer intimidation factor of the Diablo VT.\n\nOur example has undergone a comprehensive body and paint restoration by one of Thailand’s leading restoration specialists, while all mechanical works have been entrusted to Renazzo Motor, Thailand’s official Lamborghini authorised dealer. No detail has been overlooked.\n\nGENERATIONAL proudly presents the Lamborghini Diablo VT.\n\nFrom The Natee Masathienvong Collection.",
+        "description": "### Lamborghini Diablo VT\n\n* **VT (Viscous Traction) All-Wheel Drive**\n* Giallo Orion over Nero with Giallo Piping\n* Only 6,252 Kilometers from New\n* Early Pop-Up Headlight, Low Dash Model\n* Full Chassis & Paint Restoration\n* Mechanical Service by Renazzo Motor\n\nThe Diablo VT was Lamborghini’s answer to a simple problem: how to harness the fury of a naturally aspirated V12 without taming her character. Through its innovative Viscous Traction system, up to 25% of torque could be transferred to the front wheels when required, creating the blueprint that would later define every flagship V12 Lamborghini from the Murciélago and Aventador to today’s Revuelto.\n\nBeneath the engine cover sits a 5.7-litre, 48-valve V12 descended directly from the original masterpiece conceived by Giotto Bizzarrini in 1963. No turbochargers. No traction control. No ABS. Just twelve cylinders, 485 horsepower, and outrageous 335 mm-wide rear tyres.\n\nThe name Diablo translates to “Devil” in Spanish. A fitting title for a machine that rewards courage and demands absolute respect from her driver.\n\nA car built for brave men willing to tame her.\n\nSince the founding of GENERATIONAL, many extraordinary automobiles have passed through our showroom. Few possess the theatre, presence, and sheer intimidation factor of the Diablo VT.\n\nOur example has undergone a comprehensive body and paint restoration by one of Thailand’s leading restoration specialists, while all mechanical works have been entrusted to Renazzo Motor, Thailand’s official Lamborghini authorised dealer. No detail has been overlooked.\n\n**GENERATIONAL proudly presents the Lamborghi**ni Diablo VT.\n\nFrom The Natee Masathienvong Collection.",
         "images": [
-            "/inventory/lambo-diablo-vt/1.jpg",
-            "/inventory/lambo-diablo-vt/2.jpg",
-            "/inventory/lambo-diablo-vt/3.jpg",
-            "/inventory/lambo-diablo-vt/4.jpg",
-            "/inventory/lambo-diablo-vt/5.jpg",
-            "/inventory/lambo-diablo-vt/6.jpg",
-            "/inventory/lambo-diablo-vt/7.jpg",
-            "/inventory/lambo-diablo-vt/8.jpg",
-            "/inventory/lambo-diablo-vt/9.jpg",
-            "/inventory/lambo-diablo-vt/10.jpg"
+            "/inventory/lambo-diablo-vt/1.webp",
+            "/inventory/lambo-diablo-vt/2.webp",
+            "/inventory/lambo-diablo-vt/3.webp",
+            "/inventory/lambo-diablo-vt/4.webp",
+            "/inventory/lambo-diablo-vt/5.webp",
+            "/inventory/lambo-diablo-vt/6.webp",
+            "/inventory/lambo-diablo-vt/7.webp",
+            "/inventory/lambo-diablo-vt/8.webp",
+            "/inventory/lambo-diablo-vt/9.webp",
+            "/inventory/lambo-diablo-vt/10.webp"
         ]
     },
     {
         "id": "ferrari-512-tr",
         "name": "Ferrari 512 TR",
         "status": "Available",
-        "description": "### Ferrari 512 TR\n\n* **1 of only 88 RHD ever produced**\n* Authorized Dealer\n* Rosso Corsa over Tan\n* Odometer displays 6,166 kilometres following a factory instrument replacement; documented original mileage ~ 38,000 kilometres\n\nThe Testarossa changed everything about Ferrari‘s 12 cylinders flagship.\n\nIntroduced in 1984, the F110 platform represented Ferrari’s complete departure from the traditional front-engined V12 flagship. Its dramatic “cheese grater” side strakes, impossibly wide rear track and flat-twelve engine created an entirely new identity for the marque. The Testarossa became a cultural phenomenon. Immortalised by Miami Vice, celebrated by celebrities and entrepreneurs, it became the definitive symbol of the excess, ambition and optimism that characterised America’s economic boom of the 1980s.\n\nThe 512 TR arrived in 1991 as a comprehensive evolution rather than a simple facelift. The flat-twelve was repositioned lower within the chassis, improving the centre of gravity and significantly enhancing handling characteristics. Aerodynamic revisions reduced lift and increased stability at speed, while the interior was redesigned to provide greater comfort and usability without sacrificing the drama that defined the model.\n\nSince acquiring the car, Khun Natee has driven it regularly over the past 10 years, covering 6,166 kilometres to ensure the car remained active and properly exercised. During his stewardship, the car has benefited from extensive mechanical and cosmetic attention. A NOS steering rack, as well as the main shaft, layshaft and synchromesh components. The engine has also undergone a comprehensive refresh to ensure the car performs as intended when the car was new.\n\nThe bodywork has been thoroughly restored and remains free from corrosion in the areas commonly prone to rust on the model, including the door sills, floors and pillars. Together with the extensively refreshed suspension and paintwork, the result is an exceptionally well-presented example of Ferrari’s celebrated flat-twelve GT.\n\nGENERATIONAL proudly presents The Ferrari 512 TR.\n\nFrom The Natee Masathienvong Collection.",
+        "description": "### Ferrari 512 TR\n\n* **1 of only 88 RHD ever produced**\n* Authorized Dealer\n* Rosso Corsa over Tan\n* Odometer displays 6,166 kilometres following a factory instrument replacement; documented original mileage ~ 38,000 kilometres\n\nThe Testarossa changed everything about Ferrari‘s 12 cylinders flagship.\n\nIntroduced in 1984, the F110 platform represented Ferrari’s complete departure from the traditional front-engined V12 flagship. Its dramatic “cheese grater” side strakes, impossibly wide rear track and flat-twelve engine created an entirely new identity for the marque. The Testarossa became a cultural phenomenon. Immortalised by Miami Vice, celebrated by celebrities and entrepreneurs, it became the definitive symbol of the excess, ambition and optimism that characterised America’s economic boom of the 1980s.\n\nThe 512 TR arrived in 1991 as a comprehensive evolution rather than a simple facelift. The flat-twelve was repositioned lower within the chassis, improving the centre of gravity and significantly enhancing handling characteristics. Aerodynamic revisions reduced lift and increased stability at speed, while the interior was redesigned to provide greater comfort and usability without sacrificing the drama that defined the model.\n\nSince acquiring the car, Khun Natee has driven it regularly over the past 10 years, covering 6,166 kilometres to ensure the car remained active and properly exercised. During his stewardship, the car has benefited from extensive mechanical and cosmetic attention. A NOS steering rack, as well as the main shaft, layshaft and synchromesh components. The engine has also undergone a comprehensive refresh to ensure the car performs as intended when the car was new.\n\nThe bodywork has been thoroughly restored and remains free from corrosion in the areas commonly prone to rust on the model, including the door sills, floors and pillars. Together with the extensively refreshed suspension and paintwork, the result is an exceptionally well-presented example of Ferrari’s celebrated flat-twelve GT.\n\n**GENERATIONAL proudly presents The Ferrari 512 TR.**\n\nFrom The Natee Masathienvong Collection.",
         "images": [
-            "/inventory/ferrari-512-tr/1.jpg",
-            "/inventory/ferrari-512-tr/2.jpg",
-            "/inventory/ferrari-512-tr/3.jpg",
-            "/inventory/ferrari-512-tr/4.jpg",
-            "/inventory/ferrari-512-tr/5.jpg",
-            "/inventory/ferrari-512-tr/6.jpg",
-            "/inventory/ferrari-512-tr/7.jpg",
-            "/inventory/ferrari-512-tr/8.jpg",
-            "/inventory/ferrari-512-tr/9.jpg",
-            "/inventory/ferrari-512-tr/10.jpg"
+            "/inventory/ferrari-512-tr/1.webp",
+            "/inventory/ferrari-512-tr/2.webp",
+            "/inventory/ferrari-512-tr/3.webp",
+            "/inventory/ferrari-512-tr/4.webp",
+            "/inventory/ferrari-512-tr/5.webp",
+            "/inventory/ferrari-512-tr/6.webp",
+            "/inventory/ferrari-512-tr/7.webp",
+            "/inventory/ferrari-512-tr/8.webp",
+            "/inventory/ferrari-512-tr/9.webp",
+            "/inventory/ferrari-512-tr/10.webp"
         ]
     },
     {
         "id": "porsche-911-turbo",
         "name": "Porsche 911 Turbo",
         "status": "Available",
-        "description": "### Porsche 911 Turbo\n\n* **993 Turbo S in all but name — and a little more**\n* Specified through Porsche’s highest level of personalization, the “Sonderwunsch” (Special Wishes) programme\n* Factory X50 WLS II package, increasing output to 450 horsepower — matching the Turbo S\n* Equipped with the corresponding Turbo S air intakes, rear wing and front bumper\n* Ocean Blue Metallic over Tan Leather with bespoke Walnut interior\n* A genuine one-off specification\n\nThe Porsche 993 Turbo occupies a unique position in the history of the 911. She was the first turbocharged 911 to feature twin turbochargers and all-wheel drive, combining supercar performance with everyday usability in a way no previous Turbo had achieved.\n\nYet for a select group of customers, even the standard Turbo was not enough.\n\nToday, personalization has become the cornerstone of the supercar industry. Programmes such as McLaren Special Operations (MSO), Ferrari Tailor Made and Lamborghini Ad Personam allow customers to commission vehicles tailored to their individual tastes, transforming exclusivity into a key selling point.\n\nBut this car was doing exactly that nearly three decades earlier.\n\nLong benevolence bespoke commissions became a marketing strategy, Porsche’s Sonderwunsch programme quietly offered a select group of VIP clients the opportunity to work directly with the factory to create truly individual motorcars. In many ways, it was the blueprint for the personalization programmes that define the modern supercar market today.\n\nFinished in Ocean Blue Metallic over Tan Leather with a bespoke Walnut interior, she embodies a period when Porsche would build almost anything a VIP customer desired, provided they were willing to ask.\n\nA Turbo S in all but name, and more.\n\nGENERATIONAL proudly presents The Porsche 911 Turbo.\n\nFrom The Natee Masathienvong Collection.",
+        "description": "### Porsche 911 Turbo\n\n* **993 Turbo S in all but name — and a little more**\n* Specified through Porsche’s highest level of personalization, the “Sonderwunsch” (Special Wishes) programme\n* Factory X50 WLS II package, increasing output to 450 horsepower — matching the Turbo S\n* Equipped with the corresponding Turbo S air intakes, rear wing and front bumper\n* Ocean Blue Metallic over Tan Leather with bespoke Walnut interior\n* A genuine one-off specification\n\nThe Porsche 993 Turbo occupies a unique position in the history of the 911. She was the first turbocharged 911 to feature twin turbochargers and all-wheel drive, combining supercar performance with everyday usability in a way no previous Turbo had achieved.\n\nYet for a select group of customers, even the standard Turbo was not enough.\n\nToday, personalization has become the cornerstone of the supercar industry. Programmes such as McLaren Special Operations (MSO), Ferrari Tailor Made and Lamborghini Ad Personam allow customers to commission vehicles tailored to their individual tastes, transforming exclusivity into a key selling point.\n\nBut this car was doing exactly that nearly three decades earlier.\n\nLong benevolence bespoke commissions became a marketing strategy, Porsche’s Sonderwunsch programme quietly offered a select group of VIP clients the opportunity to work directly with the factory to create truly individual motorcars. In many ways, it was the blueprint for the personalization programmes that define the modern supercar market today.\n\nFinished in Ocean Blue Metallic over Tan Leather with a bespoke Walnut interior, she embodies a period when Porsche would build almost anything a VIP customer desired, provided they were willing to ask.\n\nA Turbo S in all but name, and more.\n\n**GENERATIONAL proudly presents The Porsche 911 Turbo.**\n\nFrom The Natee Masathienvong Collection.",
         "images": [
-            "/inventory/porsche-911-turbo/1.jpg",
-            "/inventory/porsche-911-turbo/2.jpg",
-            "/inventory/porsche-911-turbo/3.jpg",
-            "/inventory/porsche-911-turbo/4.jpg",
-            "/inventory/porsche-911-turbo/5.jpg",
-            "/inventory/porsche-911-turbo/6.jpg",
-            "/inventory/porsche-911-turbo/7.jpg",
-            "/inventory/porsche-911-turbo/8.jpg",
-            "/inventory/porsche-911-turbo/9.jpg",
-            "/inventory/porsche-911-turbo/10.jpg"
+            "/inventory/porsche-911-turbo/1.webp",
+            "/inventory/porsche-911-turbo/2.webp",
+            "/inventory/porsche-911-turbo/3.webp",
+            "/inventory/porsche-911-turbo/4.webp",
+            "/inventory/porsche-911-turbo/5.webp",
+            "/inventory/porsche-911-turbo/6.webp",
+            "/inventory/porsche-911-turbo/7.webp",
+            "/inventory/porsche-911-turbo/8.webp",
+            "/inventory/porsche-911-turbo/9.webp",
+            "/inventory/porsche-911-turbo/10.webp"
         ]
     },
     {
         "id": "porsche-911-supersport-cabriolet",
         "name": "Porsche 911 SuperSport Cabriolet",
         "status": "Available",
-        "description": "### Porsche 911 SuperSport Cabriolet\n\n* **Factory M491 “Works Turbo Look” specification**\n* Features the Turbo’s distinctive fender flares, front spoiler and Tea Tray rear wing\n* Factory fitted with the 930 Turbo’s uprated suspension, braking system and Fuchs alloy wheels\n* Silver Metallic over Red Interior\n* Odometer reads 39,267 miles\n\nFew shapes in automotive history are as iconic as the Porsche 930 Turbo. The sexy rear arches. The Tea Tray rear wing. Two unmistakable design elements that came to define the excess and optimism of the 1980s. It was the poster car of a generation.\n\nIt was also one of the most intimidating road cars ever built.\n\nThe combination of a rear-mounted engine, short wheelbase and explosive turbocharged power delivery earned the 930 its infamous “Widowmaker” reputation. When the boost arrived, it arrived all at once.\n\nFor those who desired the look without the risk, Porsche introduced option code M491, better known as the “SuperSport”.\n\nDelivering all the visual drama of the Turbo while retaining the balance, predictability and usability of the naturally aspirated Carrera, the M491 was far more than a cosmetic package. It received the Turbo’s wider bodywork, uprated brakes, suspension and Fuchs wheels, combined with Porsche’s proven 3.2-litre flat-six, G50 transmission, open-top cabriolet, to create one of the most complete air-cooled cabriolet 911.\n\nEverything people loved about the 930 Turbo, without the thing they fear.\n\nFinished in timeless Silver Metallic over Red Leather, our example represents one of the most elegant interpretations of Porsche’s celebrated Turbo Look formula.\n\nGENERATIONAL proudly presents The Porsche 911 SuperSport Cabriolet.\n\nFrom The Natee Masathienvong Collection.",
+        "description": "### Porsche 911 SuperSport Cabriolet\n\n* **Factory M491 “Works Turbo Look” specification**\n* Features the Turbo’s distinctive fender flares, front spoiler and Tea Tray rear wing\n* Factory fitted with the 930 Turbo’s uprated suspension, braking system and Fuchs alloy wheels\n* Silver Metallic over Red Interior\n* Odometer reads 39,267 miles\n\nFew shapes in automotive history are as iconic as the Porsche 930 Turbo. The sexy rear arches. The Tea Tray rear wing. Two unmistakable design elements that came to define the excess and optimism of the 1980s. It was the poster car of a generation.\n\nIt was also one of the most intimidating road cars ever built.\n\nThe combination of a rear-mounted engine, short wheelbase and explosive turbocharged power delivery earned the 930 its infamous “Widowmaker” reputation. When the boost arrived, it arrived all at once.\n\nFor those who desired the look without the risk, Porsche introduced option code M491, better known as the “SuperSport”.\n\nDelivering all the visual drama of the Turbo while retaining the balance, predictability and usability of the naturally aspirated Carrera, the M491 was far more than a cosmetic package. It received the Turbo’s wider bodywork, uprated brakes, suspension and Fuchs wheels, combined with Porsche’s proven 3.2-litre flat-six, G50 transmission, open-top cabriolet, to create one of the most complete air-cooled cabriolet 911.\n\nEverything people loved about the 930 Turbo, without the thing they fear.\n\nFinished in timeless Silver Metallic over Red Leather, our example represents one of the most elegant interpretations of Porsche’s celebrated Turbo Look formula.\n\n**GENERATIONAL proudly presents The Porsche 911 SuperSport Cabriolet.**\n\nFrom The Natee Masathienvong Collection.",
         "images": [
-            "/inventory/porsche-911-supersport-cabriolet/1.jpg",
-            "/inventory/porsche-911-supersport-cabriolet/2.jpg",
-            "/inventory/porsche-911-supersport-cabriolet/3.jpg",
-            "/inventory/porsche-911-supersport-cabriolet/4.jpg",
-            "/inventory/porsche-911-supersport-cabriolet/5.jpg",
-            "/inventory/porsche-911-supersport-cabriolet/6.jpg",
-            "/inventory/porsche-911-supersport-cabriolet/7.jpg",
-            "/inventory/porsche-911-supersport-cabriolet/8.jpg",
-            "/inventory/porsche-911-supersport-cabriolet/9.jpg",
-            "/inventory/porsche-911-supersport-cabriolet/10.jpg"
+            "/inventory/porsche-911-supersport-cabriolet/1.webp",
+            "/inventory/porsche-911-supersport-cabriolet/2.webp",
+            "/inventory/porsche-911-supersport-cabriolet/3.webp",
+            "/inventory/porsche-911-supersport-cabriolet/4.webp",
+            "/inventory/porsche-911-supersport-cabriolet/5.webp",
+            "/inventory/porsche-911-supersport-cabriolet/6.webp",
+            "/inventory/porsche-911-supersport-cabriolet/7.webp",
+            "/inventory/porsche-911-supersport-cabriolet/8.webp",
+            "/inventory/porsche-911-supersport-cabriolet/9.webp",
+            "/inventory/porsche-911-supersport-cabriolet/10.webp"
         ]
     },
     {
@@ -205,16 +205,16 @@ export const inventoryData: Inventory[] = [
         "status": "Available",
         "description": "### Porsche 718 Cayman GT4 RS\n\n* **The pinnacle of the 718 model range**\n* Powered by the 4.0-litre naturally aspirated flat-six directly from the 992 GT3\n* Configured with motorsport-focused options, including steel brakes similar to GT3R and GT3 RSR\n* AAS Authorised Dealer Car\n* White over Black with Blue inserts and matching Indigo Blue wheels\n* Odometer: 3,882 kilometres\n\nThe Porsche RS badge has never been more desirable.\n\nHowever, in our humble opinion, RS models have become increasingly expressive. Contrasting colours, exposed carbon, oversized decals and bold accent packages have transformed many modern RS into rolling statements. They are spectacular machines, but increasingly, they are also statements of one’s taste.\n\nMany seasoned Porsche enthusiasts have begun gravitating back towards subtler specifications. GT3 Touring rather than GT3 RS. Specification that whisper rather than shout. Cars that prioritise purpose over presence.\n\nThis GT4 RS is exactly that.\n\nFinished in White, her specification is restrained yet deeply considered. Indigo Blue wheels are echoed by matching blue seatbelts, roll cage and interior details, creating a cohesive motorsport-inspired theme rather than a collection of contrasting options.\n\nMore importantly, she was configured by a Motorsport-focused mind.\n\nInstead of Porsche Ceramic Composite Brakes, she is equipped with steel brakes—the choice favoured by many experienced track drivers and endurance racing teams, including Porsche Works Race cars as seen in GT3 R and GT3 RSR programmes, for their consistency, serviceability and ease of replacement under sustained circuit use.\n\nGENERATIONAL proudly presents\n\n The Porsche 718 Cayman GT4 RS.",
         "images": [
-            "/inventory/porsche-718-cayman-gt4rs/1.jpg",
-            "/inventory/porsche-718-cayman-gt4rs/2.jpg",
-            "/inventory/porsche-718-cayman-gt4rs/3.jpg",
-            "/inventory/porsche-718-cayman-gt4rs/4.jpg",
-            "/inventory/porsche-718-cayman-gt4rs/5.jpg",
-            "/inventory/porsche-718-cayman-gt4rs/6.jpg",
-            "/inventory/porsche-718-cayman-gt4rs/7.jpg",
-            "/inventory/porsche-718-cayman-gt4rs/8.jpg",
-            "/inventory/porsche-718-cayman-gt4rs/9.jpg",
-            "/inventory/porsche-718-cayman-gt4rs/10.jpg",
+            "/inventory/porsche-718-cayman-gt4rs/1.webp",
+            "/inventory/porsche-718-cayman-gt4rs/2.webp",
+            "/inventory/porsche-718-cayman-gt4rs/3.webp",
+            "/inventory/porsche-718-cayman-gt4rs/4.webp",
+            "/inventory/porsche-718-cayman-gt4rs/5.webp",
+            "/inventory/porsche-718-cayman-gt4rs/6.webp",
+            "/inventory/porsche-718-cayman-gt4rs/7.webp",
+            "/inventory/porsche-718-cayman-gt4rs/8.webp",
+            "/inventory/porsche-718-cayman-gt4rs/9.webp",
+            "/inventory/porsche-718-cayman-gt4rs/10.webp",
         ]
     },
     {
@@ -239,7 +239,7 @@ export const inventoryData: Inventory[] = [
         "id": "porsche-911-carrera-s",
         "name": "Porsche 911 Carrera S",
         "status": "Available",
-        "description": "### Porsche 911 Carrera S\n\n* Arena Red Metallic\n* Factory wide-body Carrera S (Type-993)\n* 3.6-litre NA VarioRam\n* Tiptronic S transmission\n* Comprehensive service history with AAS\n* Odometer: 124,641 kilometres\n\nIntroduced in 1995, the Porsche 911 Carrera S (Type-993) marked the final chapter of an era that had begun more than three decades earlier. It belonged to the last generation of NA, air-cooled 911s before Porsche embraced water cooling — and, decades later, turbocharging across the Carrera range.\n\nBorrowing the unmistakable wide body of the 993 Turbo, yet remaining faithful to rear-wheel drive and naturally aspirated simplicity, the Carrera S has long been regarded as one of the purest expressions of the 993. Less about outright speed, more about proportion, balance, and the unmistakable character that only an air-cooled flat-six can deliver.\n\nAnd yet, among air-cooled Porsches, the 993 feels remarkably modern. Enthusiasts often consider the evolutionary leap from the 964 to the 993 greater than that from the 993 to the 996, particularly in refinement and usability.\n\nOur example is presented in Arena Red Metallic, one of the defining colours of the 993 generation. Under different light, she shifts from deep burgundy to rich crimson, giving the wide-body silhouette a presence that is elegant rather than loud. She has been maintained to an exceptional standard, supported by a comprehensive service history with AAS.\n\nThe updated VarioRam engine brings stronger low-end torque and greater flexibility for traffic use, while the Tiptronic S makes the car effortless to enjoy every day — and accessible to every driver in the family.\n\nShe is a remarkably well-rounded Porsche: special enough for Cars & Coffee among other 911s, fast enough to keep company with modern water-cooled Porsches on a road trip, yet civilised enough to be enjoyed every day.\n\nFor those searching for one Porsche to do almost everything, perhaps this is it.\n\nGENERATIONAL proudly presents the Porsche 911 Carrera S.",
+        "description": "### Porsche 911 Carrera S\n\n* Arena Red Metallic\n* Factory wide-body Carrera S (Type-993)\n* 3.6-litre NA VarioRam\n* Tiptronic S transmission\n* Comprehensive service history with AAS\n* Odometer: 124,641 kilometres\n\nIntroduced in 1995, the Porsche 911 Carrera S (Type-993) marked the final chapter of an era that had begun more than three decades earlier. It belonged to the last generation of NA, air-cooled 911s before Porsche embraced water cooling — and, decades later, turbocharging across the Carrera range.\n\nBorrowing the unmistakable wide body of the 993 Turbo, yet remaining faithful to rear-wheel drive and naturally aspirated simplicity, the Carrera S has long been regarded as one of the purest expressions of the 993. Less about outright speed, more about proportion, balance, and the unmistakable character that only an air-cooled flat-six can deliver.\n\nAnd yet, among air-cooled Porsches, the 993 feels remarkably modern. Enthusiasts often consider the evolutionary leap from the 964 to the 993 greater than that from the 993 to the 996, particularly in refinement and usability.\n\nOur example is presented in Arena Red Metallic, one of the defining colours of the 993 generation. Under different light, she shifts from deep burgundy to rich crimson, giving the wide-body silhouette a presence that is elegant rather than loud. She has been maintained to an exceptional standard, supported by a comprehensive service history with AAS.\n\nThe updated VarioRam engine brings stronger low-end torque and greater flexibility for traffic use, while the Tiptronic S makes the car effortless to enjoy every day — and accessible to every driver in the family.\n\nShe is a remarkably well-rounded Porsche: special enough for Cars & Coffee among other 911s, fast enough to keep company with modern water-cooled Porsches on a road trip, yet civilised enough to be enjoyed every day.\n\nFor those searching for one Porsche to do almost everything, perhaps this is it.\n\n**GENERATIONAL proudly presents the Porsche 911 Carrera S.**",
         "images": [
             "/inventory/porsche-911-carrera-s/1.webp",
             "/inventory/porsche-911-carrera-s/2.webp",
@@ -256,7 +256,7 @@ export const inventoryData: Inventory[] = [
         "id": "mercedes-benz-300a-adenauer",
         "name": "Mercedes-Benz 300a “Adenauer”",
         "status": "Available",
-        "description": "### Mercedes-Benz 300a “Adenauer”\n\nIntroduced in 1951, the Mercedes-Benz 300 represented the return of Stuttgart to the very top of the luxury automobile world. It was the largest and fastest series-production car built in Germany at the time, and Mercedes-Benz regarded it as the successor to its pre-war “Grand Mercedes.”\n\nThe 300 soon became the automobile of choice for heads of state, industrialists and some of the most influential figures of post-war Europe. Yet no individual would become more closely associated with it than Konrad Adenauer, the first Chancellor of the Federal Republic of Germany.\n\nAdenauer’s preference for the 300 was absolute. He reportedly insisted that he would only be driven only in a Mercedes-Benz 300 — even during official trips abroad. Over the course of his chancellorship and afterward, he used six different examples, creating an association so enduring that the W186 and W189 generations simply became known as the “Adenauer.”\n\nLong before the S-Class existed, this was Mercedes-Benz at its highest level.\n\nFinished in an elegant two-tone combination, our 300a represents more than the flagship Mercedes of the 1950s. It belongs to a generation of automobiles that accompanied a country through its reconstruction and returned the three-pointed star to the world stage.\n\nGENERATIONAL proudly presents Mercedes-Benz 300a “Adenauer”",
+        "description": "### Mercedes-Benz 300a “Adenauer”\n\nIntroduced in 1951, the Mercedes-Benz 300 represented the return of Stuttgart to the very top of the luxury automobile world. It was the largest and fastest series-production car built in Germany at the time, and Mercedes-Benz regarded it as the successor to its pre-war “Grand Mercedes.”\n\nThe 300 soon became the automobile of choice for heads of state, industrialists and some of the most influential figures of post-war Europe. Yet no individual would become more closely associated with it than Konrad Adenauer, the first Chancellor of the Federal Republic of Germany.\n\nAdenauer’s preference for the 300 was absolute. He reportedly insisted that he would only be driven only in a Mercedes-Benz 300 — even during official trips abroad. Over the course of his chancellorship and afterward, he used six different examples, creating an association so enduring that the W186 and W189 generations simply became known as the “Adenauer.”\n\nLong before the S-Class existed, this was Mercedes-Benz at its highest level.\n\nFinished in an elegant two-tone combination, our 300a represents more than the flagship Mercedes of the 1950s. It belongs to a generation of automobiles that accompanied a country through its reconstruction and returned the three-pointed star to the world stage.\n\n**GENERATIONAL proudly presents Mercedes-Be**nz 300a “Adenauer”",
         "images": [
             "/inventory/mercedes-benz-300a-Adenauer/1.webp",
             "/inventory/mercedes-benz-300a-Adenauer/2.webp",
@@ -391,6 +391,78 @@ export const inventoryData: Inventory[] = [
             "/inventory/bmw-m3-csl/8.webp",
             "/inventory/bmw-m3-csl/9.webp",
             "/inventory/bmw-m3-csl/10.webp",
+        ]
+    }
+    ,{
+        "id": "porsche-911-gt2",
+        "name": "Porsche 911 GT2",
+        "status": "Available",
+        "description": "### Porsche 911 GT2\n\n* Polar Silver Metallic over Black\n* 1 of 16 UK RHD Mk.II\n* ~27,000 miles\n* Porsche Ceramic Composite Brakes\n* Never tracked and never raced\n* Exceptionally well preserved\n\nIntroduced in 2001, the 996 GT2 was Porsche’s ultimate road-going 911 of its generation — the very top of the 996 lineup.\n\nDerived from the 996 Turbo, but developed with a very different purpose, the GT2 abandoned all-wheel drive in favour of rear-wheel drive, shed weight, gained more power, and was engineered with one objective in mind: maximum performance with minimum interference between the driver and the car.\n\nThe 996 GT2 is the best of both worlds — the agility and lightness of the 996 GT3 combined with the absolute turbocharged force of the 996 Turbo.\n\nIn the end of her production in 2004, Porsche release the GT2 Mark II, with bigger twin-turbo, improved ECU, dampers and ABS system, power jump from 462 to 483 horsepowers, making the GT2 Mk.II the most powerful street-legal 996 ever produced. With a 6-Speed Manual, Rear-wheel drive, No stability control, No traction control and No electronic safety net.\n\nStuttgart designed the GT2 for brave drivers. And within the Porsche community, GT2 owners have long been regarded among the most hardcore — and perhaps bravest and craziest — of the breed.\n\nIn the long table of Porsche owners, the head of the table is always reserved for GT2 drivers.\n\nBut perhaps the most remarkable thing about our 996 GT2 is not how fast she can go, but how little she has been asked to.\n\nWe once connected to the car through her OBDII port and studied her engine rev history. Across roughly 27,000 miles of her entire life, the total time spent at redline was approximately three seconds.\n\nThree seconds.\n\nShe remains remarkably original and exceptionally well preserved — a rare example of the 996 GT2 that has lived her life more as a collector’s car than a track weapon.\n\nAlmost as if she was reserved for the next owner to decide what comes next.\n\nTracked. Raced. Or simply kept as the centrepiece of a serious Porsche collection.\n\n**GENERATIONAL proudly presents Porsche 911 GT2**",
+        "images": [
+            "/inventory/porsche-911-gt2/1.webp",
+            "/inventory/porsche-911-gt2/2.webp",
+            "/inventory/porsche-911-gt2/3.webp",
+            "/inventory/porsche-911-gt2/4.webp",
+            "/inventory/porsche-911-gt2/5.webp",
+            "/inventory/porsche-911-gt2/6.webp",
+            "/inventory/porsche-911-gt2/7.webp",
+            "/inventory/porsche-911-gt2/8.webp",
+            "/inventory/porsche-911-gt2/9.webp",
+            "/inventory/porsche-911-gt2/10.webp"
+        ]
+    }
+    ,{
+        "id": "porsche-911-gt3-rs",
+        "name": "Porsche 911 GT3 RS",
+        "status": "Available",
+        "description": "### Porsche 911 GT3 RS\n\n* Carrera White with Blue decals and wheels\n* Service at AAS\n* 1 of only 140 RHD worldwide\n* 1 of 682 produced worldwide\n* Rarest and lightest GT3 RS variant ever\n\nIn 2003, Porsche started the modern GT3 RS phenomenon — the foundation upon which every GT3 RS that followed was built.\n\nBased on the 996 GT3, Porsche Motorsport went further. Less weight. More downforce. A polycarbonate rear window. Carbon-fibre bodywork. Adjustable suspension. A fixed rear wing. And the legendary 3.6-litre naturally aspirated Mezger flat-six producing 381 horsepower, with a dry weight of approximately 1,360 kg — making her the lightest and rawest of the GT3 RS generation.\n\nOnly available from Stuttgart in Carrera White with Blue or Red graphics and wheels. A tribute to the legendary 2.7 Carrera RS.\n\nPorsche never officially sold the 996 GT3 RS in the United States, and for years, that kept the 996 GT3 RS largely outside the world’s largest Porsche collecting market. As these cars reach their 25-year eligibility under U.S. import rules, the doors to that market begin to open.\n\nThe first 2003 examples become eligible in 2028, just a little over a year from now, we believe the market will change dramatically for the model.\n\nThe 996 GT3 RS has already begun to show where she can go. A 2004 example reached $500,000 at auction in March 2026.\n\nWe believe that once the 25-year clock fully opens the U.S. market, the 996 GT3 RS could rocket toward $800,000, or even become the first million-dollar street-legal 996. Just like the 993 GT2 before her. Mark our words.\n\nOur example is finished in Carrera White with Blue RS graphics and matching Blue wheels, presenting in low-mileage and exceptionally well-preserved condition, with servicing carried out by AAS throughout her life. She is now waiting for her new visionary owner. Whether the intention is collecting, spirited driving, or track days, she has all the original formula of what makes Porsche enthusiasts love the RS.\n\n**GENERATIONAL proudly presents Porsche 911 GT3 RS.**",
+        "images": [
+            "/inventory/porsche-911-gt3-rs/1.webp",
+            "/inventory/porsche-911-gt3-rs/2.webp",
+            "/inventory/porsche-911-gt3-rs/3.webp",
+            "/inventory/porsche-911-gt3-rs/4.webp",
+            "/inventory/porsche-911-gt3-rs/5.webp",
+            "/inventory/porsche-911-gt3-rs/6.webp",
+            "/inventory/porsche-911-gt3-rs/7.webp",
+            "/inventory/porsche-911-gt3-rs/8.webp",
+            "/inventory/porsche-911-gt3-rs/9.webp",
+            "/inventory/porsche-911-gt3-rs/10.webp"
+        ]
+    }
+    ,{
+        "id": "nismo-r32-gt-r-clubman-race-spec-tribute",
+        "name": "Nismo R32 GT-R Clubman Race Spec - Tribute",
+        "status": "Available",
+        "description": "### Nismo R32 GT-R Clubman Race Spec - Tribute\n\n* Based on a Thai BNR32\n* Tribute to the original Nismo Clubman Race Spec\n* Over THB 4 million invested in original, aftermarket and restoration parts\n\nNismo’s Omori Factory is the epicenter of Nissan’s most serious performance development. Beyond supplying individual Nismo components, Omori offered complete conversion programmes for owners who wanted to take their Skyline GT-R further, with the Clubman Race Spec (CRS) representing one of the most significant interpretations of the R32 GT-R. The philosophy was not simply to modify the car, but to develop it as a complete system, with engine, drivetrain, suspension, brakes, wheels, exhaust, bodywork and interior working together as one cohesive package, bringing Nismo’s motorsport knowledge closer to the road.\n\nThe original CRS became one of the defining expressions of the R32 GT-R tuning era, combining Nismo’s engineering expertise with the Japanese aftermarket culture that surrounded the Skyline. Rather than focusing on individual upgrades, the objective was to create a more focused and cohesive GT-R, with every component contributing to the balance, response and character of the complete car.\n\nOur car is a tribute to that philosophy, based on a Thai BNR32 and finished in Gun Grey Metallic. The project was entrusted to Sky Gallery, one of Thailand’s leading GT-R specialists, with the objective of creating a complete R32 GT-R rather than simply assembling a collection of performance upgrades. More than THB 4 million has been invested, combining original Nismo and Nissan OEM components, carefully selected aftermarket parts and extensive restoration work.\n\nThe result is our interpretation of the R32 GT-R Clubman Race Spec — a complete car built around the principles of the original Omori programme, where restoration, performance and design are considered together rather than as separate modifications. It is not presented as an original Nismo CRS, but as a carefully constructed tribute to one of the most influential complete-car philosophies of the Japanese GT-R era.\n\n**GENERATIONAL proudly presents Nismo R32 GT-R Clubma**n Race Spec - Tribute.",
+        "images": [
+            "/inventory/nismo-r32-gt-r-clubman-race-spec-tribute/1.webp",
+            "/inventory/nismo-r32-gt-r-clubman-race-spec-tribute/2.webp",
+            "/inventory/nismo-r32-gt-r-clubman-race-spec-tribute/3.webp",
+            "/inventory/nismo-r32-gt-r-clubman-race-spec-tribute/4.webp",
+            "/inventory/nismo-r32-gt-r-clubman-race-spec-tribute/5.webp",
+            "/inventory/nismo-r32-gt-r-clubman-race-spec-tribute/6.webp",
+            "/inventory/nismo-r32-gt-r-clubman-race-spec-tribute/7.webp",
+            "/inventory/nismo-r32-gt-r-clubman-race-spec-tribute/8.webp",
+            "/inventory/nismo-r32-gt-r-clubman-race-spec-tribute/9.webp",
+            "/inventory/nismo-r32-gt-r-clubman-race-spec-tribute/10.webp"
+        ]
+    }
+    ,{
+        "id": "nismo-400r-tribute",
+        "name": "Nismo 400R - Tribute",
+        "status": "Available",
+        "description": "### Nismo 400R - Tribute\n\n* Based on a Thai BCNR33\n* Tribute build inspired by the original Nismo 400R\n* Over 150 parts replaced or restored\n* More than THB 5 million invested in the build\n\nIn 1996, the Nismo 400R was developed as a complete car, producing 400 horsepowers and combining Nismo’s racing experience with its knowledge of Japanese tuning culture. Originally planned for 100 cars, only 44 examples were ultimately produced, making it one of the rarest and most significant R33 GT-Rs ever created, occupying the same rarefied level as the R34 GT-R Z-Tune. Its value today reflects that rarity, with original examples achieving $857,500 at auction as recently as August 2026, following another 400R selling for $918,000 earlier this year.\n\nIn our opinion, among JDM cars, the 400R by Nismo is the equivalent of a Ferrari F40 LM by Michelotto.\nThe very top of the mountain.\n\nOur car is a tribute build, based on a Thai BCNR33. The project was entrusted to Sky Gallery, Thailand’s leading GT-R specialist, with more than THB 5 million invested into the build. More than 150 individual parts have been replaced, restored or upgraded, combining original Nismo and Nissan OEM components, carefully selected aftermarket parts and extensive restoration work, with the objective of bringing the car back to an essentially like-new condition.\n\nThe result is our interpretation of the Nismo 400R — a complete-car tribute inspired by one of the most significant creations from Omori Factory.\n\n**GENERATIONAL proudly presents Nismo 400R - Tribute.**",
+        "images": [
+            "/inventory/nismo-400r-tribute/1.webp",
+            "/inventory/nismo-400r-tribute/2.webp",
+            "/inventory/nismo-400r-tribute/3.webp",
+            "/inventory/nismo-400r-tribute/4.webp",
+            "/inventory/nismo-400r-tribute/5.webp",
+            "/inventory/nismo-400r-tribute/6.webp",
+            "/inventory/nismo-400r-tribute/7.webp",
+            "/inventory/nismo-400r-tribute/8.webp",
+            "/inventory/nismo-400r-tribute/9.webp",
+            "/inventory/nismo-400r-tribute/10.webp"
         ]
     }
 ]

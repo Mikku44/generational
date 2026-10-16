@@ -51,7 +51,7 @@ export function meta({ }: Route.MetaArgs) {
       content:
         "Global sourcing, provenance verification, Thai import and registration, preservation and resale support for culturally significant classic automobiles.",
     },
-    { tagName: "link", rel: "canonical", href: "https://generational.co/ourservice" },
+    { tagName: "link", rel: "canonical", href: "https://www.generational.co/ourservice" },
 
     // — Open Graph
     { property: "og:title", content: "Our Services: Sourcing, Import & Preservation — GENERATIONAL Thailand" },
@@ -61,10 +61,10 @@ export function meta({ }: Route.MetaArgs) {
         "Generational provides expert curation and preservation services for historically significant classic automobiles, ensuring authenticity and excellence.",
     },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://generational.co/ourservice" },
+    { property: "og:url", content: "https://www.generational.co/ourservice" },
     {
       property: "og:image",
-      content: "https://generational.co/images/red.webp",
+      content: "https://www.generational.co/images/red.webp",
     },
     { property: "og:image:alt", content: "Red classic sports car curated by GENERATIONAL" },
     { property: "og:site_name", content: "GENERATIONAL" },
@@ -79,7 +79,7 @@ export function meta({ }: Route.MetaArgs) {
     },
     {
       name: "twitter:image",
-      content: "https://generational.co/images/red.webp",
+      content: "https://www.generational.co/images/red.webp",
     },
     { name: "twitter:image:alt", content: "Red classic sports car curated by GENERATIONAL" },
   ];

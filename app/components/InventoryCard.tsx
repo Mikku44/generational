@@ -46,7 +46,7 @@ export default function InventoryCard({ index, item }: InventoryCardProps) {
             </div>
 
             {/* IMAGE CAROUSEL */}
-            <div className="md:col-span-6 group relative overflow-hidden bg-neutral-900">
+            <div className="md:col-span-6 group relative overflow-hidden">
                 <div className="bg-black px-4 w-fit py-2 text-white absolute z-10 m-2 text-sm uppercase tracking-wider font-bold">
                     {item.status}
                 </div>
@@ -172,6 +172,7 @@ export default function InventoryCard({ index, item }: InventoryCardProps) {
             <ImagePreview
                 images={item.images}
                 name={item.name}
+                detailHref={`/inventory/${item.id}`}
                 index={selectedIndex}
                 onSelect={setSelectedIndex}
                 onClose={() => setSelectedIndex(null)}

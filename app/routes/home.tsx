@@ -13,7 +13,7 @@ export function meta({ }: Route.MetaArgs) {
       content:
         "GENERATIONAL curates the most beautiful, culturally significant classic cars in Thailand — global sourcing, provenance verification, import and preservation.",
     },
-    { tagName: "link", rel: "canonical", href: "https://generational.co/" },
+    { tagName: "link", rel: "canonical", href: "https://www.generational.co/" },
 
     // — Open Graph (Facebook / LinkedIn / Line, etc.)
     { property: "og:title", content: "Classic Cars Thailand | Curated Collector Automobiles — GENERATIONAL" },
@@ -23,10 +23,10 @@ export function meta({ }: Route.MetaArgs) {
         "Purveyor of the most beautiful, culturally significant classic automobiles in Thailand.",
     },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://generational.co/" },
+    { property: "og:url", content: "https://www.generational.co/" },
     {
       property: "og:image",
-      content: "https://generational.co/images/og.jpg",
+      content: "https://www.generational.co/images/og.jpg",
     },
     { property: "og:image:alt", content: "Curated classic automobiles by GENERATIONAL Thailand" },
     { property: "og:site_name", content: "GENERATIONAL" },
@@ -42,14 +42,14 @@ export function meta({ }: Route.MetaArgs) {
     },
     {
       name: "twitter:image",
-      content: "https://generational.co/images/og.jpg",
+      content: "https://www.generational.co/images/og.jpg",
     },
     { name: "twitter:image:alt", content: "Curated classic automobiles by GENERATIONAL Thailand" },
     { name: "robots", content: "index, follow" },
   ];
 }
 
-// https://generational.co/images/Lamborghini_Countach_md.jpg
+// https://www.generational.co/images/Lamborghini_Countach_md.jpg
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);

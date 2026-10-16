@@ -1,102 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-  <loc>https://generational.co/</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://generational.co/curation-philosophy</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://generational.co/ourservice</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://generational.co/inventory</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://generational.co/ourteam</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://generational.co/contact</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://generational.co/inventory/ferrari-348-tb-01</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://generational.co/inventory/ferrari-f355-berlinetta-02</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://generational.co/inventory/bmw-m3-cs-interlagos-01</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://generational.co/inventory/honda-nsx-r-03</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://generational.co/inventory/alfa-romeo-alfasud-sprint-01</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://generational.co/inventory/toyota-celica-1600-gtv</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://generational.co/inventory/bently-brooklands</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://generational.co/inventory/lambo-diablo-vt</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://generational.co/inventory/ferrari-512-tr</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://generational.co/inventory/porsche-911-turbo</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://generational.co/inventory/porsche-911-supersport-cabriolet</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://generational.co/inventory/porsche-718-cayman-gt4rs</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://generational.co/inventory/nissan-skyline-gtr-r32</loc>
-  <lastmod>2026-09-12T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.generational.co/</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/curation-philosophy</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/ourservice</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/ourteam</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/contact</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/ferrari-348-tb-01</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/ferrari-f355-berlinetta-02</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/bmw-m3-cs-interlagos-01</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/honda-nsx-r-03</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/alfa-romeo-alfasud-sprint-01</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/toyota-celica-1600-gtv</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/bently-brooklands</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/lambo-diablo-vt</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/ferrari-512-tr</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/porsche-911-turbo</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/porsche-911-supersport-cabriolet</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/porsche-718-cayman-gt4rs</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/nissan-skyline-gtr-r32</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/porsche-911-carrera-s</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/mercedes-benz-300a-adenauer</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/austin-mini-mk1-cooper-s</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/rover-mini-cooper</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/rover-mini-cooper-bscc</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/rover-mini-paul-smith</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/rover-mini-cooper-sport-500</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/mercedes-benz-c63-amg-coupe-black-series</loc>
+  </url>
+  <url>
+    <loc>https://www.generational.co/inventory/bmw-m3-csl</loc>
+  </url>
 </urlset>

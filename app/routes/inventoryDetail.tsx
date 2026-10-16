@@ -110,7 +110,7 @@ export async function loader({ params }: Route.LoaderArgs) {
 
 export function meta({ data, params }: Route.MetaArgs) {
   const slug = (params as Record<string, string | undefined>)?.slug ?? "";
-  const canonicalUrl = `https://generational.co/inventory/${slug}`;
+  const canonicalUrl = `https://www.generational.co/inventory/${slug}`;
   const item = data as unknown as DetailInventory | null;
   if (!item) {
     return [
@@ -124,7 +124,7 @@ export function meta({ data, params }: Route.MetaArgs) {
   const desc = excerpt(item.content || item.title);
   const image = item.cover?.href?.startsWith("http")
     ? item.cover.href
-    : `https://generational.co${item.cover?.href ?? "/images/inventory.jpg"}`;
+    : `https://www.generational.co${item.cover?.href ?? "/images/inventory.jpg"}`;
   const title = `${item.title} | Classic Car Thailand — GENERATIONAL`;
 
   return [
@@ -238,9 +238,9 @@ export default function InventoryDetail() {
     name: data.title,
     description: excerpt(data.content, 300),
     image: [data.cover?.href, ...(data.gallery ?? [])].filter(Boolean).map((src) =>
-      src.startsWith("http") ? src : `https://generational.co${src}`
+      src.startsWith("http") ? src : `https://www.generational.co${src}`
     ),
-    url: `https://generational.co/inventory/${data.slug}`,
+    url: `https://www.generational.co/inventory/${data.slug}`,
     vehicleModelDate: data.year || undefined,
     ...(data.price > 0
       ? {
@@ -252,7 +252,7 @@ export default function InventoryDetail() {
                 : "https://schema.org/SoldOut",
             priceCurrency: "USD",
             price: data.price,
-            url: `https://generational.co/inventory/${data.slug}`,
+            url: `https://www.generational.co/inventory/${data.slug}`,
           },
         }
       : {}),
@@ -511,6 +511,7 @@ export default function InventoryDetail() {
       <ImagePreview
         images={allImages}
         name={data.title}
+        detailHref={`/inventory/${data.id}`}
         index={selectedIndex}
         onSelect={setSelectedIndex}
         onClose={() => setSelectedIndex(null)}

@@ -46,8 +46,8 @@ export function meta({ location }: Route.MetaArgs) {
   const search = location.search ?? "";
   const canonicalUrl =
     search && search !== "?page=1"
-      ? `https://generational.co/inventory${search}`
-      : "https://generational.co/inventory";
+      ? `https://www.generational.co/inventory${search}`
+      : "https://www.generational.co/inventory";
   return [
     { title: "Curated Classic Car Inventory Thailand — GENERATIONAL" },
     {
@@ -68,7 +68,7 @@ export function meta({ location }: Route.MetaArgs) {
     { property: "og:url", content: canonicalUrl },
     {
       property: "og:image",
-      content: "https://generational.co/images/inventory.jpg",
+      content: "https://www.generational.co/images/inventory.jpg",
     },
     { property: "og:image:alt", content: "Curated classic car inventory by GENERATIONAL Thailand" },
     { property: "og:site_name", content: "GENERATIONAL" },
@@ -83,7 +83,7 @@ export function meta({ location }: Route.MetaArgs) {
     },
     {
       name: "twitter:image",
-      content: "https://generational.co/images/inventory.jpg",
+      content: "https://www.generational.co/images/inventory.jpg",
     },
     { name: "twitter:image:alt", content: "Curated classic car inventory by GENERATIONAL Thailand" },
   ];
@@ -100,9 +100,9 @@ export default function Inventory() {
     itemListElement: items.map((item, i) => ({
       "@type": "ListItem",
       position: (page - 1) * perPage + i + 1,
-      url: `https://generational.co/inventory/${item.id}`,
+      url: `https://www.generational.co/inventory/${item.id}`,
       name: item.name,
-      image: item.images?.[0] ? `https://generational.co${item.images[0]}` : undefined,
+      image: item.images?.[0] ? `https://www.generational.co${item.images[0]}` : undefined,
     })),
   };
   return (

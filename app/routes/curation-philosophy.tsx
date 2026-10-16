@@ -10,7 +10,7 @@ export function meta({ }: Route.MetaArgs) {
       content:
         "How GENERATIONAL selects classic cars for Thailand: timeless design, verified provenance and originality, emotional driving character and lasting cultural relevance.",
     },
-    { tagName: "link", rel: "canonical", href: "https://generational.co/curation-philosophy" },
+    { tagName: "link", rel: "canonical", href: "https://www.generational.co/curation-philosophy" },
 
     // — Open Graph
     { property: "og:title", content: "Curation Philosophy: Design, Provenance & Legacy — GENERATIONAL" },
@@ -20,10 +20,10 @@ export function meta({ }: Route.MetaArgs) {
         "Our approach to curation is grounded in the belief that classic cars are more than machines. They are design objects and ultimately investments of passion.",
     },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://generational.co/curation-philosophy" },
+    { property: "og:url", content: "https://www.generational.co/curation-philosophy" },
     {
       property: "og:image",
-      content: "https://generational.co/images/nsx.jpg",
+      content: "https://www.generational.co/images/nsx.jpg",
     },
     { property: "og:image:alt", content: "Honda NSX curated by GENERATIONAL Thailand — design above all" },
     { property: "og:site_name", content: "GENERATIONAL" },
@@ -38,7 +38,7 @@ export function meta({ }: Route.MetaArgs) {
     },
     {
       name: "twitter:image",
-      content: "https://generational.co/images/nsx.jpg",
+      content: "https://www.generational.co/images/nsx.jpg",
     },
     { name: "twitter:image:alt", content: "Honda NSX curated by GENERATIONAL Thailand — design above all" },
   ];

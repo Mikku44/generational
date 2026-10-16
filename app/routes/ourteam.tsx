@@ -13,7 +13,7 @@ export function meta({ }: Route.MetaArgs) {
       content:
         "Meet GENERATIONAL's founders and global team in Bangkok, the UK and Japan — lawyers, collectors and marque specialists curating classic cars for Thailand.",
     },
-    { tagName: "link", rel: "canonical", href: "https://generational.co/ourteam" },
+    { tagName: "link", rel: "canonical", href: "https://www.generational.co/ourteam" },
 
     // — Open Graph
     { property: "og:title", content: "Our Team: Founders & Global Specialists — GENERATIONAL Thailand" },
@@ -23,10 +23,10 @@ export function meta({ }: Route.MetaArgs) {
         "Get to know the GENERATIONAL team — experts committed to sourcing and preserving Thailand's most historically significant classic automobiles.",
     },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://generational.co/ourteam" },
+    { property: "og:url", content: "https://www.generational.co/ourteam" },
     {
       property: "og:image",
-      content: "https://generational.co/images/Lamborghini_Diablo.jpg",
+      content: "https://www.generational.co/images/Lamborghini_Diablo.jpg",
     },
     { property: "og:image:alt", content: "GENERATIONAL team Lamborghini Diablo VT in Thailand" },
     { property: "og:site_name", content: "GENERATIONAL" },
@@ -41,7 +41,7 @@ export function meta({ }: Route.MetaArgs) {
     },
     {
       name: "twitter:image",
-      content: "https://generational.co/images/Lamborghini_Diablo.jpg",
+      content: "https://www.generational.co/images/Lamborghini_Diablo.jpg",
     },
     { name: "twitter:image:alt", content: "GENERATIONAL team Lamborghini Diablo VT in Thailand" },
   ];
@@ -68,8 +68,8 @@ export default function Ourteam() {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     name: "Our Team — GENERATIONAL",
-    url: "https://generational.co/ourteam",
-    about: { "@id": "https://generational.co/#organization" },
+    url: "https://www.generational.co/ourteam",
+    about: { "@id": "https://www.generational.co/#organization" },
   };
 
   return (

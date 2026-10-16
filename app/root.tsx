@@ -42,11 +42,11 @@ export function meta() {
 const ORGANIZATION_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "AutoDealer",
-  "@id": "https://generational.co/#organization",
+  "@id": "https://www.generational.co/#organization",
   name: "GENERATIONAL",
-  url: "https://generational.co/",
-  logo: "https://generational.co/logo.png",
-  image: "https://generational.co/images/og.jpg",
+  url: "https://www.generational.co/",
+  logo: "https://www.generational.co/logo.png",
+  image: "https://www.generational.co/images/og.jpg",
   description:
     "Purveyor of the most beautiful, culturally significant classic automobiles in Thailand. Global sourcing, provenance verification, import, registration and preservation for discerning collectors.",
   telephone: "+66-91-991-1911",
@@ -62,10 +62,10 @@ const ORGANIZATION_SCHEMA = {
 const WEBSITE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://generational.co/#website",
-  url: "https://generational.co/",
+  "@id": "https://www.generational.co/#website",
+  url: "https://www.generational.co/",
   name: "GENERATIONAL",
-  publisher: { "@id": "https://generational.co/#organization" },
+  publisher: { "@id": "https://www.generational.co/#organization" },
 };
 
 export function Layout({ children }: { children: React.ReactNode }) {
