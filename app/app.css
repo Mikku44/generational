@@ -93,6 +93,10 @@ body {
   
 }
 
+html {
+  position: relative;
+}
+
 .redhat {
   font-family: "redhat";
 }

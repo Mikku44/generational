@@ -42,14 +42,16 @@ export async function loader({ request }: Route.LoaderArgs) {
   };
 }
 
-export function meta({ location }: Route.MetaArgs) {
-  const search = location.search ?? "";
-  const canonicalUrl =
-    search && search !== "?page=1"
-      ? `https://www.generational.co/inventory${search}`
-      : "https://www.generational.co/inventory";
+export function meta({ data }: Route.MetaArgs) {
+  const page = data?.page ?? 1;
+  const canonicalUrl = page > 1
+    ? `https://www.generational.co/inventory/?page=${page}`
+    : "https://www.generational.co/inventory/";
+  const title = page > 1
+    ? `Curated Classic Car Inventory Thailand — Page ${page} | GENERATIONAL`
+    : "Curated Classic Car Inventory Thailand — GENERATIONAL";
   return [
-    { title: "Curated Classic Car Inventory Thailand — GENERATIONAL" },
+    { title },
     {
       name: "description",
       content:
@@ -58,7 +60,7 @@ export function meta({ location }: Route.MetaArgs) {
     { tagName: "link", rel: "canonical", href: canonicalUrl },
 
     // — Open Graph
-    { property: "og:title", content: "Curated Classic Car Inventory Thailand — GENERATIONAL" },
+    { property: "og:title", content: title },
     {
       property: "og:description",
       content:
@@ -75,7 +77,7 @@ export function meta({ location }: Route.MetaArgs) {
 
     // — Twitter
     { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:title", content: "Curated Classic Car Inventory Thailand — GENERATIONAL" },
+    { name: "twitter:title", content: title },
     {
       name: "twitter:description",
       content:
@@ -115,7 +117,6 @@ export default function Inventory() {
         <Logo />
       </div>
       <h1 className="sr-only">Classic Car Inventory — Curated Collector Automobiles in Thailand by GENERATIONAL</h1>
-
       {/* <div className="grid container-x md:grid-cols-12 justify-items-center justify-center
        items-center gap-5 md:mt-[220px]  mt-[200px] mb-20">
        
@@ -134,7 +135,7 @@ export default function Inventory() {
       </div> */}
 
       {/* INVENTORY CARDS */}
-      <div className="container-x grid md:gap-24 gap-10 md:mt-[220px]  mt-[200px]">
+      <div className="container-x grid md:gap-24 gap-10 md:mt-[220px] mt-[200px]">
         {items.map((item, i) => <InventoryCard
           key={item.id}
           index={(page - 1) * perPage + i}
@@ -173,7 +174,7 @@ export default function Inventory() {
               ) : (
                 <Link
                   key={p}
-                  to={p === 1 ? "/inventory" : `?page=${p}`}
+                  to={p === 1 ? "/inventory/" : `?page=${p}`}
                   className="border border-black px-4 py-2 text-xs tracking-widest hover:bg-black hover:text-white transition-colors"
                 >
                   {p}

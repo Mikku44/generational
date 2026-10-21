@@ -7,6 +7,7 @@ import AdminMobileSidebar from '~/components/adminMobileSideBar';
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "ADMIN - GENERATIONAL" },
+    { name: "robots", content: "noindex, nofollow" },
     { name: "description", content: "SOURCE OF THE MOST BEAUTIFUL, CULTURALLY SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND." },
   ];
 }

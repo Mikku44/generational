@@ -1,1 +1,5 @@
-export { default, meta } from "./curation-philosophy";
+import { redirect } from "react-router";
+
+export function loader() {
+  return redirect("/curation-philosophy", 301);
+}

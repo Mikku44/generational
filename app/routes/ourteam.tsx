@@ -85,12 +85,6 @@ export default function Ourteam() {
       {/* content */}
       <section className="md:mt-[220px] mt-[200px] mb-20 container-x" aria-label="Our team">
         <h1 className="sr-only">Our Team — Founders and Global Classic Car Specialists at GENERATIONAL Thailand</h1>
-        <p className="sr-only">
-          GENERATIONAL was founded in Bangkok by Akkaporn Vichitranon, Kajkanit
-          Sakdisubha and Seth Sethaputra, supported by specialists in the United
-          Kingdom and Japan sourcing culturally significant classic automobiles
-          for Thai collectors.
-        </p>
 
         {/*  */}
         <div className="grid md:grid-cols-12 gap-5">

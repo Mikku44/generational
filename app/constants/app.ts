@@ -8,7 +8,7 @@ export const APP_MENU = [
         href: "/ourservice",label : "OUR SERVICES"
     },
     {
-        href: "/inventory",label : "INVENTORY"
+        href: "/inventory/",label : "INVENTORY"
     },
     {
         href: "/ourteam",label : "OUR TEAM"

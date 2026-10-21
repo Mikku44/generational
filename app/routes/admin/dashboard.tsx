@@ -13,6 +13,7 @@ import type { Inventory } from '~/models/inventoryModel';
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "DASHBOARD - GENERATIONAL" },
+    { name: "robots", content: "noindex, nofollow" },
     { name: "description", content: "SOURCE OF THE MOST BEAUTIFUL, CULTURALLY SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND." },
   ];
 }

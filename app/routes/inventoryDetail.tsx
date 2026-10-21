@@ -1,4 +1,4 @@
-import { Link, useLoaderData, useNavigate } from "react-router";
+import { isRouteErrorResponse, Link, useLoaderData, useNavigate } from "react-router";
 import { useCallback, useState } from "react";
 import { ChevronLeft, DollarSign, Share2 } from "lucide-react";
 import { MdOutlineFullscreen } from "react-icons/md";
@@ -105,7 +105,9 @@ export async function loader({ params }: Route.LoaderArgs) {
     // fall through to local JSON
   }
   // 2) Local curated inventory (id === slug)
-  return await loadLocalById(slug);
+  const local = await loadLocalById(slug);
+  if (!local) throw new Response("Vehicle Not Found", { status: 404 });
+  return local;
 }
 
 export function meta({ data, params }: Route.MetaArgs) {
@@ -189,7 +191,7 @@ export default function InventoryDetail() {
 
       // 3) Direct entry, bookmark, or external referrer (Google, Facebook, ...):
       // never send the user away, keep them on the website.
-      navigate("/inventory");
+      navigate("/inventory/");
     },
     [navigate]
   );
@@ -225,7 +227,7 @@ export default function InventoryDetail() {
       <div className="min-h-screen flex flex-col items-center justify-center">
         <h1 className="text-4xl font-bold mb-4">Vehicle Not Found</h1>
         <p className="text-gray-600 mb-4">This vehicle is no longer in our curated inventory.</p>
-        <Link to="/inventory" className="text-blue-600 hover:underline">
+        <Link to="/inventory/" className="text-blue-600 hover:underline">
           Back to Inventory
         </Link>
       </div>
@@ -270,7 +272,7 @@ export default function InventoryDetail() {
 
       <div className="container mx-auto px-4 md:px-8 max-w-7xl md:mt-[120px] mt-[100px]">
         <Link
-          to="/inventory"
+          to="/inventory/"
           onClick={handleBack}
           className="py-5 flex hover:opacity-60 duration-200 font-bold items-center gap-2"
         >
@@ -333,7 +335,7 @@ export default function InventoryDetail() {
         {/* Description — Our Services style: big heading left, body right */}
         <div className="w-full grid md:grid-cols-12 mt-[48px] gap-5">
           <motion.h2
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 1, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -368,7 +370,7 @@ export default function InventoryDetail() {
         {/* Specifications — Our Services Section style */}
         {data.specs && Object.keys(data.specs).length > 0 && (
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 1, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -424,7 +426,7 @@ export default function InventoryDetail() {
           <div className="container mx-auto px-4 md:px-8 max-w-7xl">
             <div className="w-full grid md:grid-cols-12 mt-[48px] gap-5 min-h-[600px]">
               <motion.h2
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 1, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
@@ -476,7 +478,7 @@ export default function InventoryDetail() {
         <section aria-label="Gallery" className="w-full mt-14">
           <div className="container mx-auto px-4 md:px-8 max-w-7xl mb-6">
             <motion.h2
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 1, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
@@ -517,5 +519,24 @@ export default function InventoryDetail() {
         onClose={() => setSelectedIndex(null)}
       />
     </div>
+  );
+}
+
+export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
+  const notFound = isRouteErrorResponse(error) && error.status === 404;
+  return (
+    <main className="min-h-screen flex flex-col items-center justify-center px-5 text-center">
+      <h1 className="text-4xl font-bold mb-4">
+        {notFound ? "Vehicle Not Found" : "Unable to load vehicle"}
+      </h1>
+      <p className="text-gray-600 mb-4">
+        {notFound
+          ? "This vehicle is no longer in our curated inventory."
+          : "Please try again later."}
+      </p>
+      <Link to="/inventory/" className="text-blue-600 hover:underline">
+        Back to Inventory
+      </Link>
+    </main>
   );
 }

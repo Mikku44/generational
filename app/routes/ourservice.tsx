@@ -166,15 +166,6 @@ export default function OurService() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }}
       />
-      {/* AEO direct answer */}
-      <section className="sr-only" aria-label="Service summary">
-        <h1>Classic Car Sourcing, Import and Preservation Services in Thailand</h1>
-        <p>
-          GENERATIONAL sources historically significant classic cars worldwide,
-          verifies provenance and condition, manages shipping, Thai import and
-          registration, and supports resale or export — from discovery to delivery.
-        </p>
-      </section>
       {/* HERO TITLE */}
       <div className="md:p-10 p-5">
         <Logo />
@@ -194,12 +185,12 @@ export default function OurService() {
         {/* SECTION 1: OUR SERVICES */}
         {/* our service */}
         <div className="w-full md:px-0 px-5 grid md:grid-cols-12 container-x mt-10 gap-5">
-          <motion.h2
-            initial={{ opacity: 0, y: 40 }}
+          <motion.h1
+            initial={{ opacity: 1, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="md:text-[65px] text-[48px] -mt-3 font-semibold md:col-span-7">OUR SERVICES</motion.h2>
+            className="md:text-[65px] text-[48px] -mt-3 font-semibold md:col-span-7">OUR SERVICES</motion.h1>
           {/* global sourcing */}
           <motion.div className="space-y-4 md:col-span-5">
             <AnimatedSection>
@@ -229,7 +220,7 @@ export default function OurService() {
             </AnimatedSection>
             {steps.map((step) => (
               <motion.div
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 1, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
@@ -338,7 +329,7 @@ function Section({
 }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 1, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
