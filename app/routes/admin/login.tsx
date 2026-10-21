@@ -8,7 +8,7 @@ import { Eye, EyeOff } from "lucide-react";
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "ADMIN LOGIN - GENERATIONAL" },
-    { name: "description", content: "PURVEYOR OF THE MOST BEAUTIFUL, CULTURALLY SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND." },
+    { name: "description", content: "SOURCE OF THE MOST BEAUTIFUL, CULTURALLY SIGNIFICANT CLASSIC AUTOMOBILES IN THAILAND." },
   ];
 }
 

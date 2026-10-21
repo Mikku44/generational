@@ -20,7 +20,7 @@ export function meta({ }: Route.MetaArgs) {
     {
       property: "og:description",
       content:
-        "Purveyor of the most beautiful, culturally significant classic automobiles in Thailand.",
+        "Source of the most beautiful, culturally significant classic automobiles in Thailand.",
     },
     { property: "og:type", content: "website" },
     { property: "og:url", content: "https://www.generational.co/" },
@@ -38,7 +38,7 @@ export function meta({ }: Route.MetaArgs) {
     {
       name: "twitter:description",
       content:
-        "Purveyor of the most beautiful, culturally significant classic automobiles in Thailand.",
+        "Source of the most beautiful, culturally significant classic automobiles in Thailand.",
     },
     {
       name: "twitter:image",
@@ -139,7 +139,7 @@ export default function Home() {
         <section className="sr-only" aria-label="About GENERATIONAL">
           <h1>Classic Cars in Thailand — Curated Collector Automobiles by GENERATIONAL</h1>
           <p>
-            GENERATIONAL is a Bangkok-based purveyor of the most beautiful, culturally
+            GENERATIONAL is a Bangkok-based source of the most beautiful, culturally
             significant classic automobiles in Thailand, offering global sourcing,
             provenance verification, import, registration and preservation for
             discerning collectors.

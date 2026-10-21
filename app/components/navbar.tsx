@@ -12,7 +12,7 @@ export default function Navbar() {
       <div className='lg:grid flex justify-between   grid-cols-12 gap-5 xl:items-end lg:items-end md:items-center items-end '>
         {isHomePage ?  <div className="md:text-[20px] text-[12px] col-span-7 font-semibold md:max-w-[70vw] w-full">
       
-          PURVEYOR OF THE MOST BEAUTIFUL, CULTURALLY <br className='sm:block hidden'/>SIGNIFICANT CLASSIC AUTOMOBILES.
+          SOURCE OF THE MOST BEAUTIFUL, CULTURALLY <br className='sm:block hidden'/>SIGNIFICANT CLASSIC AUTOMOBILES.
         </div>
       :
       <Link to={"/"} className='size-[30px] col-span-7 bg-black text-white

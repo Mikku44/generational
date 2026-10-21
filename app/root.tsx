@@ -48,7 +48,7 @@ const ORGANIZATION_SCHEMA = {
   logo: "https://www.generational.co/logo.png",
   image: "https://www.generational.co/images/og.jpg",
   description:
-    "Purveyor of the most beautiful, culturally significant classic automobiles in Thailand. Global sourcing, provenance verification, import, registration and preservation for discerning collectors.",
+    "Source of the most beautiful, culturally significant classic automobiles in Thailand. Global sourcing, provenance verification, import, registration and preservation for discerning collectors.",
   telephone: "+66-91-991-1911",
   email: "HELLO@GENERATIONAL.CO",
   address: {
